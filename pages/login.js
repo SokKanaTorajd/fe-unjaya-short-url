@@ -8,7 +8,7 @@ function Login(){
         <>
         <div className="grid-2">
             <div className="image">
-                <Image alt='login' src="/login.png" width={400} height={400}/>
+                <Image alt='login' src="/login.png" width="50" height="80"/>
             </div>
             <div className="masuk">
                 <h2 className="title">Masuk Unjaya.id</h2>
