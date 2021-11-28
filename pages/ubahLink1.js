@@ -20,9 +20,8 @@ function Beranda(){
              <form method="" action="">
                 <div className='flex-input'>
                         <Image src="/star.png" alt="img" className="m-input" width="25%" height="20%"  objectFit="contain"/>
-                        <input type="text" name="UbahLink"id="isi"/> <br/>
+                        <input type="text"  className="link1"  name="UbahLink"id="isi"/> <br/>
                 </div>
-                {/* <button type="submit"  id="submit" className="ubah">Ubah Link</button> */}
                 <div className="ubah-1">
                     <button type="submit"  id="submit" className="ubah">Ubah Link</button>
                 </div>

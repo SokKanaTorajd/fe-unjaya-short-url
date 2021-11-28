@@ -1,5 +1,7 @@
 import '../styles/globals.css'
 import '../styles/layout.css'
+import '../styles/layLogin.css'
+import '../styles/dashboard.css'
 import Link from 'next/link'
 import Head from 'next/head'
 import Header from '../components/Header'
