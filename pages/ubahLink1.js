@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/dist/client/image'
 
-function Beranda(){
+function Ubahlink(){
     return(
         <>
         {/* <div className='circle1'></div> */}
@@ -56,4 +56,4 @@ function Beranda(){
     )
 }
 
-export default Beranda
+export default Ubahlink

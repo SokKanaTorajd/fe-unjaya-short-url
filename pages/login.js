@@ -25,9 +25,7 @@ function Login(){
                     <input type="checkbox" name="ingat"/> <label>ingat NIM</label>
                     </div>
 
-                    <div className="form-group">
-                        <button type="submit" name="masuk" className="btn-masuk">Masuk</button>
-                    </div>
+
                 </form>
             </div>
         </div>
