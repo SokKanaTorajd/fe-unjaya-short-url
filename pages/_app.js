@@ -1,6 +1,11 @@
 import '../styles/globals.css'
 import '../styles/layout.css'
+<<<<<<< HEAD
 import '../styles/dashboardnyacss.css'
+=======
+import '../styles/layLogin.css'
+import '../styles/dashboard.css'
+>>>>>>> 249d99f5029f3b26b412e1f9ad313ac6460a8fdb
 import Link from 'next/link'
 import Head from 'next/head'
 import Header from '../components/Header'

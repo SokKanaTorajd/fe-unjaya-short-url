@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Head from 'next/head'
 import Header2 from '../components/Header2'
 import Image from 'next/image'
@@ -42,6 +43,27 @@ dashboard.getLayout = function dashboard(page){
     <>
     <Header2/>
     <Linechart/>
+=======
+import Link from 'next/link'
+import Image from 'next/image'
+import HeaderD from '../components/HeaderDashboard'
+
+
+function Login(){
+    return(
+        <>
+       
+        </>
+    )
+}
+
+export default Login
+
+Login.getLayout = function pageLayout(page){
+    return(
+    <>
+    <HeaderD/>
+>>>>>>> 249d99f5029f3b26b412e1f9ad313ac6460a8fdb
     {page}
     </>
     )

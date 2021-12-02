@@ -77,7 +77,6 @@ li .masuk{
 }
 .navbar li{
     margin: 20px;
-   
 }
 
 .left h2{
@@ -107,7 +106,6 @@ li .masuk{
     opacity: 0.8;
     font-size: 25px;
 }
-
 .flex{
     display: flex;
     flex-direction:row;
@@ -142,7 +140,6 @@ li .masuk{
     letter-spacing: 0.2px;
     text-align: center;
     line-height: 20px;
-    
 }
 .g-flex input{
     width: 70%;
@@ -159,6 +156,13 @@ li .masuk{
     flex-direction: row;
     margin-bottom: 10px
 }
+.flex-input>.link1{
+    padding: 12px;
+    border: 2px solid var(--green-color);
+    margin-left: px;
+    border-radius: 11px;
+    width: 100%;
+}
 .flex-input>input{
     padding: 12px;
     border: 2px solid var(--green-color);
@@ -172,11 +176,9 @@ li .masuk{
     margin-left: -6px;
     border-radius: 11px;
 }
-
 .changeLink{
     width: 100%;
 }
-
 form .ubah{
     display: flex;
     justify-content: start;
@@ -188,7 +190,7 @@ form .ubah{
 form .ubah-1{
     display: flex;
     justify-content: start;
-    width: 100%;
+    width: 90%;
     padding: 10px 0;
     text-align: center;
     margin-left: 9%;
@@ -211,7 +213,6 @@ form .alert-danger{
     background-color: var(--green-color);
     color: var(--white-color);
     border-radius: 5px;
-    
     border: none;
     margin-left: 10px;
     width: 100%;
@@ -232,20 +233,18 @@ form .alert-danger{
     cursor: pointer;
 }
 
-
 .section2{
     background-color:  #E6FFDF;
-    padding: 50px 30px;
+    padding: 20px 30px;
+    height: fit-content;
 }
 .section2 h1{
-
     font-family: Montserrat;
     text-align: center;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
     letter-spacing: 0.2px;
-
 }
 .section2 h2{
     font-weight: 900;
@@ -261,7 +260,6 @@ form .alert-danger{
     letter-spacing: 0.01px;
 }
 .section2 p{
-  
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -284,55 +282,87 @@ form .alert-danger{
     height: 319.53px;
     left: 580px;
     top: 1051px;
-
 }
 
 
 /* login */
 .grid-2{
+    margin-top: 5%;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    height: 40vh;
+    grid-template-columns: 0.8fr 1fr;
+    height: fit-content;
     color: black;
-    margin: 20px;
-    font-size: 13px;
-    }
-    .grid-2>.masuk{
-        width: 80%;
-        border: 2px solid black;
-        border-radius: 11px;
-        height: 100%;
-        padding: 20px;
-    }
-    .masuk>.title{
-        text-align: center;
-        font-size: 20px;
-    }
-    .masuk>.form-group{
-        width: 100%;
-        
-    }
-    .form-group input{
-        width: 100%;
-        padding: 10px;
-        border-radius: 5px;
-        margin-bottom: 10px;
-    }
-    .ingat{
-        display: flex;
-        justify-items: flex-start;
-        margin-bottom: 10px;
-    }
-    .form-group button{
-        padding: 5px;
-        color: var(--white-color);
-        text-align: center;
-        border-radius: 5px;
-        background-color: var(--green-color);
-        width: 100%;
-        border: none;
-    }
-
+    font-size: 20px;
+    padding: 30px;
+}
+.grid-2>.image{
+    width: 100%;
+    height: fit-content;
+}
+.grid-2>.masuk{
+    margin-top: 10%;
+    margin: auto;
+    width: 70%;
+    border: 2px solid black;
+    border-radius: 11px;
+    height: fit-content;
+    padding: 20px;
+}
+.masuk>.title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.3px;
+}
+.masuk>.form-group{
+    width: 100%;
+    height: fit-content;
+}
+.form-group label{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.3px;
+}
+.form-group input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    left: 825px;
+    top: 461px;
+    background: #FFFFFF;
+    border: 2.5px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.ingat{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: #2F2E41;
+}
+.form-group button{
+    margin-top:20px ;
+    padding: 10px;
+    color: var(--white-color);
+    text-align: center;
+    border-radius: 5px;
+    background-color: var(--green-color);
+    width: 100%;
+    border: none;
+}
 
 /* footer */
 footer{
@@ -352,20 +382,26 @@ footer{
 /* notfound */
 .notFound>.image{
     margin-top: 60px;
-    width: 40%;
+    width: 35%;
     margin: 50px auto 0 auto;
+    
+}
+.notFound>.image1{
+    margin-top:0;
+    width: 50%;
+    margin: 0 auto 0 auto;
 }
 .notFound h2{
     color: #000000;
     font-size: 25px;
 }
 .notFound>.ket{
+    margin-top: 0;
     width: 100%;
     text-align: center;
     font-family: Montserrat;
     font-style: normal;
     font-size: 20px;
-    line-height: 56px;
     letter-spacing: 0.2px;
     color: #000000;
     padding: 0 10%;
@@ -412,9 +448,7 @@ footer{
     }
     .navbar li{
         margin: 10px;
-    
     }
-    
     .section1{
         margin-bottom: 70px;
         margin-top: 50px;
@@ -434,7 +468,6 @@ footer{
         margin: auto;
         margin-bottom: 20px;
     }
-   
     .section2{
         padding: 60px 30px;
         font-family: Montserrat;
@@ -444,7 +477,6 @@ footer{
     .section2 h1{
         font-size: 35px;
         letter-spacing: 0.2px;
-
     }
     .section2 h2{
         font-weight: 900;
@@ -456,7 +488,6 @@ footer{
     .section2 p{
         font-size: 20px;
         letter-spacing: 0.01px;
-        
     }
     .section2>.grid-3{
         grid-template-columns: 1fr;
@@ -472,6 +503,22 @@ footer{
         left: 580px;
         top: 1051px;
     }
+    /* login */
+    .grid-2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid-2>.masuk{
+        width: 100%;
+    }
+    .masuk>.title{
+        font-size: 20px;
+        line-height: 10px;
+    }
+    .form-group input, .form-group button{
+        padding: 6px;
+    }
+
     /* notfound */
     .notFound>.image{
         width: 50%;
@@ -485,12 +532,11 @@ footer{
         margin-top: 20%;
         font-style: normal;
         font-size: 15px;
-        line-height: 40px;
+        line-height: 20px;
         letter-spacing: 0.1px;
         color: #000000;
         padding: 0 5%;
         margin-bottom: 20px;
-    
     }
 }
 

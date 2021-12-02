@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import Header from '../components/Header'
+import HeaderL from '../components/HeaderLogin'
 
 
 function Login(){
@@ -8,7 +8,7 @@ function Login(){
         <>
         <div className="grid-2">
             <div className="image">
-                <Image alt='login' src="/login.png" width="50" height="80"/>
+                <Image alt='login' src="/login.png" width={500} height={500}/>
             </div>
             <div className="masuk">
                 <h2 className="title">Masuk Unjaya.id</h2>
@@ -38,7 +38,7 @@ export default Login
 Login.getLayout = function pageLayout(page){
     return(
     <>
-    <Header/>
+    <HeaderL/>
     {page}
     </>
     )
