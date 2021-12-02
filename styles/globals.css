@@ -1,7 +1,10 @@
 :root{
   --green-color : #00633B;
+  --bg-color2: #AAECA0;
+  --green-color2: #6FC3A1;
   --white-color : #FBFBFB;
   --white-color2 : #fff;
+
 }
 
 html,
