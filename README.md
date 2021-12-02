@@ -9,3 +9,4 @@ Front-End Team members:
 4. Latifah Arum Sulistyaningsih
 5. Ahmad Fadhil
 6. Yatinah
+7. ets
