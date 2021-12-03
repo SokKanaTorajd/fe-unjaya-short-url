@@ -19,11 +19,6 @@ function HeaderL(){
                         <a>Tentang</a> 
                         </Link>
                     </li>
-                    <li> 
-                        <Link href='/login'>
-                        <a class="active">Masuk</a> 
-                        </Link>
-                    </li>
                 </ul>
             </div>
         </nav>
