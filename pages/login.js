@@ -29,10 +29,12 @@ function Login(){
                 <Image alt='login' src="/login.png" width={500} height={500}/>
             </div>
             <div className="masuk">
-                <h2 className="title">Masuk <span className="unjaya">Unjaya.id</span></h2>
+                <div>
+                    <h2 className="title">Masuk <mark class="red">Unjaya.id</mark></h2>
+                </div>
                 <form method="post" spellcheck="false">
                     <div className="form-group">
-                        <input type="text" name="nim" placeholder="NIM" className="form-control"/>
+                        <input type="text" name="username" placeholder="Username" className="form-control"/>
                     </div>
                     <div className="form-group">
                         <input type="text" name="password" placeholder="Kata Sandi" className="form-control"/>
@@ -43,7 +45,7 @@ function Login(){
                     <div className="form-group">
                         <button type="submit" name="masuk" className="btn-masuk">Masuk</button>
                         <div class="buat-akun">Belum memiliki akun? 
-                        <span class="klik-akun" onClick={toRegister}>Klik untuk buat akun</span>
+                            <span class="klik-akun" onClick={toRegister}> Buat akun</span>
                         </div>
                         <p></p>
                     </div>
@@ -54,7 +56,7 @@ function Login(){
         <div className="buatAkun" id="buatAkun">
             <div class="cl" onClick={close}>&times;</div>
             <div className="header">
-                <h2 className="title">Buat Akun <br/><span className="unjaya">Unjaya.id</span> </h2>
+                <h2 className="title">Buat Akun <mark class="red">Unjaya.id</mark> </h2>
             </div>
                 <form method="post" spellcheck="false">
                     <div className="form-group">
