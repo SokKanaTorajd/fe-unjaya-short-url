@@ -284,8 +284,55 @@ form .alert-danger{
     top: 1051px;
 }
 
+/* login header*/
+.navLogin{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    left: 832px;
+}
+.navLogin h2{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 56px;
+    letter-spacing: 0.2px;
+    color: var(--green-color);
+    margin-left: 70px;
+}
+.navLogin>.right{
+    font-weight: 700px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 18px;
+}
+.navLogin ul{
+    list-style-type: none;
+    display: flex;
+}
+.navLogin li{
+    margin: 20px;
+}
+.navLogin .active{
+    color: var(--green-color);
+    border-bottom: 2px solid var(--green-color);
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--white-color);
+    background: var(--green-color);
+}
+.navLogin a{
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--green-color2);
+}
+.navLogin .active{
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--white-color);
+    background: var(--green-color);
+}
 
-/* login */
+/* login isi */
 .grid-2{
     margin-top: 5%;
     display: grid;
@@ -303,10 +350,15 @@ form .alert-danger{
     margin-top: 10%;
     margin: auto;
     width: 70%;
-    border: 2px solid black;
+    border: none;
+    box-shadow:  2px 3px 8px 1px #7a7878;
     border-radius: 11px;
     height: fit-content;
     padding: 20px;
+}
+.title>.unjaya{
+    color: var(--green-color);
+    margin-left: 10px;
 }
 .masuk>.title{
     font-style: normal;
@@ -334,13 +386,19 @@ form .alert-danger{
 .form-group input{
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     left: 825px;
     top: 461px;
-    background: #FFFFFF;
-    border: 2.5px solid #000000;
+    /* background: #FFFFFF; */
+    border: 2.5px solid #afafaf;
     box-sizing: border-box;
     border-radius: 10px;
+    background-color: transparent;
+}
+input[type=text]:focus{
+    outline: 2.5px solid rgb(0, 164, 214);
+    border: none;
 }
 .ingat{
     font-style: normal;
@@ -362,7 +420,57 @@ form .alert-danger{
     background-color: var(--green-color);
     width: 100%;
     border: none;
+    margin-bottom: 15px;
+    cursor: pointer;
 }
+.form-group>.buat-akun{
+    text-align: center;
+    font-size: 13px;
+}
+.buat-akun>.klik-akun{
+    color: var(--green-color);
+    cursor: pointer;
+}
+/* Buat Akun */
+.buatAkun{
+    display: none;
+    margin: auto;
+    background-color: #fefefe;
+    width: 35%;
+    border: none;
+    box-shadow:  2px 3px 8px 1px #7a7878;
+    border-radius: 11px;
+    height: fit-content;
+    padding: 0 20px;
+    position: fixed; 
+    z-index: 1; 
+    margin-top: 50px; 
+    margin-left: 30%;
+    top: 0;
+    overflow: auto; 
+}
+.buatAkun>.header{
+    width: 100%;
+}
+.buatAkun>.cl{
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: right;
+}
+.buatAkun h2{
+    text-align: center;
+    color: black;
+}
+p.title{
+    color: black;
+}
+.title>.unjaya{
+    color: var(--green-color);
+}
+.buat-akun{
+    color: black;
+}
+
 
 /* footer */
 footer{
@@ -406,7 +514,37 @@ footer{
     color: #000000;
     padding: 0 10%;
     margin-bottom: 30px;
+}
 
+/* alert sukses */
+.sukses-alert{
+    display: none;
+    margin: auto;
+    background-color: #fefefe;
+    width: 23%;
+    border: none;
+    box-shadow:  2px 3px 8px 1px #7a7878;
+    border-radius: 11px;
+    height: fit-content;
+    padding: 0 20px;
+    position: fixed; 
+    z-index: 1; 
+    margin-top: 150px; 
+    margin-left: 40%;
+    top: 0;
+    overflow: auto; 
+    text-align: center;
+}
+.sukses-alert h2{
+    font-size: 30px;
+    color: black;
+}
+.sukses-alert p{
+    font-size: 20px;
+    color: black;
+}
+p> .unjaya{
+    color: var(--green-color);
 }
 
 @media(max-width:786px){
@@ -503,6 +641,22 @@ footer{
         left: 580px;
         top: 1051px;
     }
+     /* login header*/
+     .navLogin{
+         background-color: transparent;
+     }
+     .navLogin h2{
+        font-size: 25px;
+        margin-left: 70px;
+        color: var(--green-color);
+    }
+    .navLogin>.right{
+        font-size: 15px;
+    }
+    .navLogin li{
+        margin: 25px 10px;
+        padding: 0 1px;
+    }
     /* login */
     .grid-2{
         display: grid;
@@ -537,6 +691,14 @@ footer{
         color: #000000;
         padding: 0 5%;
         margin-bottom: 20px;
+    }
+
+    /* buat akun */
+    .buatAkun{
+        width: 50%;
+    }
+    .sukses-alert{
+        width: 40%;
     }
 }
 
