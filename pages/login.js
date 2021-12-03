@@ -41,6 +41,7 @@ function Login(){
                     <div className="ingat">
                     <input type="checkbox" name="ingat"/> <label>Ingat Akun</label>
                     </div>
+<<<<<<< HEAD
                     <div className="form-group">
                         <button type="submit" name="masuk" className="btn-masuk">Masuk</button>
                         <div class="buat-akun">Belum memiliki akun? 
@@ -48,6 +49,10 @@ function Login(){
                         </div>
                         <p></p>
                     </div>
+=======
+
+
+>>>>>>> main
                 </form>
             </div>
         </div>

@@ -35,6 +35,7 @@
     line-height: 18px;
     letter-spacing: 0.3px;
     color: var(--white-color2);
+    
 }
 li .beranda{
     color: var(--green-color);
@@ -92,7 +93,7 @@ li .masuk{
     left: 0px;
     top: -209px;
     margin: auto;
-    width: 80%;
+    width: 100%;
     line-height: 1.5;
     font-size: 15px;
     text-align: center;

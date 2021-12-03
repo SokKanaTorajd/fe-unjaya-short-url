@@ -1,0 +1,273 @@
+.headdash>.navbardash {
+  width: 100%;
+  height: 10%;
+  left: 0px;
+  top: 0px;
+  background: #00633B;
+  position: fixed;
+}
+
+.navbardash{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  left: 832px;
+  top: 65px;
+  position: fixed;
+}
+.navbardash>.header{
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 56px;
+  letter-spacing: 0.2px;
+  color: var(--white-color2);
+}
+
+.header h1{
+  position: absolute;
+  left: 77px;
+  margin-top: 2%;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 15px;
+  /* identical to box height, or 75% */
+
+  display: flex;
+  align-items: center;
+  text-align: right;
+  letter-spacing: 1px;
+
+  color: #FBFBFB;
+  
+}
+
+  
+.headernya h2{
+  position: absolute;
+  margin-top: 2%;
+
+  color: var(--white-color);
+  font-size: 15px;
+  font-weight: bold;
+  font-family: Montserrat;
+  left: 70%;
+}
+
+.headernya h2:hover{
+  /* padding: 5px 20px; */
+  border-radius: 11px;
+  height: 18px;
+  width: 138px;
+}
+
+.akun {
+  position: absolute;
+  left: 78%;
+  right: 15.91%;
+  margin-top: 23px;
+
+}
+.poly {
+  position: absolute;
+  left: 81%;
+  right: 15.91%;
+  margin-top: 23px;
+}
+.ubahlinknya{
+  left: 0px;
+  /* top: -209px; */
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  line-height: 1.5;
+  font-size: 15px;
+  text-align: center;
+  height: 65vh;
+}
+.flex1{
+  display: flex;
+  flex-direction:row;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.g-flex1{
+  margin-top: 10px;
+  margin-left: 5px;
+  display: flex;
+  width: 100%;
+  border: 2px solid var(--green-color) ;
+  border-radius: 11px;
+  box-sizing: border-box;
+ 
+}
+
+
+.g-flex1 button{
+  margin-left: 5px;
+  flex: 1;
+  width: 30%;
+  padding: 7px 0;
+  border: 2px solid var(--green-color);
+  background: var(--green-color);
+  color: var(#fff);
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--white-color);
+  font-weight: 600;
+  border-radius: 5px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  line-height: 20px;
+  
+}
+.g-flex1 input{
+  width: 70%;
+  border: none;
+  outline: none;
+  border-radius: 11px;
+}
+.total-link h1{
+  position: absolute;
+  width: 20px;
+  height: 18px;
+  left: 80px;
+  top: 211px;
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 18px;
+  /* identical to box height, or 60% */
+  
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.3px;
+  
+  color: #00633B;
+}
+.total-link h2{
+  position: absolute;
+  width: 147px;
+  height: 18px;
+  left: 140px;
+  top: 211px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 18px;
+  /* identical to box height, or 60% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.3px;
+
+  color: #00633B;
+
+}
+.total-klik h1{
+  position: absolute;
+  width: 20px;
+  height: 18px;
+  left: 80px;
+  top: 270px;
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 18px;
+  /* identical to box height, or 60% */
+  
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.3px;
+  
+  color: #00633B;
+}
+.total-klik h2{
+  position: absolute;
+  width: 147px;
+  height: 18px;
+  left: 140px;
+  top: 270px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 18px;
+  /* identical to box height, or 60% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.3px;
+
+  color: #00633B;
+}
+.riwayat1 {
+  position: absolute;
+  width: 1440px;
+  height: 143px;
+  left: 0px;
+  top: 1031px;
+  background: #FFFFFF;
+}
+.riwayat1 h1 {
+  position: absolute;
+  left: 140px;
+  margin: auto;
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  /* identical to box height, or 91% */
+  
+  letter-spacing: 0.2px;
+  
+  color: #000000;
+}
+/* B A G I A N   G R A F I K */
+.grafik {
+  width: 700px;
+
+  height: 370px;
+  align-items: center;
+  letter-spacing: 0.3px;
+  margin-top: 100px;
+  margin-left:  300px;
+}
+.canvas {
+  background-color: linear-gradient(180deg, #00633B 0%, rgba(23, 255, 198, 0) 100%);
+}
+@media(max-width:786px){
+
+  .section1{
+      width: 80%;
+  }
+  .section1{
+      margin-bottom: 70px;
+      margin-top: 50px;
+  }
+
+  .flex1{
+      display: flex;
+      flex-direction:row;
+      width: 100%;
+      margin: auto;
+      margin-bottom: 20px;
+  }
+}
