@@ -3,7 +3,14 @@ import Image from 'next/image'
 
 function Header2(){
   function userbin(){
-
+      const userbin = document.getElementById('userbin')
+      if(userbin.style.display === 'none'){
+        userbin.style.display='block'
+      }
+      else{
+        userbin.style.display='none'
+      }
+      
   }
     return(
       <>
@@ -13,23 +20,29 @@ function Header2(){
               <h1>Unjaya.id</h1>
             </div>
             <div className="headernya">
-              <div className ="dashb">
-                <h2>Dashboard</h2>
-              </div>
-              <div className="akun">
-                <Image src="/Group.png" alt="akun" width={23} height={23}/>
-              </div>
-              <div className="poly">
-                <Image src="/polygon.png" onClick={userbin} alt="poly" width={25} height={8}/>
-                <div className="user">
-                  {/* <h3>@Userbin</h3>
-                  <p>Keluar</p> */}
+                <div className="dashb">
+                  <h2>Dashboard</h2>
                 </div>
-              </div>
+                <div className="akun">
+                  <Image src="/Group.png" alt="akun" width={23} height={23}/>
+                </div>
+                <div className="poly" onClick={userbin}>
+                  <Image src="/polygon.png" alt="poly" width={25} height={8}/>
+                </div>
             </div>
         </div>
       </div>
+      <div className="userbin" id='userbin'>
+          @Userbin
+          <p>
+          <Image src="/out.png"alt="akun" width={15} height={15}/>
+          <Link href='/logout'>
+              <a>Keluar</a>
+          </Link>
+          </p>
+      </div>
   </>
+   
   )
 }
 export default Header2
