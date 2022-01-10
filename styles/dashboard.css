@@ -1,26 +1,26 @@
 /* navbar */
 .headdash>.navbardash {
-    width: 100%;
-    height: 10%;
-    left: 0px;
-    top: 0px;
-    background: #00633B;
-    position: fixed;
-  }  
+  width: 100%;
+  height: 10%;
+  left: 0px;
+  top: 0px;
+  background: #00633B;
+  position: fixed;
+}  
 .navbardash{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    top: 65px;
-    position: fixed;
-  }
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  top: 65px;
+  position: fixed;
+}
 .navbardash>.header{
-    font-weight: bold;
-    font-size: 50px;
-    line-height: 56px;
-    letter-spacing: 0.2px;
-    color: var(--white-color2);
-  }
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 56px;
+  letter-spacing: 0.2px;
+  color: var(--white-color2);
+}
 .akun {
   position: absolute;
   left: 78%;
@@ -57,214 +57,279 @@
   left: 70%;
 }
 .headernya h2:hover{
-  border-radius: 11px;
-  height: 18px;
-  width: 138px;
+border-radius: 11px;
+height: 18px;
+width: 138px;
 }
 /* usetbin */
 .userbin{
-  display: none;
-  width: fit-content;
-  padding: 8px;
-  height: fit-content;
-  position: absolute;
-  top: 11%;
-  left: 83%;
-  border-radius: 11px;
-  border: 2px solid black;
-  color: black;
+display: none;
+width: fit-content;
+padding: 8px;
+height: fit-content;
+position: absolute;
+top: 11%;
+left: 83%;
+border-radius: 11px;
+border: 2px solid black;
+color: black;
 }
 a{
-  text-decoration: none;
+text-decoration: none;
 }
 .userbin a{
-  color: black;
+color: black;
 }
 
 /* ubah Link */
 .ubahlinknya{
-  left: 0px;
-  margin-top: auto;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  line-height: 1.5;
-  font-size: 15px;
-  text-align: center;
-  height: fit-content;
-  margin-bottom: 10%;
+left: 0px;
+margin-top: auto;
+margin-left: auto;
+margin-right: auto;
+width: 80%;
+line-height: 1.5;
+font-size: 15px;
+text-align: center;
+height: fit-content;
+margin-bottom: 10%;
 }
 .ubahlinknya-d{
-  left: 0px;
-  margin-top: 40%;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  line-height: 1.5;
-  font-size: 15px;
-  text-align: center;
-  height: fit-content;
-  margin-bottom: 10%;
+left: 0px;
+margin-top: 40%;
+margin-left: auto;
+margin-right: auto;
+width: 80%;
+line-height: 1.5;
+font-size: 15px;
+text-align: center;
+height: fit-content;
+margin-bottom: 10%;
 }
 .flex1{
-  display: flex;
-  flex-direction:row;
-  width: 50%;
-  margin: auto;
-  margin-bottom: 20px;
+display: flex;
+flex-direction:row;
+width: 50%;
+margin: auto;
+margin-bottom: 20px;
 }
 .g-flex1{
-  margin-top: 10px;
-  margin-left: 5px;
-  display: flex;
-  width: 100%;
-  border: 2px solid var(--green-color) ;
-  border-radius: 11px;
-  box-sizing: border-box; 
+margin-top: 10px;
+margin-left: 5px;
+display: flex;
+width: 100%;
+border: 2px solid var(--green-color) ;
+border-radius: 11px;
+box-sizing: border-box; 
 }
 .g-flex1 button{
-  margin-left: 5px;
-  flex: 1;
-  width: 30%;
-  padding: 7px 0;
-  border: 2px solid var(--green-color);
-  background: var(--green-color);
-  color: var(#fff);
-  cursor: pointer;
-  font-size: 13px;
-  color: var(--white-color);
-  font-weight: 600;
-  border-radius: 5px;
-  letter-spacing: 0.2px;
-  text-align: center;
-  line-height: 20px;
+margin-left: 5px;
+flex: 1;
+width: 30%;
+padding: 7px 0;
+border: 2px solid var(--green-color);
+background: var(--green-color);
+color: var(#fff);
+cursor: pointer;
+font-size: 13px;
+color: var(--white-color);
+font-weight: 600;
+border-radius: 5px;
+letter-spacing: 0.2px;
+text-align: center;
+line-height: 20px;
 }
 .g-flex1 input{
-  width: 70%;
-  border: none;
-  outline: none;
-  border-radius: 11px;
-  background-color: transparent;
+width: 70%;
+border: none;
+outline: none;
+border-radius: 11px;
+background-color: transparent;
 }
 
 /* B A G I A N   G R A F I K */
 .dash{
-  width: 100%;
-  margin-top: 8%;
-  display: grid;
-  grid-template-columns: 20% 80%;
-  margin-bottom: 10%;
+width: 100%;
+margin-top: 8%;
+display: grid;
+grid-template-columns: 20% 80%;
+margin-bottom: 10%;
 }
 .dash>.ket{
-  text-align: end;
-  padding-top: 20%;
-  font-size: 20px;
-  line-height: 2rem;
+text-align: end;
+padding-top: 20%;
+font-size: 20px;
+line-height: 2rem;
 }
 .grafik {
-  width: 60%;
-  height: 350px;
-  display: flex;
-  justify-content:center;
-  letter-spacing: 0.3px;
-  margin-left: 25%;
-  margin-right:80%;
-  margin-top: 10%;
+width: 60%;
+height: 350px;
+display: flex;
+justify-content:center;
+letter-spacing: 0.3px;
+margin-left: 25%;
+margin-right:80%;
+margin-top: 10%;
 }
 /* riwayat */
 .riwayat{
-  width: 100%;
-  margin-bottom: 10%;
+width: 100%;
+margin-bottom: 10%;
 }
 .riwayat>.riwayat1{
-  padding: 0 5px;
-  display: flex;
-  justify-content: space-between;
-  border-bottom:1px solid black ;
-  width: 100%;
+padding: 0 5px;
+display: flex;
+justify-content: space-between;
+border-bottom:1px solid black ;
+width: 100%;
 }
 .riwayat1>.img-fig{
-  width: 5%;
-  margin-top: 27px;
-  margin-right: 20px;
-  text-align: end;
+width: 5%;
+margin-top: 27px;
+margin-right: 20px;
+text-align: end;
 }
 .ket-riwayat{
-  width: 65%;
+width: 65%;
 }
 .ket-riwayat h1{
-  font-size: 22px;
-  color: black;
+font-size: 22px;
+color: black;
 }
 h1 span{
-  padding-left: 18px;
+padding-left: 18px;
 }
 .option-click, .just-now{
-  width: 15%;
-  color: black;
-  font-size: 18px;
-  margin-top: 40px;
-  text-align: center;
+width: 15%;
+color: black;
+font-size: 18px;
+margin-top: 40px;
+text-align: center;
 }
 .riwayat>.option{
-  background-color: #E2FEDB;
-  border-bottom: none;
+background-color: #E2FEDB;
+border-bottom: none;
 }
 .options{
-  width: 30%;
-  display: flex;
-  justify-content: space-between;
+width: 30%;
+display: flex;
+justify-content: space-between;
 }
 
 /* ubah link popup */
 .ubahLinkPop{
-  display: none;
-  margin: 15% 25% auto 25%;
-  background-color: #fefefe;
-  width: 50%;
-  border: none;
-  box-shadow:  2px 3px 8px 1px #7a7878;
-  border-radius: 18px;
-  height: fit-content;
-  padding: 0 20px;
-  position: fixed; 
-  z-index: 1; 
-  top: 0;
-  padding-bottom: 2%;
+display: none;
+margin: 15% 25% auto 25%;
+background-color: #fefefe;
+width: 50%;
+border: none;
+box-shadow:  2px 3px 8px 1px #7a7878;
+border-radius: 18px;
+height: fit-content;
+padding: 0 20px;
+position: fixed; 
+z-index: 1; 
+top: 0;
+padding-bottom: 2%;
 }
 .ubahLinkPop>.ubahLinkPop-h{
-  width: 100%;
-  padding-top: 10px;
-  display: flex;
-  justify-content: space-between;
-  font-size: 10px;
+width: 100%;
+padding-top: 10px;
+display: flex;
+justify-content: space-between;
+font-size: 10px;
 }
 .ubahLinkPop-h>.ki{
-  width: 65%;
+width: 65%;
 }
 .ubahLinkPop-h>.ka{
-  width: 35%;
-  display: flex;
-  justify-content: space-between;
+width: 35%;
+display: flex;
+justify-content: space-between;
 }
 .ubahLink-m{
- width: 100%;
- padding: 0 0 0 7%;
- font-size: 14px;
+width: 100%;
+padding: 0 0 0 7%;
+font-size: 14px;
 }
 .ubahLink-m ul{
+list-style-type: none;
+display: flex;
+text-align: start;
+padding-left: 0px;
+}
+.ubahLink-m li{
+padding: 10px;
+}
+li span{
+margin-left: 5px;
+}
+.ubahLink-m>.ubahLink-b{
+padding: 10px 20px;
+color: white;
+background-color: var(--green-color);
+border: none;
+font-family: Montserrat;
+font-weight: bold;
+font-size: 15px;
+border-radius: 8px;
+cursor: pointer;
+}
+/* P O P  U P   K E D U A */
+.buttonUbahLink {
+display: none;
+/* justify-content: center; */
+margin: 15% 30% auto 35%;
+background-color: #fefefe;
+width: 30%;
+border: none;
+box-shadow:  2px 3px 8px 1px #7a7878;
+border-radius: 18px;
+height: fit-content;
+padding: 0 20px;
+position: fixed; 
+z-index: 1; 
+top: 0;
+padding-bottom: 2%;
+}
+.poplink>.warn{
+width: 35%;
+display: flex;
+justify-content: center;
+}
+.warn{
+  margin: auto;
+  width: 100px;
+}
+.poplink {
+  color:black;
+  margin-left: 50px;
+}
+.poplink p{
+  justify-items: center;
+}
+.buttonUbahLink ul {
   list-style-type: none;
   display: flex;
   text-align: start;
-  padding-left: 0px;
+  margin-top: auto;
+  color: green ;
 }
-.ubahLink-m li{
-  padding: 10px;
+.buttonUbahLink>.batal{
+  float: left;
+  display: block;
+  padding: 10px 20px;
+  /* color: white; */
+  background-color: var(--green-color);
+  border: none;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 40px;
 }
-li span{
-  margin-left: 5px;
-}
-.ubahLink-m>.ubahLink-b{
+.btn-pop>.lanjut{
   padding: 10px 20px;
   color: white;
   background-color: var(--green-color);
@@ -274,126 +339,109 @@ li span{
   font-size: 15px;
   border-radius: 8px;
   cursor: pointer;
+
+  float: right;
+  display: block;
+  padding: 10px 20px;
+  margin-right: 40px;
 }
-/* P O P  U P   K E D U A */
-.buttonUbahLink {
-  display: none;
-  /* justify-content: center; */
-  margin: 15% 30% auto 35%;
-  background-color: #fefefe;
-  width: 30%;
-  border: none;
-  box-shadow:  2px 3px 8px 1px #7a7878;
-  border-radius: 18px;
-  height: fit-content;
-  padding: 0 20px;
-  position: fixed; 
-  z-index: 1; 
-  top: 0;
-  padding-bottom: 2%;
+.button ul a{
+padding: 10px;
+color: white;
 }
-.poplink>.warn{
-  width: 35%;
-  display: flex;
-  justify-content: center;
-}
-.ubahLinkPop-h .h1{
-  width: 35%;
-  display: flex;
-  justify-content: space-between;
-}
+
 @media(max-width:786px){
-  .navbardash>.header{
-    margin-top: 10px;
-  }
-  .dashb{
-    margin-top: 15px;
-  }
-  .akun {
-    left: 85%;
-    margin-top: 10px;
-  }
-  .poly {
-    position: absolute;
-    left: 90%;
-    margin-top: 10px;
-  }
-  .flex1{
-    display: flex;
-    flex-direction:row;
-    width: 100%;
-    margin: auto;
-    margin-bottom: 20px;
+.navbardash>.header{
+  margin-top: 10px;
 }
-  /* grafik */
-  .dash{
-    width: 100%;
-    margin-top: 20%;
-    display: grid;
-    grid-template-columns: 20% 80%;
-    margin-bottom: 10%;
-  }
-  .riwayat>.riwayat1{
-    padding: 0 7px;
-  }
-  .riwayat1>.img-fig{
-    width: 4%;
-    margin-top: 15px;
-    margin-right: 0px; 
-  }
-  .ket-riwayat{
-    width: 75%;
-  }
-  .ket-riwayat h1{
-    font-size: 15px;
-  }
-  h1 span{
-    padding-left: 10px;
-  }
-  .option-click, .just-now{
-    width: 10%;
-    font-size: 15px;
-    margin-top: 35px;
-  }
-  .options{
-    width: 20%;
-  }
-  
-  
+.dashb{
+  margin-top: 15px;
+}
+.akun {
+  left: 85%;
+  margin-top: 10px;
+}
+.poly {
+  position: absolute;
+  left: 90%;
+  margin-top: 10px;
+}
+.flex1{
+  display: flex;
+  flex-direction:row;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+/* grafik */
+.dash{
+  width: 100%;
+  margin-top: 20%;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  margin-bottom: 10%;
+}
+.riwayat>.riwayat1{
+  padding: 0 7px;
+}
+.riwayat1>.img-fig{
+  width: 4%;
+  margin-top: 15px;
+  margin-right: 0px; 
+}
+.ket-riwayat{
+  width: 75%;
+}
+.ket-riwayat h1{
+  font-size: 15px;
+}
+h1 span{
+  padding-left: 10px;
+}
+.option-click, .just-now{
+  width: 10%;
+  font-size: 15px;
+  margin-top: 35px;
+}
+.options{
+  width: 20%;
+}
+
+
 }
 
 @media(max-width:500px){
-  .dashb{
-    left:83%;
-  }
-  .akun {
-    left: 87%;
-    margin-top: 10px;
-  }
-  .poly {
-    position: absolute;
-    left: 94%;
-    margin-top: 10px;
-  }
-  .header h1{
-    left: 30px;
-    font-size: 20px;
-  }  
-  .userbin{
-    padding: 1px;
-  }
-  .dash>.ket{
-    font-size: 15px;
-    line-height: 1rem;
-  }
-  .ket-riwayat{
-    width: 85%;
-  }
-  .option-click, .just-now{
-    width: 10%;
-    font-size: 12px;
-  }
-  .ket-riwayat p{
-    font-size: 10px;
-  }
+.dashb{
+  left:83%;
+}
+.akun {
+  left: 87%;
+  margin-top: 10px;
+}
+.poly {
+  position: absolute;
+  left: 94%;
+  margin-top: 10px;
+}
+.header h1{
+  left: 30px;
+  font-size: 20px;
+}  
+.userbin{
+  padding: 1px;
+}
+.dash>.ket{
+  font-size: 15px;
+  line-height: 1rem;
+}
+.ket-riwayat{
+  width: 85%;
+}
+.option-click, .just-now{
+  width: 10%;
+  font-size: 12px;
+}
+.ket-riwayat p{
+  font-size: 10px;
+}
 }
