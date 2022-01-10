@@ -29,8 +29,8 @@ function Login(){
                 <Image alt='login' src="/login.png" width={500} height={500}/>
             </div>
             <div className="masuk">
-                <div>
-                    <h2 className="title">Masuk <mark class="red">Unjaya.id</mark></h2>
+                <div className="judul">
+                    <h2 className="title">Masuk <span class="red">Unjaya.id</span></h2>
                 </div>
                 <form method="post" spellcheck="false">
                     <div className="form-group">

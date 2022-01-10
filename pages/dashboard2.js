@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Header2 from '../components/Header2'
 import Image from 'next/image'
 import React from 'react'
+import Linechart from '../components/Linechart'
 
 function dashboard(){
     function ubahLink(){

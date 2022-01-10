@@ -162,11 +162,14 @@ a{
   line-height: 2rem;
 }
 .grafik {
-  width: 80%;
-  height: 370px;
-  align-items: center;
+  width: 60%;
+  height: 350px;
+  display: flex;
+  justify-content:center;
   letter-spacing: 0.3px;
-  padding-left:5%  ;
+  margin-left: 25%;
+  margin-right:80%;
+  margin-top: 10%;
 }
 /* riwayat */
 .riwayat{
@@ -174,15 +177,15 @@ a{
   margin-bottom: 10%;
 }
 .riwayat>.riwayat1{
-  padding: 0 10px;
+  padding: 0 5px;
   display: flex;
   justify-content: space-between;
-  border-bottom:2px solid black ;
+  border-bottom:1px solid black ;
   width: 100%;
 }
 .riwayat1>.img-fig{
   width: 5%;
-  margin-top: 20px;
+  margin-top: 27px;
   margin-right: 20px;
   text-align: end;
 }
@@ -190,16 +193,16 @@ a{
   width: 65%;
 }
 .ket-riwayat h1{
-  font-size: 30px;
+  font-size: 22px;
   color: black;
 }
 h1 span{
-  padding-left: 20px;
+  padding-left: 18px;
 }
 .option-click, .just-now{
   width: 15%;
   color: black;
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 40px;
   text-align: center;
 }
@@ -272,7 +275,33 @@ li span{
   border-radius: 8px;
   cursor: pointer;
 }
-
+/* P O P  U P   K E D U A */
+.buttonUbahLink {
+  display: none;
+  /* justify-content: center; */
+  margin: 15% 30% auto 35%;
+  background-color: #fefefe;
+  width: 30%;
+  border: none;
+  box-shadow:  2px 3px 8px 1px #7a7878;
+  border-radius: 18px;
+  height: fit-content;
+  padding: 0 20px;
+  position: fixed; 
+  z-index: 1; 
+  top: 0;
+  padding-bottom: 2%;
+}
+.poplink>.warn{
+  width: 35%;
+  display: flex;
+  justify-content: center;
+}
+.ubahLinkPop-h .h1{
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+}
 @media(max-width:786px){
   .navbardash>.header{
     margin-top: 10px;

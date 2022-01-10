@@ -90,30 +90,33 @@ li .masuk{
 /* content1 */
 .section1{
     left: 0px;
-    top: -209px;
+    top: -209p;
     margin: auto;
     width: 80%;
     line-height: 1.5;
     font-size: 15px;
     text-align: center;
-    height: 65vh;
+    height: 90vh;
 }
 .section1 span{
     font-size: 35px;
+    font-family: Montserrat;
 }
 .section1 p{
     opacity: 0.8;
     font-size: 25px;
+    font-family: Montserrat;
 }
 .flex{
     display: flex;
     flex-direction:row;
     width: 50%;
-    margin: auto;
+    margin-top: 10%;
+    margin-left: 25%;
     margin-bottom: 20px;
 }
 .g-flex{
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 5px;
     display: flex;
     width: 100%;
@@ -234,7 +237,7 @@ form .alert-danger{
 
 .section2{
     background-color:  #E6FFDF;
-    padding: 20px 30px;
+    padding: 20px;
     height: fit-content;
 }
 .section2 h1{
@@ -242,17 +245,16 @@ form .alert-danger{
     text-align: center;
     font-style: normal;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 30px;
     letter-spacing: 0.2px;
 }
 .section2 h2{
     font-weight: 900;
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
-    font-size: 30px;
     line-height: 56px;
     align-items: center;
     text-align: center;
@@ -262,7 +264,7 @@ form .alert-danger{
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 15px;
     align-items: center;
     text-align: center;
     letter-spacing: 0.01px;
@@ -272,15 +274,15 @@ form .alert-danger{
 .section2>.grid-3{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-column-gap: 50px;
+    grid-column-gap: 40px;
     color: var(--green-color);
     text-align: center;
+
 }
 .grid-3>.g-1{
-    width: 250px;
-    height: 319.53px;
-    left: 580px;
-    top: 1051px;
+    width: 200px;
+    height: 300px;
+    margin: auto;
 }
 
 /* login header*/
@@ -346,14 +348,15 @@ form .alert-danger{
     color: var(--green-color);
     margin-left: 10px;
 }
-.masuk>.title{
+.masuk>.judul{
     font-style: normal;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 18px;
     text-align: center;
     letter-spacing: 0.3px;
 }
+
 .masuk>.form-group{
     width: 100%;
     height: fit-content;
@@ -461,7 +464,7 @@ p.title{
 
 /* footer */
 footer{
-    padding: 50px;
+    padding: 20px;
     background-color: var(--green-color);
     text-align: center;
     color: var(--white-color);

@@ -11,6 +11,11 @@ function coba(){
         document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
     }
     function ubahLinkB(){
+        const ubahLinkB = document.getElementById('buttonUbah')
+        ubahLinkB.style.display = 'block'
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+    function UbahLinkC(){
 
     }
   return (
@@ -77,35 +82,53 @@ function coba(){
         </div>
     </div>
     <div className="ubahLinkPop" id="ubahLink">
-            <div className="ubahLinkPop-h">
-                <div className="ki">
+        <div className="ubahLinkPop-h">
+            <div className="ki">
                 <h1><Image src="/image1.png" alt = "figma" width={20} height={20}/>
-                        <span>Unjaya.id/uiux</span> </h1>
-                </div>
-                <div className="ka"> 
-                    <Image src="/copy.png" alt="copy"width={25} height={25} objectFit="contain"/>
-                    <Image src="/share.png" alt="share"width={25} height={25} objectFit="contain"/>
-                    <Image src="/email.png" alt="email"width={25} height={25} objectFit="contain"/>
-                    <Image src="/blutit.png" alt="sha1e"width={25} height={25} objectFit="contain"/>
-                    <Image src="/del.png" alt="delete"width={25} height={25} objectFit="contain"/>
-                </div>
+                    <span>Unjaya.id/uiux</span> </h1>
             </div>
-            <div className="ubahLink-m">
-                <p>https://www.figma.com/file/nXmrtlVVKFIXe9PxrzXBcm/Shorten-link?node-id=0%3A1</p>
-                <ul>
-                    <li>
-                        <Image src='/calendar.png' width={15} height={15} alt="c" />
-                         <span>23 Februari 2020</span>
-                    </li>
-                    <li>
-                    <Image src='/pointer.png' width={15} height={15} alt="c" />
-                     <span>Total Klik 5</span>
-                    </li>
-                </ul>
-                <button className="ubahLink-b" onClick={ubahLinkB}>Ubah Link</button>
+            <div className="ka"> 
+                <Image src="/copy.png" alt="copy"width={25} height={25} objectFit="contain"/>
+                <Image src="/share.png" alt="share"width={25} height={25} objectFit="contain"/>
+                <Image src="/email.png" alt="email"width={25} height={25} objectFit="contain"/>
+                <Image src="/blutit.png" alt="sha1e"width={25} height={25} objectFit="contain"/>
+                <Image src="/del.png" alt="delete"width={25} height={25} objectFit="contain"/>
             </div>
         </div>
-
+        <div className="ubahLink-m">
+            <p>https://www.figma.com/file/nXmrtlVVKFIXe9PxrzXBcm/Shorten-link?node-id=0%3A1</p>
+            <ul>
+                <li>
+                    <Image src='/calendar.png' width={15} height={15} alt="c" />
+                    <span>23 Februari 2020</span>
+                </li>
+                <li>
+                    <Image src='/pointer.png' width={15} height={15} alt="c" />
+                    <span>Total Klik 5</span>
+                </li>
+            </ul>
+            <button className="ubahLink-b" onClick={ubahLinkB}>Ubah Link</button>
+        </div>
+    </div>
+    <div className="buttonUbahLink" id="buttonUbah">
+        <div className="poplink">
+            <div className="warn">
+                <Image src="/warning.png" width={300} height={300} alt="a"/>
+            </div>
+            <h1>Yakin ingin diubah?</h1>
+            <p>Kamu harus siap kehilangan jumlah klik-link sebelumnya.</p>
+        </div>
+        <div className="btn-pop">
+            <ul>
+                <li>
+                    <button className="batal" onClick={coba}>Batalkan</button>
+                </li>
+                <li>
+                    <button className="continue" onClick={UbahLinkC}>Lanjutkan</button>
+                </li>
+            </ul>
+        </div>
+    </div>
     </div>
   )
 }
