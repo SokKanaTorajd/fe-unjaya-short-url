@@ -15,8 +15,15 @@ function coba(){
         ubahLinkB.style.display = 'block'
         document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
     }
-    function UbahLinkC(){
-
+    function ubahLinkBatal(){
+      const ubahLinkBatal = document.getElementById('buttonUbah')
+      ubahLinkBatal.style.display = 'block'
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+    function ubahLinkLanjutkan(){
+      const ubahLinkLanjutkan = document.getElementById('buttonUbah')
+      ubahLinkLanjutkan.style.display = 'block'
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
     }
   return (
     <div>
@@ -111,6 +118,7 @@ function coba(){
             <button className="ubahLink-b" onClick={ubahLinkB}>Ubah Link</button>
         </div>
     </div>
+
     <div className="buttonUbahLink" id="buttonUbah">
         <div className="poplink">
             <div className="warn">
@@ -119,12 +127,14 @@ function coba(){
             <h1><b>Yakin ingin diubah?</b></h1>
             <p>Kamu harus siap kehilangan jumlah klik-link sebelumnya.</p>
         </div>
-        <ul>
-            <button className='batal'>Batalkan</button>
-        </ul>
-        <ul>
-            <button className='lanjut'>Lanjutkan</button>  
-        </ul>
+        <div className="btn-pop">
+            <ul class="batal">
+              <button onclick={ubahLinkBatal} className='b-batal'>Batalkan</button>
+            </ul>
+            <ul class="lanjutkan">
+              <button onclick={ubahLinkLanjutkan} className='b-lanjutkan'>Lanjutkan</button>  
+            </ul>
+        </div>
     </div>
     </div>
   )
