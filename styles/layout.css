@@ -234,7 +234,33 @@ form .alert-danger{
     justify-content: center;
     cursor: pointer;
 }
-
+.tentang1 {
+    width:100%;
+    margin-bottom: 5%;
+    margin-top: 1%;
+    height: 500px;
+    background-color:white;
+}
+.tentang1 h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size:30pt;
+    padding: 70px;
+    color: var(--green-color);
+}
+.tentang1 p {
+    color: white;
+}
+.abt-1 {
+    border-radius: 11px;
+    box-shadow:  2px 3px 8px 1px #7a7878;
+    width:70%;
+    height: 200px;
+    padding-top: 20px;
+    margin:auto;
+    text-align: center;
+    background-color:var(--green-color);
+}
 .section2{
     background-color:  #E6FFDF;
     padding: 20px;
@@ -292,7 +318,7 @@ form .alert-danger{
     width: 100%;
 }
 .navLogin h2{
-    margin-left: 5%;
+    margin-left: 7%;
     font-weight: bold;
     font-size: 30px;
     line-height: 56px;
@@ -318,11 +344,13 @@ form .alert-danger{
     font-weight: 700;
     color: var(--green-color2);
 }
-
+.navLogin a:hover {
+    color: var(--green-color)
+}
 
 /* login isi */
 .grid-2{
-    margin-top: 5%;
+    margin-bottom: 10%;
     display: grid;
     grid-template-columns: 0.8fr 1fr;
     height: fit-content;
@@ -331,12 +359,11 @@ form .alert-danger{
     padding: 30px;
 }
 .grid-2>.image{
-    width: 100%;
-    height: fit-content;
+    margin-top: 2%;
 }
 .grid-2>.masuk{
-    margin-top: 10%;
-    margin: auto;
+    margin-top: 2%;
+    margin-left: 10%;
     width: 70%;
     border: none;
     box-shadow:  2px 3px 8px 1px #7a7878;
@@ -399,6 +426,12 @@ form .alert-danger{
     letter-spacing: 0.3px;
     color: #2F2E41;
 }
+
+.forgot {
+    margin-left: 45%;
+    color:green;
+}
+
 .form-group button{
     margin-top:20px ;
     padding: 10px;
@@ -442,13 +475,16 @@ form .alert-danger{
 }
 .buatAkun>.cl{
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 17px;
     text-align: right;
 }
 .buatAkun h2{
     text-align: center;
     color: black;
     font-size: 20px;
+}
+.red {
+    color: var(--green-color)
 }
 p.title{
     color: black;
@@ -464,14 +500,14 @@ p.title{
 
 /* footer */
 footer{
-    padding: 20px;
+    padding: 15px;
     background-color: var(--green-color);
     text-align: center;
     color: var(--white-color);
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 18px;
     text-align: center;
     letter-spacing: 0.3px;

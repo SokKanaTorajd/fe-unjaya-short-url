@@ -3,21 +3,16 @@ import Header2 from '../components/Header2'
 import Image from 'next/image'
 import React from 'react'
 import Linechart from '../components/Linechart'
+import Modal from '../components/Modal'
+import { useState, useEffect } from "react";
 
-function coba(){
+function App(){
     function ubahLink(){
         const ubahLink = document.getElementById('ubahLink')
         ubahLink.style.display = 'block'
         document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
     }
-    function ubahLinkB(){
-        const ubahLinkB = document.getElementById('buttonUbah')
-        ubahLinkB.style.display = 'block'
-        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-    }
-    function UbahLinkC(){
-
-    }
+    const [modalOpen, setModalOpen] = useState(false);
   return (
     <div>
       <canvas id="grafik"></canvas>
@@ -107,7 +102,17 @@ function coba(){
                     <span>Total Klik 5</span>
                 </li>
             </ul>
-            <button className="ubahLink-b" onClick={ubahLinkB}>Ubah Link</button>
+            <div className="App">
+                <button
+                className="openModalBtn"
+                onClick={() => {
+                    setModalOpen(true);
+                }}
+                >
+                    Open
+                </button>
+                {modalOpen && <Modal setOpenModal={setModalOpen} />}
+            </div>
         </div>
     </div>
     <div className="buttonUbahLink" id="buttonUbah">
@@ -118,23 +123,13 @@ function coba(){
             <h1>Yakin ingin diubah?</h1>
             <p>Kamu harus siap kehilangan jumlah klik-link sebelumnya.</p>
         </div>
-        <div className="btn-pop">
-            <ul>
-                <li>
-                    <button className="batal" onClick={coba}>Batalkan</button>
-                </li>
-                <li>
-                    <button className="continue" onClick={UbahLinkC}>Lanjutkan</button>
-                </li>
-            </ul>
-        </div>
     </div>
     </div>
   )
 }
-export default coba
+export default App
 
-coba.getLayout = function coba(page){
+App.getLayout = function App(page){
     return(
     <>
     <Header2/>

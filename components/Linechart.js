@@ -4,8 +4,6 @@ import {CategoryScale, LinearScale} from 'chart.js';
 import Chart from 'chart.js/auto'
 
 Chart.register(CategoryScale)
-
-
 const data = {
 
   labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],

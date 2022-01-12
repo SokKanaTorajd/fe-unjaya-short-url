@@ -1,5 +1,5 @@
+import { useState, useEffect } from "react";
 import React from "react";
-import "./Modal.css";
 
 function Modal({ setOpenModal }) {
   return (
@@ -15,10 +15,10 @@ function Modal({ setOpenModal }) {
           </button>
         </div>
         <div className="title">
-          <h1>Are You Sure You Want to Continue?</h1>
+          <h1>Apakah kamu yakin ingin diubah?</h1>
         </div>
         <div className="body">
-          <p>The next page looks amazing. Hope you want to go there!</p>
+          <p>Kamu harus siap kehilangan jumlah klik-link sebelumnya!</p>
         </div>
         <div className="footer">
           <button

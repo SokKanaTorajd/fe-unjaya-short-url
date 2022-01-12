@@ -16,9 +16,7 @@ function Header(){
                             </Link>
                         </li>
                         <li> 
-                            <Link href='/tentang'>
-                            <a class="tentang">Tentang</a> 
-                            </Link>
+                            <a href="#" class="tentang">Tentang</a> 
                         </li>
                         <li> 
                             <Link href='/login'>

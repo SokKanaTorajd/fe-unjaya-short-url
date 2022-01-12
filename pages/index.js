@@ -16,6 +16,15 @@ function Beranda(){
                 </form>
             </div>
         </div>
+        <section class='tentang1'>
+            <h1 className='heading'><span>Tentang Kami</span></h1>
+            <div className='abt-1'>
+                <p>RB.GY is the perfect free URL shortener for transforming long, ugly links into nice, 
+                    memorable and trackable short URLs. Use it to shorten links for any social media platforms,
+                     blogs, SMS, emails, ads, or pretty much anywhere else you want to share them. 
+                    Twitter, Facebook, YouTube, Instagram, WhatsApp, emails, SMS, videos.</p>
+            </div>
+        </section>
         <div className='section2'>
             <h1> Alasan kamu harus masuk</h1>
             <div className="grid-3">

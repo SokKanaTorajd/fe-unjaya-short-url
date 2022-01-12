@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import HeaderL from '../components/HeaderLogin'
+import Footer from '../components/Footer'
 function Login(){
     function toRegister(){
        const buat = document.getElementById('buatAkun')
@@ -26,7 +27,7 @@ function Login(){
         <div id="bod">
         <div className="grid-2">
             <div className="image">
-                <Image alt='login' src="/login.png" width={500} height={500}/>
+                <Image alt='login' src="/login.png" width={725} height={525}/>
             </div>
             <div className="masuk">
                 <div className="judul">
@@ -40,7 +41,8 @@ function Login(){
                         <input type="text" name="password" placeholder="Kata Sandi" className="form-control"/>
                     </div>
                     <div className="ingat">
-                    <input type="checkbox" name="ingat"/> <label>Ingat Akun</label>
+                        <input type="checkbox" name="ingat"/> <label>Ingat Akun</label>
+                        <span className="forgot">Lupa Password?</span>
                     </div>
                     <div className="form-group">
                         <button type="submit" name="masuk" className="btn-masuk">Masuk</button>
@@ -56,7 +58,7 @@ function Login(){
         <div className="buatAkun" id="buatAkun">
             <div class="cl" onClick={close}>&times;</div>
             <div className="header">
-                <h2 className="title">Buat Akun <mark class="red">Unjaya.id</mark> </h2>
+                <h2 className="title">Buat Akun <span class="red">Unjaya.id</span> </h2>
             </div>
                 <form method="post" spellcheck="false">
                     <div className="form-group">
@@ -96,6 +98,7 @@ Login.getLayout = function pageLayout(page){
     <>
     <HeaderL/>
     {page}
+    <Footer/>
     </>
     )
 }
