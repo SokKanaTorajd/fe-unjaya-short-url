@@ -90,8 +90,6 @@ function coba(){
             <div className="ka"> 
                 <Image src="/copy.png" alt="copy"width={25} height={25} objectFit="contain"/>
                 <Image src="/share.png" alt="share"width={25} height={25} objectFit="contain"/>
-                <Image src="/email.png" alt="email"width={25} height={25} objectFit="contain"/>
-                <Image src="/blutit.png" alt="sha1e"width={25} height={25} objectFit="contain"/>
                 <Image src="/del.png" alt="delete"width={25} height={25} objectFit="contain"/>
             </div>
         </div>
