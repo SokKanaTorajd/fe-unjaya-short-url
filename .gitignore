@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+pages/cobacoba.js
+components/Modalpen.js
+styles/Modal.css
