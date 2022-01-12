@@ -26,29 +26,29 @@ function dashboard(){
     </div>
     <div className="riwayat">
         <div className="riwayat1">
-            <div class="img-fig">
+            <div className="img-fig">
             <Image src="/image1.png" alt = "figma" width={30} height={40}/>
             </div>
             <div className="ket-riwayat">
               <h1>Unjaya.id/uiux</h1>
               <p>https:/www.figma.com/file/nXmrtlVVKFIXe9PxrzXBcm/Shorten-link?node-id=204%3A320</p>
             </div>
-            <div class="option-click"><span>0 Klik</span></div>
-            <div class="just-now"><span> Baru Saja</span> </div>
+            <div className="option-click"><span>0 Klik</span></div>
+            <div className="just-now"><span> Baru Saja</span> </div>
         </div>
         <div className="riwayat1">
-            <div class="img-fig">
+            <div className="img-fig">
             <Image src="/image1.png" alt = "figma" width={30} height={40}/>
             </div>
             <div className="ket-riwayat">
               <h1>Unjaya.id/uiux</h1>
               <p>https:/www.figma.com/file/nXmrtlVVKFIXe9PxrzXBcm/Shorten-link?node-id=204%3A320</p>
             </div>
-            <div class="option-click"><span>5 Klik</span></div>
-            <div class="just-now"><span> 1 jam yang lalu</span> </div>
+            <div className="option-click"><span>5 Klik</span></div>
+            <div className="just-now"><span> 1 jam yang lalu</span> </div>
         </div>
         <div className="riwayat1 option">
-            <div class="img-fig">
+            <div className="img-fig">
             <Image src="/image1.png" alt = "figma" width={30} height={40}/>
             </div>
             <div className="ket-riwayat">
@@ -57,7 +57,7 @@ function dashboard(){
               </h1>
               <p>https:/www.figma.com/file/nXmrtlVVKFIXe9PxrzXBcm/Shorten-link?node-id=204%3A320</p>
             </div>
-            <div class="options">
+            <div className="options">
                 <Image src="/copy.png" alt="copy"width={35} height={35} objectFit="contain"/>
                 <Image src="/share.png" alt="share"width={35} height={35} objectFit="contain"/>
                 <Image src="/email.png" alt="email"width={35} height={35} objectFit="contain"/>

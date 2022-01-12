@@ -12,15 +12,17 @@ function Header(){
                     <ul>
                         <li> 
                             <Link href='/'>
-                            <a class="beranda">Beranda</a> 
+                            <a className="beranda">Beranda</a> 
                             </Link>
                         </li>
                         <li> 
-                            <a href="#" class="tentang">Tentang</a> 
+                            <Link href='/tentang'>
+                            <a className='tentang'>Tentang</a>
+                            </Link> 
                         </li>
                         <li> 
                             <Link href='/login'>
-                            <a class="masuk">Masuk</a> 
+                            <a className="masuk">Masuk</a> 
                             </Link>
                         </li>
                     </ul>
