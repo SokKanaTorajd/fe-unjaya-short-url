@@ -11,20 +11,11 @@ function Beranda(){
             <div className="flex">
                 <Image src="/kkk.png" alt="img" className="v-input" width={25} height={20} objectFit="contain"/>
                 <form method="" action="   " className="g-flex">
-                    <input type="text" name="isi" id="isi" placeholder="Paste atau klik link panjangmu disini" />
-                    <button type="submit"  id="submit" className="kanan">Singkatkan</button>
+                    <input type="text" name="isi" id="isi" placeholder="Paste link panjangmu disini" />
+                    <button type="submit"  id="submit" className="kanan">Mulai</button>
                 </form>
             </div>
         </div>
-        <section class='tentang1'>
-            <h1 className='heading'><span>Tentang Kami</span></h1>
-            <div className='abt-1'>
-                <p>RB.GY is the perfect free URL shortener for transforming long, ugly links into nice, 
-                    memorable and trackable short URLs. Use it to shorten links for any social media platforms,
-                     blogs, SMS, emails, ads, or pretty much anywhere else you want to share them. 
-                    Twitter, Facebook, YouTube, Instagram, WhatsApp, emails, SMS, videos.</p>
-            </div>
-        </section>
         <div className='section2'>
             <h1> Alasan kamu harus masuk</h1>
             <div className="grid-3">
