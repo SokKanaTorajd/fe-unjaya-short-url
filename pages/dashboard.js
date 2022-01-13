@@ -79,11 +79,11 @@ function coba(){
               </h1>
               <p>https:/www.figma.com/file/nXmrtlVVKFIXe9PxrzXBcm/Shorten-link?node-id=204%3A320</p>
             </div>
-          <div class="options">
+          {/* <div class="options">
            <Image src="/copy.png" alt="copy"width={20} height={20} objectFit="contain"/>
            <Image src="/blutit.png" alt="sha1e"width={25} height={25} objectFit="contain"/>
            <Image src="/del.png" alt="delete"width={25} height={25} objectFit="contain"/>
-          </div>
+          </div> */}
         </div>
     </div>
     <div className="ubahLinkPop" id="ubahLink">
