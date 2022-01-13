@@ -42,7 +42,7 @@ function Login(){
                     </div>
                     <div className="ingat">
                         <input type="checkbox" name="ingat"/> <label>Ingat Akun</label>
-                        <span className="forgot">Lupa Password?</span>
+                        {/* <span className="forgot">Lupa Password?</span> */}
                     </div>
                     <div className="form-group">
                         <button type="submit" name="masuk" className="btn-masuk">Masuk</button>

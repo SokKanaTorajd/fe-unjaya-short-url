@@ -3,14 +3,14 @@ import Link from 'next/link'
 function Header(){
     return(
         <>
-             <div className='circle1'></div>
+            <div className='circle1'></div>
             <nav className='navbar'>
                 <div className="left">
                     <h2>Unjaya.id</h2>
                 </div>
                 <div className="right">
                     <ul>
-                        <li> 
+                        <li>
                             <Link href='/'>
                             <a class="beranda">Beranda</a> 
                             </Link>
