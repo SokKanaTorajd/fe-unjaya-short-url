@@ -161,7 +161,7 @@ padding-top: 20%;
 font-size: 20px;
 line-height: 2rem;
 }
-.grafik {
+/* .grafik {
 width: 60%;
 height: 350px;
 display: flex;
@@ -170,6 +170,13 @@ letter-spacing: 0.3px;
 margin-left: 25%;
 margin-right:80%;
 margin-top: 10%;
+} */
+.grafik-n{
+  width: 80%;
+  height: 400px;
+  align-items: center;
+  letter-spacing: 0.3px;
+  padding-left:5%  ;
 }
 /* riwayat */
 .riwayat{
