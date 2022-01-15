@@ -1,40 +1,51 @@
-import {Line} from 'react-chartjs-2';
-import React from 'react';
-import {CategoryScale, LinearScale} from 'chart.js';
+import React, {useRef, useEffect} from 'react'
+import Header2 from '../components/Header2'
 import Chart from 'chart.js/auto'
-
-Chart.register(CategoryScale)
-const data = {
-
-  labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-  datasets: [{
-    data: [12, 19, 3, 5, 2, 3],
-    backgroundColor:LinearScale['rgba(23, 255, 198, 0)'],
-    borderColor: "Green",
-    borderWidth: 1
-  }]
+// Page
+function Linecart(props) {
+    let chartRef = useRef();
+  useEffect(() => {
+  var ctx = document.getElementById('grafik')
+  const gradient = ctx.getContext('2d').createLinearGradient(0, 0, 0,420);
+  gradient.addColorStop(0, 'rgba(0, 99, 59, 1)');
+  gradient.addColorStop(1, 'rgba(23, 255, 198, 0)');
+      var nilaiX = [0,5,10,20,30,35,40,50]
+      var nilaiY = [15,30,10,30,10,27,5,50]
+        let chart = new Chart(chartRef.current, {
+            type:'line',
+              data: {
+               
+                  labels:nilaiX,
+                  datasets:[{
+                      label: 'SortURL',
+                      fill:true,
+                      backgroundColor:gradient,
+                      data:nilaiY, 
+                      cubicInterpolationMode: 'monotone',
+                      tension: 0.4,
+                      borderColor: "rgb(0, 184, 110)",
+                  }],
+                },
+                options:{
+                  responsive: true,
+                    scales: {
+                      y: {
+                          beginAtZero: true,
+                          display:true,
+                      },
+                      x:{
+                        display:true,
+                      }
+                    },
+                }
+          });
+    }, [])
+    // Render
+    return (
+        <div>
+            <canvas id="grafik" ref={chartRef} />
+        </div>
+    )
 }
 
-export default () => ({
-  render() {
-    return (
-      <div className="grafik">
-        <Line
-          data={data}
-          options={{
-              maintainAspectRatio: false,
-              scales: {
-                  yAxes: [
-                      {
-                          ticks: {
-                              beginAtZero: true,
-                          }
-                      }
-                  ]
-              }
-          }}
-        />
-      </div>
-    );
-  }
-});
+export default Linecart
