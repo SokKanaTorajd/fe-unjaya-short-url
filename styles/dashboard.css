@@ -402,11 +402,12 @@ cursor: pointer;
 }
 /* grafik */
 .dash{
-  width: 100%;
-  margin-top: 20%;
-  display: grid;
-  grid-template-columns: 20% 80%;
-  margin-bottom: 10%;
+    width: 100%;
+    margin-top: 15%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin-bottom: 5%;
+    height: 40vh;
 }
 .riwayat>.riwayat1{
   padding: 0 7px;
@@ -438,6 +439,10 @@ h1 span{
 }
 
 @media(max-width:500px){
+  .dash{
+    margin-bottom: 0;
+    height: 30vh;
+  }
 .dashb{
   left:83%;
 }
