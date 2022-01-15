@@ -27,15 +27,27 @@ function coba(){
     }
   return (
     <div>
-      <div className="total-link">
-        <h1><strong>0</strong></h1>
-        <h2><strong>Total Link</strong></h2>
+//       <div className="total-link">
+//         <h1><strong>0</strong></h1>
+//         <h2><strong>Total Link</strong></h2>
+//       </div>
+//       <div className="total-klik">
+//         <h1>0</h1>
+//         <h2>Total Klik</h2>
+//       </div>
+      <div className="dash">
+          <div className="ket">
+              <div className="total-link">
+                <p> 0 Total Link</p>
+              </div>
+              <div className="total-klik">
+              <p> 0 Total Klik</p>
+              </div>
+          </div>
+        <div className="grafik-n">
+        <Linechart/>
+        </div>
       </div>
-      <div className="total-klik">
-        <h1>0</h1>
-        <h2>Total Klik</h2>
-      </div>
-      <canvas id="grafik"></canvas>
       <div className='ubahlinknya'>
         <div className="flex1">
         <Image src="/kkk.png" alt="img" className="v-input1" width={25} height={20} objectFit="contain"/>
