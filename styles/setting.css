@@ -1,0 +1,121 @@
+/* body {
+    background-color: whitesmoke;
+} */
+
+.boxset {
+    background-color: transparent;
+}
+.boxprofil {
+    width: 80%;
+    height:auto;
+    padding:10px 30px;
+    background:white;
+    box-shadow:  2px 3px 8px 1px #7a7878;
+    border-radius: 15px;
+    display:flex;
+    align-items: left;
+    margin-top:7%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.boxprofil>.user-set {
+    display: flex;
+    justify-content:left;
+}
+.boxprofil >.boxpro{
+    width: 500px;
+    height:fit-content;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    
+}
+.boxpro h1 {
+    color: black;
+    font-size:20px;
+}
+.boxpro h2{
+    font-size: 15px;
+    letter-spacing: 0.01px;
+}
+.change {
+    width: 80%;
+    height:auto;
+    padding:10px 30px;
+    background:white;
+    box-shadow:  2px 3px 8px 1px #7a7878;
+    border-radius: 15px;
+    display:flex;
+    align-items: left;
+    margin-top:3%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr;
+    grid-column-gap: 10px; 
+}
+.boxinfo {
+    
+    
+}
+.boxinfo>.box-form{
+
+}
+.form-set label{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.3px;
+}
+.form-set input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    left: 825px;
+    top: 461px;
+    border: 2.5px solid #afafaf;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: transparent;
+}
+.form-control-a:focus{
+    outline: 2.5px solid rgb(0, 164, 214);
+    border: none;
+}
+.ingat{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: #2F2E41;
+}
+
+/* .forgot {
+    margin-left: 45%;
+    color:green;
+} */
+
+.form-set button{
+    margin-top:20px ;
+    padding: 10px;
+    color: var(--white-color);
+    text-align: center;
+    border-radius: 5px;
+    background-color: var(--green-color);
+    width: 100%;
+    border: none;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.form-set>.buat-akun{
+    text-align: center;
+    font-size: 13px;
+}

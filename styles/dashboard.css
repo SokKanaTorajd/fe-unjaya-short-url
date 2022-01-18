@@ -161,15 +161,13 @@ padding-top: 20%;
 font-size: 20px;
 line-height: 2rem;
 }
-.grafik {
-width: 60%;
-height: 350px;
-display: flex;
-justify-content:center;
-letter-spacing: 0.3px;
-margin-left: 25%;
-margin-right:80%;
-margin-top: 10%;
+
+.grafik-n{
+  width: 80%;
+  height: 400px;
+  align-items: center;
+  letter-spacing: 0.3px;
+  padding-left:5%  ;
 }
 /* riwayat */
 .riwayat{
@@ -370,6 +368,44 @@ cursor: pointer;
     overflow: hidden;
   }
   
+
+  .ubahLinkPopLanjut{
+    display: none;
+    margin: 15% 25% auto 25%;
+    background-color: #fefefe;
+    width: 50%;
+    border: none;
+    box-shadow:  2px 3px 8px 1px #7a7878;
+    border-radius: 18px;
+    height: fit-content;
+    padding: 0 20px;
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    padding-bottom: 2%;
+    }
+    .ubahLinkPopLanjut>.ubahLinkPop-L{
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    }
+    .ubahLinkPop-L>.ki{
+    width: 65%;
+    }
+    
+   .ubahLink-b{
+    padding: 10px 20px;
+    color: white;
+    background-color: var(--green-color);
+    border: none;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    }
 @media(max-width:786px){
 .navbardash>.header{
   margin-top: 10px;
@@ -395,11 +431,12 @@ cursor: pointer;
 }
 /* grafik */
 .dash{
-  width: 100%;
-  margin-top: 20%;
-  display: grid;
-  grid-template-columns: 20% 80%;
-  margin-bottom: 10%;
+    width: 100%;
+    margin-top: 15%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin-bottom: 5%;
+    height: 40vh;
 }
 .riwayat>.riwayat1{
   padding: 0 7px;
@@ -431,6 +468,10 @@ h1 span{
 }
 
 @media(max-width:500px){
+  .dash{
+    margin-bottom: 0;
+    height: 30vh;
+  }
 .dashb{
   left:83%;
 }

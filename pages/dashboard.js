@@ -21,21 +21,25 @@ function coba(){
       document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
     }
     function ubahLinkLanjutkan(){
-      const ubahLinkLanjutkan = document.getElementById('buttonUbah')
+      const ubahLinkLanjutkan = document.getElementById('ubah')
       ubahLinkLanjutkan.style.display = 'block'
       document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
     }
   return (
     <div>
-      <div className="total-link">
-        <h1><strong>0</strong></h1>
-        <h2><strong>Total Link</strong></h2>
+      <div className="dash">
+          <div className="ket">
+              <div className="total-link">
+                <p> 0 Total Link</p>
+              </div>
+              <div className="total-klik">
+              <p> 0 Total Klik</p>
+              </div>
+          </div>
+        <div className="grafik-n">
+        <Linechart/>
+        </div>
       </div>
-      <div className="total-klik">
-        <h1>0</h1>
-        <h2>Total Klik</h2>
-      </div>
-      <canvas id="grafik"></canvas>
       <div className='ubahlinknya'>
         <div className="flex1">
         <Image src="/kkk.png" alt="img" className="v-input1" width={25} height={20} objectFit="contain"/>
@@ -79,11 +83,11 @@ function coba(){
               </h1>
               <p>https:/www.figma.com/file/nXmrtlVVKFIXe9PxrzXBcm/Shorten-link?node-id=204%3A320</p>
             </div>
-          {/* <div class="options">
+          <div class="options">
            <Image src="/copy.png" alt="copy"width={20} height={20} objectFit="contain"/>
            <Image src="/blutit.png" alt="sha1e"width={25} height={25} objectFit="contain"/>
            <Image src="/del.png" alt="delete"width={25} height={25} objectFit="contain"/>
-          </div> */}
+          </div>
         </div>
     </div>
     <div className="ubahLinkPop" id="ubahLink">
@@ -132,6 +136,15 @@ function coba(){
             </ul>
         </div>
     </div>
+    <div className="ubahLinkPopLanjut" id="ubah">
+        <div className="ubahLinkPop-L">
+            <div className="ki">
+                <h1><Image src="/image1.png" alt = "figma" width={20} height={20}/>
+                    <span>https://www.figma.com/file/nXmrtlVVKFIXe9PxrzXBcm/Shorten-link?node-id=0%3A1</span> </h1>
+            </div>
+            <button className="ubahLink-b" onClick={ubahLinkB}>Ubah Link</button>
+        </div>
+    </div>
     </div>
   )
 }
@@ -141,7 +154,6 @@ coba.getLayout = function coba(page){
     return(
     <>
     <Header2/>
-    <Linechart/>
     {page}
     </>
     )
