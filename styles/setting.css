@@ -2,8 +2,8 @@
     background-color: whitesmoke;
 } */
 
-.boxset {
-    background-color: transparent;
+.box1 {
+    background-color: rgba(2, 1, 1, 0);
 }
 .boxprofil {
     width: 80%;
@@ -52,13 +52,6 @@
     grid-template-columns: 1fr;
     grid-column-gap: 10px; 
 }
-.boxinfo {
-    
-    
-}
-.boxinfo>.box-form{
-
-}
 .form-set label{
     font-family: Poppins;
     font-style: normal;
@@ -97,11 +90,6 @@
     letter-spacing: 0.3px;
     color: #2F2E41;
 }
-
-/* .forgot {
-    margin-left: 45%;
-    color:green;
-} */
 
 .form-set button{
     margin-top:20px ;

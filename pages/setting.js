@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 function setting (){
     return(
+        <div className="box1">
         <div className="boxset">
             <div className='boxprofil'>
                 <div className="user-set">
@@ -24,10 +25,6 @@ function setting (){
                         <input type="text" name="username" placeholder="Wijatama diwangkara" className="form-control"/>
                     </div>
                     <div className="form-set">
-                        <label>NPM</label>
-                        <input type="text" name="password" placeholder="123456789" className="form-control"/>
-                    </div>
-                    <div className="form-set">
                         <label>Kata Sandi</label>
                         <p>Silahkan ubah kata sandi lama dengan kata sandi baru</p>
                         <input type="password" value="password"/>
@@ -40,6 +37,8 @@ function setting (){
                 </form>
             </div>
         </div>
+        </div>
+ 
     )
 }
 

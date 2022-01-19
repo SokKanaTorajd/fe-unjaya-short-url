@@ -25,6 +25,11 @@ function coba(){
       ubahLinkLanjutkan.style.display = 'block'
       document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
     }
+    function close(){
+      const tutup = document.getElementById('buatAkun')
+      document.body.style.backgroundColor = "#ffffff";
+      tutup.style.display = "none";
+  }
   return (
     <div>
       <div className="dash">
@@ -120,7 +125,11 @@ function coba(){
     </div>
 
     <div className="buttonUbahLink" id="buttonUbah">
-        <div className="poplink">
+        <div className="UbahLinkBatal">
+          <div class="cl" onClick={close}>&times;</div>
+          <div className="header">
+            <h2 className="title">Buat Akun <span class="red">Unjaya.id</span> </h2>
+          </div>
             <div className="warn">
                 <Image src="/warning.png" width={300} height={300} alt="a"/>
             </div>

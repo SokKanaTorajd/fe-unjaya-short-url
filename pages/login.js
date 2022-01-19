@@ -68,9 +68,6 @@ function Login(){
                         <input type="text" name="username" placeholder="Username" className="form-control"/>
                     </div>
                     <div className="form-group">
-                        <input type="text" name="nama_lengkap" placeholder="NIM" className="form-control"/>
-                    </div>
-                    <div className="form-group">
                         <input type="password" name="password" placeholder="Kata Sandi" className="form-control"/>
                     </div>                    
                     <div className="form-group">
