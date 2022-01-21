@@ -2,6 +2,7 @@ import Header2 from '../components/Header2'
 import Image from 'next/image'
 
 function setting (){
+    
     return(
         <div className="box1">
         <div className="boxset">

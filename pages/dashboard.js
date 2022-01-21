@@ -30,6 +30,14 @@ function coba(){
       document.body.style.backgroundColor = "#ffffff";
       tutup.style.display = "none";
   }
+  // let riwayatForm = document.querySelector('.riwayatForm');
+
+  // document.querySelector('#riwayat1').onclick = () =>{
+  //   riwayatForm.classList.toggle('active');
+  //       // loginForm.classList.remove('active');
+  //       // navbar.classList.remove('active');
+  // }
+  
   return (
     <div>
       <div className="dash">
@@ -56,7 +64,7 @@ function coba(){
       </div>
 
     <div className="riwayat">
-        <div className="riwayat1">
+        <div className="riwayat1" id="riwayat">
             <div class="img-fig">
             <Image src="/image1.png" alt = "figma" width={16} height={26}/>
             </div>
@@ -78,6 +86,24 @@ function coba(){
             <div class="option-click"><span>5 Klik</span></div>
             <div class="just-now"><span> 1 jam yang lalu</span> </div>
         </div>
+        {/* D A L A M */}
+        {/* <form className="riwayatForm">
+            <div class="img-fig">
+            <Image src="/image1.png" alt = "figma" width={16} height={26}/>
+            </div>
+            <div className="ket-riwayat">
+              <h1>Unjaya.id/uiux
+                <span><Image src="/pen.png" onClick={ubahLink} alt="pen"  width={20} height={20}/></span>
+              </h1>
+              <p>https:/www.figma.com/file/nXmrtlVVKFIXe9PxrzXBcm/Shorten-link?node-id=204%3A320</p>
+            </div>
+          <div class="options">
+           <Image src="/copy.png" alt="copy"width={20} height={20} objectFit="contain"/>
+           <Image src="/blutit.png" alt="sha1e"width={25} height={25} objectFit="contain"/>
+           <Image src="/del.png" alt="delete"width={25} height={25} objectFit="contain"/>
+          </div>
+        </form> */}
+        {/* D A L A M */}
         <div className="riwayat1 option">
             <div class="img-fig">
             <Image src="/image1.png" alt = "figma" width={16} height={26}/>
@@ -100,11 +126,6 @@ function coba(){
             <div className="ki">
                 <h1><Image src="/image1.png" alt = "figma" width={20} height={20}/>
                     <span>Unjaya.id/uiux</span> </h1>
-            </div>
-            <div className="ka"> 
-                <Image src="/copy.png" alt="copy"width={25} height={25} objectFit="contain"/>
-                <Image src="/share.png" alt="share"width={25} height={25} objectFit="contain"/>
-                <Image src="/del.png" alt="delete"width={25} height={25} objectFit="contain"/>
             </div>
         </div>
 

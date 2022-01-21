@@ -23,13 +23,13 @@
 }
 .akun {
   position: absolute;
-  left: 78%;
+  left: 78.5%;
   margin-top: 23px;
 }
 .poly {
   position: absolute;
-  left: 83%;
-  margin-top: 23px;
+  left: 82%;
+  margin-top: 22px;
   cursor: pointer;
 }
 .header h1{
@@ -180,6 +180,12 @@ justify-content: space-between;
 border-bottom:1px solid black ;
 width: 100%;
 }
+.riwayat1:hover{
+  outline-offset: 0rem;
+  outline: black;
+  cursor: pointer;
+  background-color: #E2FEDB;
+}
 .riwayat1>.img-fig{
 width: 5%;
 margin-top: 27px;
@@ -190,7 +196,7 @@ text-align: end;
 width: 65%;
 }
 .ket-riwayat h1{
-font-size: 22px;
+font-size: 15px;
 color: black;
 }
 h1 span{
@@ -199,7 +205,7 @@ padding-left: 18px;
 .option-click, .just-now{
 width: 15%;
 color: black;
-font-size: 18px;
+font-size: 15px;
 margin-top: 40px;
 text-align: center;
 }
@@ -268,7 +274,7 @@ background-color: var(--green-color);
 border: none;
 font-family: Montserrat;
 font-weight: bold;
-font-size: 15px;
+font-size: 12px;
 border-radius: 8px;
 cursor: pointer;
 }

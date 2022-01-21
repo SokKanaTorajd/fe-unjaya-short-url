@@ -33,7 +33,7 @@ function Header2(){
         </div>
       </div>
       <div className="userbin" id='userbin'>
-          @Userbin
+          Setting
           <p>
           <Image src="/out.png"alt="akun" width={15} height={15}/>
           <Link href='/logout'>
