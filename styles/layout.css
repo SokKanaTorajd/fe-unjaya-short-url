@@ -30,38 +30,49 @@
 }
 .navbar>.right{
     font-weight: 700px;
-    font-size: 24px;
     text-align: center;
     line-height: 18px;
     letter-spacing: 0.3px;
     color: var(--white-color2);
 }
 li .beranda{
-    color: var(--green-color);
-    border-bottom: 2px solid var(--green-color);
+    color: var(--green-color2);
+    font-size: 18px;
+
 }
 li .tentang{
     opacity: 0.7;
-    color: var(--green-color);
+    color: var(--green-color2);
+    font-size: 18px;
 }
 li .masuk{
     padding: 10px;
     border-radius: 10px;
-    color: var(--white-color);
-    background: var(--green-color);
+    background: transparent;
+    color: var(--green-color2);
+    border: 2px solid var(--green-color);
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.masuk:hover {
+    border-radius: 10px;
+    color: var(--green-color);
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    
 }
 .navbar a{
     text-decoration: none;
     font-weight: 700;
 }
 .navbar a:hover{
-    color: var(--white-color);
-    /* padding: 5px 20px; */
-    background-color: var(--green-color);
-    border-radius: 11px;
-    height: 100px;
-    width: 190px;
-    overflow: hidden;
+    color: var(--green-color)
 }
 .navbar ul{
     color: var(--green-color); 
@@ -91,12 +102,14 @@ li .masuk{
 .section1{
     left: 0px;
     top: -209p;
-    margin: auto;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
     width: 80%;
     line-height: 1.5;
     font-size: 15px;
     text-align: center;
-    height: 90vh;
+    height: 70vh;
 }
 .section1 span{
     font-size: 35px;
@@ -106,6 +119,7 @@ li .masuk{
     opacity: 0.8;
     font-size: 25px;
     font-family: Montserrat;
+    margin-bottom: 80px;
 }
 .flex{
     display: flex;
@@ -115,125 +129,29 @@ li .masuk{
     margin-left: 25%;
     margin-bottom: 20px;
 }
-.g-flex{
-    margin-top: 20px;
-    margin-left: 5px;
-    display: flex;
-    width: 100%;
-    border: 2px solid var(--green-color) ;
-    border-radius: 11px;
-    box-sizing: border-box;
-   
-}
 
-.g-flex button{
-    margin-left: 5px;
-    flex: 1;
-    width: 30%;
-    padding: 7px 0;
-    border: 2px solid var(--green-color);
-    background: var(--green-color);
-    color: var(#fff);
-    cursor: pointer;
-    font-size: 13px;
-    color: var(--white-color);
-    font-weight: 600;
-    border-radius: 5px;
-    letter-spacing: 0.2px;
-    text-align: center;
-    line-height: 20px;
-}
-.g-flex input{
-    width: 70%;
-    border: none;
-    outline: none;
-    border-radius: 11px;
-}
-
-/* input kedua */
-.flex-input{
-    justify-content: space-around;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 10px
-}
-.flex-input>.link1{
-    padding: 12px;
-    border: 2px solid var(--green-color);
-    margin-left: px;
-    border-radius: 11px;
-    width: 100%;
-}
-.flex-input>input{
-    padding: 12px;
-    border: 2px solid var(--green-color);
-    margin-left: 5px;
-    border-radius: 11px;
-    width: 50%;
-}
-.flex-input>.ubahLink{
-    padding: 12px;
-    border: 2px solid var(--green-color);
-    margin-left: -6px;
-    border-radius: 11px;
-}
-.changeLink{
-    width: 100%;
-}
-form .ubah{
-    display: flex;
-    justify-content: start;
-    width: 100%;
-    padding: 10px 0;
-    text-align: center;
-    margin-left: 6%;
-}
-form .ubah-1{
-    display: flex;
-    justify-content: start;
-    width: 90%;
-    padding: 10px 0;
-    text-align: center;
-    margin-left: 9%;
-}
-form .alert{
-    display: flex;
-    justify-content: start;
-    margin-left: 10%;
-}
-form .alert-danger{
-    display: flex;
-    justify-content: start;
-    margin-left: 10%;
-    color: red;
-    font-size: 12px;
-    
-}
-.ubah>.ubah, .ubah-1>.ubah{
+.mulai{
     justify-self: start;
     background-color: var(--green-color);
     color: var(--white-color);
     border-radius: 5px;
+    padding: 10px 40px;
     border: none;
-    margin-left: 10px;
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-}
-.ubah button, .ubah-1>button{
-    justify-self: start;
-    background-color: var(--green-color);
-    color: var(--white-color);
-    border-radius: 5px;
-    padding: 13px;
-    border: none;
-    margin-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
     width: 48%;
     text-align: center;
     justify-content: center;
     cursor: pointer;
+    font-size: 20px;
 }
+
+.mulai:hover {
+    background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+
+}
+
 .tentang1 {
     width:100%;
     margin-bottom: 5%;
@@ -241,26 +159,7 @@ form .alert-danger{
     height: 500px;
     background-color:white;
 }
-.tentang1 h1 {
-    text-align: center;
-    font-weight: 700;
-    font-size:30pt;
-    padding: 70px;
-    color: var(--green-color);
-}
-.tentang1 p {
-    color: white;
-}
-.abt-1 {
-    border-radius: 11px;
-    box-shadow:  2px 3px 8px 1px #7a7878;
-    width:70%;
-    height: 200px;
-    padding-top: 20px;
-    margin:auto;
-    text-align: center;
-    background-color:var(--green-color);
-}
+
 .section2{
     background-color:  #E6FFDF;
     padding: 20px;
@@ -273,6 +172,8 @@ form .alert-danger{
     font-weight: bold;
     font-size: 30px;
     letter-spacing: 0.2px;
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
 .section2 h2{
     font-weight: 900;
@@ -303,6 +204,7 @@ form .alert-danger{
     grid-column-gap: 40px;
     color: var(--green-color);
     text-align: center;
+    margin-top: 20px;
 
 }
 .grid-3>.g-1{
@@ -310,6 +212,16 @@ form .alert-danger{
     height: 300px;
     margin: auto;
 }
+
+.g-1 h2 {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.g-1 p {
+    margin-top: 5px;
+}
+
 
 /* login header*/
 .navLogin{
@@ -385,7 +297,7 @@ form .alert-danger{
 }
 
 .masuk>.form-group{
-    width: 100%;
+    width: 200%;
     height: fit-content;
 }
 .form-group label{
@@ -400,7 +312,7 @@ form .alert-danger{
     letter-spacing: 0.3px;
 }
 .form-group input{
-    width: 100%;
+    width: 200%;
     padding: 10px;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -439,7 +351,7 @@ form .alert-danger{
     text-align: center;
     border-radius: 5px;
     background-color: var(--green-color);
-    width: 100%;
+    width: 200%;
     border: none;
     margin-bottom: 15px;
     cursor: pointer;
@@ -447,6 +359,7 @@ form .alert-danger{
 .form-group>.buat-akun{
     text-align: center;
     font-size: 13px;
+    width: 200%;
 }
 .buat-akun>.klik-akun{
     color: var(--green-color);
