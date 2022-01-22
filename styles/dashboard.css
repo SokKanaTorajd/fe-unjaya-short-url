@@ -216,7 +216,7 @@ border-bottom: none;
 .options{
 width: 30%;
 display: flex;
-justify-content: space-between;
+justify-content: space-evenly;
 }
 
 /* ubah link popup */
@@ -248,7 +248,7 @@ width: 65%;
 .ubahLinkPop-h>.ka{
 width: 35%;
 display: flex;
-justify-content: space-between;
+justify-content: space-evenly;
 }
 .ubahLink-m{
 width: 100%;
