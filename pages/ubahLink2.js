@@ -22,10 +22,7 @@ function Beranda(){
                     <Image src="/star.png" alt="img" width="25%" height="20%"  objectFit="contain"/>
                     <input type="text" name="Ubah" className="ubahLink" id="isi"/> <br/>
                     <Image src="/copy.png" alt="img" className="m-input" width="30%" height="20%"  objectFit="contain"/>
-                    <Image src="/share.png" alt="img" className="m-input" width="30%" height="20%"  objectFit="contain"/>
-                    <Image src="/email.png" alt="img" className="m-input" width="30%" height="20%"  objectFit="contain"/>
                     <Image src="/blutit.png" alt="img" className="m-input" width="30%" height="20%"  objectFit="contain"/>
-                    <Image src="/qrc.png" alt="img" className="m-input" width="30%" height="20%"  objectFit="contain"/>
                     </div>
                     <div className="ubah">
                         <button type="submit"  id="submit">Ubah Link</button> 
