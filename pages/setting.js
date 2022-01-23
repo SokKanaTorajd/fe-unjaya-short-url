@@ -24,13 +24,10 @@ function setting (){
                         <input type="text" name="username" placeholder="Wijatama diwangkara" className="form-control"/>
                     </div>
                     <div className="form-set">
-                        <label>NPM</label>
-                        <input type="text" name="password" placeholder="123456789" className="form-control"/>
-                    </div>
-                    <div className="form-set">
                         <label>Kata Sandi</label>
                         <p>Silahkan ubah kata sandi lama dengan kata sandi baru</p>
-                        <input type="password" value="password"/>
+                        <input type="password" value="password" class="myInput"/>
+                        <span id="mybutton" onclick="change()"><i class="glyphicon glyphicon-eye-open"></i></span>
                             {/* <span className="forgot">Lupa Password?</span> */}
                     </div>
                     <div className="form-set">
@@ -42,6 +39,21 @@ function setting (){
         </div>
     )
 }
+function change()
+    {
+        var x = document.getElementById('pass').type;
+ 
+        if (x == 'password')
+        {
+           document.getElementById('pass').type = 'text';
+           document.getElementById('mybutton').innerHTML = '<i class="glyphicon glyphicon-eye-close"></i>';
+        }
+        else
+        {
+           document.getElementById('pass').type = 'password';
+           document.getElementById('mybutton').innerHTML = '<i class="glyphicon glyphicon-eye-open"></i>';
+        }
+    }
 
 
 
