@@ -20,11 +20,11 @@ function Header2(){
               <h1>Unjaya.id</h1>
             </div>
             <div className="headernya">
-                <div className="dashb">
-                  <h2>Dashboard</h2>
-                </div>
                 <div className="akun">
                   <Image src="/Group.png" alt="akun" width={23} height={23}/>
+                </div>
+                <div className="dashb">
+                  <h2>Wijatama Diwangkara</h2>
                 </div>
                 <div className="poly" onClick={userbin}>
                   <Image src="/polygon.png" alt="poly" width={25} height={8}/>
@@ -33,7 +33,9 @@ function Header2(){
         </div>
       </div>
       <div className="userbin" id='userbin'>
-          Setting
+          <Link href='/setting'>
+                <a className="btn-setting">Setting</a> 
+            </Link>
           <p>
           <Image src="/out.png"alt="akun" width={15} height={15}/>
           <Link href='/logout'>

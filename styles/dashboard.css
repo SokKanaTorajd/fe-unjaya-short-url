@@ -168,10 +168,30 @@ line-height: 2rem;
   letter-spacing: 0.3px;
   padding-left:5%  ;
 }
+
 /* riwayat */
-.riwayat{
+/* .scroll {
+  width: 100%;
+  height:20px;
+  margin-bottom: 10%;
+} */
+.riwayat {
 width: 100%;
+height: 260px;
 margin-bottom: 10%;
+overflow-y: scroll;
+}
+.riwayat::-webkit-scrollbar {
+  width: 20px;
+}
+.riwayat::-webkit-scrollbar-thumb:hover {
+  background-color: var(--green-color);
+}
+.riwayat::-webkit-scrollbar-thumb {
+  background-color: #b3b8b9;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
 }
 .riwayat>.riwayat1{
 padding: 0 5px;
@@ -216,8 +236,23 @@ border-bottom: none;
 .options{
 width: 30%;
 display: flex;
-justify-content: space-between;
+justify-content:space-around;
 }
+
+
+#edit.open{
+  
+  -webkit-transition:max-height 0.7s;
+  -moz-transition: max-height 0.7s;
+  transition: max-height 0.7s;
+  padding: 0 5px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom:1px solid black ;
+  width: 100%;
+}
+
+
 
 /* ubah link popup */
 .ubahLinkPop{
@@ -234,6 +269,12 @@ position: fixed;
 z-index: 1; 
 top: 0;
 padding-bottom: 2%;
+}
+.ubahLinkPop>.cl{
+  cursor: pointer;
+  margin-top: 3%;
+  text-align: right;
+  margin-right: 10px;
 }
 .ubahLinkPop>.ubahLinkPop-h{
 width: 100%;
@@ -282,7 +323,7 @@ cursor: pointer;
 .buttonUbahLink {
   display: none;
   /* justify-content: center; */
-  margin: 15% 30% auto 35%;
+  margin: 10% 30% auto 35%;
   background-color: #fefefe;
   width: 30%;
   border: none;
@@ -295,6 +336,11 @@ cursor: pointer;
   top: 0;
   padding-bottom: 2%;
   }
+  .buttonUbahLink>.cancel{
+    cursor: pointer;
+    margin-top: 5%;
+    text-align: right;
+}
   .poplink>.warn{
   width: 35%;
   display: flex;
@@ -320,7 +366,7 @@ cursor: pointer;
   }
   .btn-pop>.batal{
     float: left;
-    display: block;
+   
     padding: 10px 20px;
     /* color: white; */
     background-color: var(--green-color);
@@ -343,7 +389,7 @@ cursor: pointer;
     border-radius: 8px;
     cursor: pointer;
     float: right;
-    display: block;
+    
     margin-right: 40px;
   }
   .b-batal{
@@ -375,32 +421,55 @@ cursor: pointer;
   
 
   .ubahLinkPopLanjut{
-    display: none;
-    margin: 15% 25% auto 25%;
+    display:none;
+    margin: 10% 25% auto 25%;
     background-color: #fefefe;
-    width: 50%;
+    width: 55%;
     border: none;
     box-shadow:  2px 3px 8px 1px #7a7878;
     border-radius: 18px;
-    height: fit-content;
+    height: 35%;
     padding: 0 20px;
     position: fixed; 
     z-index: 1; 
     top: 0;
-    padding-bottom: 2%;
+
     }
     .ubahLinkPopLanjut>.ubahLinkPop-L{
     width: 100%;
     padding-top: 10px;
-    display: flex;
+    display: block;
     justify-content: space-between;
     font-size: 10px;
     }
     .ubahLinkPop-L>.ki{
-    width: 65%;
+    width: 100%;
+    font-size: 8px;
+    display: flex;
     }
-    
-   .ubahLink-b{
+   .tombol{
+    display:flex;
+    justify-content:space-around;
+    margin-bottom: 5%;
+    margin-top: 2%;
+   } 
+
+   .batal-b{
+    color: var(--green-color);
+    background-color: transparent;
+    border: solid 2px var(--green-color);
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    overflow: hidden;
+    width: 30%;
+  }
+
+   .simpan-b{
     padding: 10px 20px;
     color: white;
     background-color: var(--green-color);
@@ -410,8 +479,119 @@ cursor: pointer;
     font-size: 15px;
     border-radius: 8px;
     cursor: pointer;
+    width: 30%;
+    justify-content: space-around;
     }
-@media(max-width:786px){
+  .kotak1 {
+    display:flex;
+    justify-content:space-around;
+    margin-top: 2%;
+  }
+  .linknya {
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-family: Montserrat;
+    width:40%;
+    background: transparent;
+    border: 2px solid var(--green-color);
+    text-align: center;
+  }
+  .linknyaa{
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    font-family: Montserrat;
+    width:40%;
+    background: transparent;
+    border: 2px solid var(--green-color);
+    text-align: center;
+  }
+.ubahLinkPopLanjut2{
+  display:none;
+  margin: 10% 25% auto 25%;
+  background-color: #fefefe;
+  width: 50%;
+  border: none;
+  box-shadow:  2px 3px 8px 1px #7a7878;
+  border-radius: 18px;
+  height: 50%;
+  padding: 0 20px;
+  position: fixed; 
+  z-index: 1; 
+  top: 0;
+  
+}
+.flexx1{
+  display: flex;
+  flex-direction:row;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.g-flex11{
+  margin-top: 10px;
+  margin-left: 5px;
+  display: flex;
+  width: 100%;
+  border: 2px solid var(--green-color) ;
+  border-radius: 11px;
+  box-sizing: border-box; 
+}
+.g-flex11 button{
+  margin-left: 5px;
+  flex: 1;
+  /* width: 80%; */
+  padding: 6px 9px;
+  border: 2px solid var(--green-color);
+  background: var(--green-color);
+  color: var(#fff);
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--white-color);
+  font-weight: 600;
+  border-radius: 4px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  line-height: 20px;
+}
+.g-flex11 input{
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 11px;
+  background-color: transparent;
+}
+.rekom {
+  display: block;
+  justify-content: center;
+  color: black;
+
+}
+.rekom h1 {
+  font-size: 17px;
+  text-align: center;
+}
+.rekomendasi{
+  border: solid 2px green;
+  border-radius: 8px;
+  padding:5px;
+  margin-bottom: 5px;
+  width: 70%;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+.rekomendasi:hover{
+  background:#AAECA0;
+}
+@media screen and (min-width: 450px){
+  
+}
+@media(max-width:768px){
 .navbardash>.header{
   margin-top: 10px;
 }

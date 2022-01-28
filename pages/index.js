@@ -8,14 +8,11 @@ function Beranda(){
         <div className='section1'>
             <span>Lebih <b> Mudah</b> Dengan Tautan Lebih <b>Singkat</b></span>
             <p> Buat tautanmu menjadi lebih singkat untuk memudahkan <br/> mereka mengakesnya</p>
-            <div className="flex">
-                <Image src="/kkk.png" alt="img" className="v-input" width={25} height={20} objectFit="contain"/>
-                <form method="" action="   " className="g-flex">
-                    <input type="text" name="isi" id="isi" placeholder="Paste link panjangmu disini" />
-                    <button type="submit"  id="submit" className="kanan">Mulai</button>
-                </form>
-            </div>
+            <Link href='/login'>
+                <a className="mulai">Mulai</a> 
+            </Link>
         </div>
+        
         <div className='section2'>
             <h1> Alasan kamu harus masuk</h1>
             <div className="grid-3">
