@@ -68,6 +68,16 @@
 form{
     width: 50%;
 }
+.boxinfo {
+    margin-bottom: 50px;
+    
+}
+.boxinfo>.box-form{
+
+}
+form{
+    width: 50%;
+}
 .form-set label{
     font-family: Poppins;
     font-style: normal;

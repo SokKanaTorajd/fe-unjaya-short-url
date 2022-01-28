@@ -36,7 +36,8 @@ function setting (){
                     <div className="form-set">
                         <label>Kata Sandi</label>
                         <p>Silahkan ubah kata sandi lama dengan kata sandi baru</p>
-                        <input type="password" value="password"/>
+                        <input type="password" value="password" class="myInput"/>
+                        <span id="mybutton" onclick="change()"><i class="glyphicon glyphicon-eye-open"></i></span>
                             {/* <span className="forgot">Lupa Password?</span> */}
                     </div>
                     <div className="form-set">
@@ -47,9 +48,27 @@ function setting (){
                 </div>
             </div>
         </div>
+<<<<<<< HEAD
         
+=======
+>>>>>>> 78711f94dfad4729b7b7733f8b47bb2f085c59fd
     )
 }
+function change()
+    {
+        var x = document.getElementById('pass').type;
+ 
+        if (x == 'password')
+        {
+           document.getElementById('pass').type = 'text';
+           document.getElementById('mybutton').innerHTML = '<i class="glyphicon glyphicon-eye-close"></i>';
+        }
+        else
+        {
+           document.getElementById('pass').type = 'password';
+           document.getElementById('mybutton').innerHTML = '<i class="glyphicon glyphicon-eye-open"></i>';
+        }
+    }
 
 
 export default setting
