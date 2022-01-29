@@ -3,7 +3,6 @@ import Header2 from '../components/Header2'
 import Image from 'next/image'
 import React from 'react'
 import Linechart from '../components/Linechart'
-import Copy from "../components/Copy"
 
 function coba(){
     function ubahLink(){
@@ -101,7 +100,7 @@ function coba(){
             </div>
           <div class="options">
             {/* <Copy/> */}
-            <Image src="/copy.png" onclick={Copy} alt="copy"width={20} height={20} objectFit="contain"/>
+            <Image src="/copy.png" alt="copy"width={20} height={20} objectFit="contain"/>
             <Image src="/blutit.png" alt="sha1e"width={25} height={25} objectFit="contain"/>
             <Image src="/del.png" alt="delete"width={25} height={25} objectFit="contain"/>
           </div>
