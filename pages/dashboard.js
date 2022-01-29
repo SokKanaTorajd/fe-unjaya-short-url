@@ -13,33 +13,56 @@ function coba(){
     }
     function ubahLinkB(){
         const ubahtutup = document.getElementById('ubahLink')
-        const ubahLinkB = document.getElementById('buttonUbah')
+        const ubahLinkB = document.getElementById('buttonUbah1')
         ubahLinkB.style.display = 'block'
         ubahtutup.style.display = "none"
         document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
     }
     function ubahLinkBatal(){
-      const ubahLinkBatal = document.getElementById('buttonUbah')
+      const ubahLinkBatal = document.getElementById('buttonUbah1')
       ubahLinkBatal.style.display = 'none'
-      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      document.body.style.backgroundColor = 'white'
+    }
+    function ubahLinkBatal2(){
+      const ubahLinkBatal = document.getElementById('LanjutUbah')
+      ubahLinkBatal.style.display = 'none'
+      document.body.style.backgroundColor = 'white'
     }
     function lanjut(){
-      const nextedit = document.getElementById('Ubah')
-      const ubahLinkBcl = document.getElementById('buttonUbah')
+      const nextedit = document.getElementById('LanjutUbah')
+      const ubahLinkBcl = document.getElementById('buttonUbah1')
       nextedit.style.display = 'block'
       ubahLinkBcl.style.display = 'none'
       document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+    function Simpan(){
+     const toSave =  document.getElementById('UbahtoSave')
+     const nextedit = document.getElementById('LanjutUbah')
+     toSave.style.display = 'block'
+     nextedit.style.display='none'
+     document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
     }
     function close(){
       const tutup = document.getElementById('ubahLink')
       document.body.style.backgroundColor = "#ffffff";
       tutup.style.display = "none";
     }
-    function close1(){
-      const tutup1 = document.getElementById('buttonUbah')
+    function closeUbah(){
+      const tutup = document.getElementById('buttonUbah1')
+      document.body.style.backgroundColor = "#ffffff";
+      tutup.style.display = "none";
+    }
+    function closeNext(){
+      const tutup1 = document.getElementById('LanjutUbah')
       document.body.style.backgroundColor = "#ffffff";
       tutup1.style.display = "none";
     }
+    function closeSave(){
+      const tutup1 = document.getElementById('UbahtoSave')
+      document.body.style.backgroundColor = "#ffffff";
+      tutup1.style.display = "none";
+    }
+
   return (
     <div>
       <div className="dash">
@@ -100,7 +123,6 @@ function coba(){
             </div>
           <div class="options">
             {/* <Copy/> */}
-            <Image src="/copy.png" alt="copy"width={20} height={20} objectFit="contain"/>
             <Image src="/blutit.png" alt="sha1e"width={25} height={25} objectFit="contain"/>
             <Image src="/del.png" alt="delete"width={25} height={25} objectFit="contain"/>
           </div>
@@ -131,8 +153,8 @@ function coba(){
         </div>
     </div>
 
-    <div className="buttonUbahLink" id="buttonUbah">
-      <div class="cancel" onClick={close1}>&times;</div>
+    <div className="buttonUbahLink" id="buttonUbah1">
+      <div class="cancel" onClick={closeUbah}>&times;</div>
         <div className="UbahLinkBatal">
           <div className="header">
             <h2 className="title">Ubah link <span class="red">Unjaya.id</span> </h2>
@@ -146,15 +168,16 @@ function coba(){
         </div>
         <div className="btn-pop">
             <ul class="batal">
-              <button onclick={ubahLinkBatal} className='b-batal'>Batalkan</button>
+              <button onClick={ubahLinkBatal} className='b-batal'>Batalkan</button>
             </ul>
             <ul class="lanjutkan">
-              <button onclick={lanjut} className='b-lanjutkan'>Lanjutkan</button>  
+              <button onClick={lanjut} className='b-lanjutkan'>Lanjutkan</button>  
             </ul>
         </div>
     </div>
-    <div className="ubahLinkPopLanjut" id="Ubah">
-      <div class="cl" onClick={close1}>&times;</div>
+  </div>
+    <div className="ubahLinkPopLanjut" id="LanjutUbah">
+      <div class="cl" onClick={closeNext}>&times;</div>
       <div className="ubahLinkPop-L">
         <div className="ki">
           <h1><Image src="/image1.png" alt = "figma" width={20} height={23}/>
@@ -166,14 +189,14 @@ function coba(){
               <input className='linknya' placeholder="Ubah ke link yang kamu inginkan" type="text"></input>
             </div>
           </div>
-          <div className='tombol'>
-            <button className="ubahLink-b" onClick={ubahLinkB}>Batalkan</button>
-            <button className="ubahLink-b" onClick={ubahLinkB}>Simpan</button>
+          <div className='ubahLink-flex'>
+            <button className="ubahLink-b" onClick={ubahLinkBatal2}>Batalkan</button>
+            <button className="ubahLink-b" onClick={Simpan}>Simpan</button>
           </div>
       </div>
     </div>
-    <div className="ubahLinkPopLanjut2" id="Ubah2">
-      <div class="cl" onClick={close1}>&times;</div>
+    <div className="ubahLinkPopLanjut2" id="UbahtoSave">
+      <div class="cl" onClick={closeSave}>&times;</div>
       <div className='ubahlinknya2'>
         <div className="flexx1">
         <Image src="/kkk.png" alt="img" className="v-input1" width={25} height={20} objectFit="contain"/>
@@ -191,6 +214,7 @@ function coba(){
       </div>      
     </div>
     </div>
+   
   )
 }
 export default coba
