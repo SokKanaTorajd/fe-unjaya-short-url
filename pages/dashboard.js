@@ -31,7 +31,6 @@ function coba(){
       ubahLinkBcl.style.display = 'none'
       document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
     }
-<<<<<<< HEAD
     function close(){
       const tutup = document.getElementById('ubahLink')
       document.body.style.backgroundColor = "#ffffff";
@@ -42,35 +41,6 @@ function coba(){
       document.body.style.backgroundColor = "#ffffff";
       tutup1.style.display = "none";
     }
-    // function Copy(){
-    //   var copyText = document.getElementById('hasil')
-    //   copyText.select();
-    //   copyText.setSelectionRange(0, 99999);
-    //   navigator.clipboard.getElementById(copyText.value);
-    //   alert("Copied the text: " + copyText.value);
-    // }
-  // var edit =document.getElementById("edit");
-  // var riwayat1 = document.getElementById("openn");
-  // riwayat1.onclick = function(){
-  //   if(edit.className == "open"){
-  //     edit.className="";
-  //     riwayat1.innerHTML="openn";
-  //   }else{
-  //     edit.className="open";
-  //     riwayat1.innerHTML="openn";
-  //   }
-  // }
-  
-  // let riwayatForm = document.querySelector('.riwayatForm');
-
-  // document.querySelector('#riwayat1').onclick = () =>{
-  //   riwayatForm.classList.toggle('active');
-  //       // loginForm.classList.remove('active');
-  //       // navbar.classList.remove('active');
-  // }
-  
-=======
->>>>>>> 78711f94dfad4729b7b7733f8b47bb2f085c59fd
   return (
     <div>
       <div className="dash">
@@ -119,27 +89,6 @@ function coba(){
             <div class="option-click"><span>5 Klik</span></div>
             <div class="just-now"><span> 1 jam yang lalu</span> </div>
         </div>
-<<<<<<< HEAD
-        {/* D A L A M */}
-        {/* <div className="riwayat1 option" id="openn">
-            <div class="img-fig">
-            <Image src="/image1.png" alt = "figma" width={16} height={26}/>
-            </div>
-            <div className="ket-riwayat">
-              <h1>Unjaya.id/uiux
-                <span><Image src="/pen.png" onClick={ubahLink} alt="pen"  width={20} height={20}/></span>
-              </h1>
-              <p>https:/www.figma.com/file/nXmrtlVVKFIXe9PxrzXBcm/Shorten-link?node-id=204%3A320</p>
-            </div>
-          <div class="options">
-           <Image src="/copy.png" alt="copy"width={20} height={20} objectFit="contain"/>
-           <Image src="/blutit.png" alt="sha1e"width={25} height={25} objectFit="contain"/>
-           <Image src="/del.png" alt="delete"width={25} height={25} objectFit="contain"/>
-          </div>
-        </div> */}
-        {/* D A L A M */}
-=======
->>>>>>> 78711f94dfad4729b7b7733f8b47bb2f085c59fd
         <div className="riwayat1 option">
             <div class="img-fig">
             <Image src="/image1.png" alt = "figma" width={16} height={26}/>
@@ -165,11 +114,6 @@ function coba(){
                 <h1><Image src="/image1.png" alt = "figma" width={20} height={20}/>
                     <span>Unjaya.id/uiux</span> </h1>
             </div>
-            <div className="ka"> 
-                <Image src="/copy.png" alt="copy"width={25} height={25} objectFit="contain"/>
-                <Image src="/share.png" alt="share"width={25} height={25} objectFit="contain"/>
-                <Image src="/del.png" alt="delete"width={25} height={25} objectFit="contain"/>
-            </div>
         </div>
 
         <div className="ubahLink-m">
@@ -189,15 +133,12 @@ function coba(){
     </div>
 
     <div className="buttonUbahLink" id="buttonUbah">
-<<<<<<< HEAD
       <div class="cancel" onClick={close1}>&times;</div>
         <div className="UbahLinkBatal">
           <div className="header">
             <h2 className="title">Ubah link <span class="red">Unjaya.id</span> </h2>
           </div>
-=======
         <div className="poplink">
->>>>>>> 78711f94dfad4729b7b7733f8b47bb2f085c59fd
             <div className="warn">
                 <Image src="/warning.png" width={350} height={350} alt="a"/>
             </div>
@@ -248,14 +189,8 @@ function coba(){
         <div className="rekomendasi">Unjaya.id/uiux1</div>
         <div className="rekomendasi">Unjaya.id/uiux2</div>
         <div className="rekomendasi">Unjaya.id/uiux3</div>
-      </div>
-      
+      </div>      
     </div>
-    {/* <div>
-      <button onClick={(CopyExample) => navigator.clipboard.writeText("Copy this text to clipboard")}>
-        Copy
-      </button>
-    </div> */}
     </div>
   )
 }
