@@ -11,50 +11,54 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  top: 65px;
   position: fixed;
 }
 .navbardash>.header{
   font-weight: bold;
   font-size: 50px;
   line-height: 56px;
-  letter-spacing: 0.2px;
   color: var(--white-color2);
 }
-.akun {
-  position: absolute;
-  left: 68%;
-  margin-top: 23px;
+.navbardash>.headernya{
+  width: 23%;
 }
-.poly {
-  position: absolute;
-  left: 83%;
-  margin-top: 23px;
-  cursor: pointer;
+.headernya>.dashb{
+  padding-left: 20px;
+  font-size: 15px;
+  width: 80%;
+}
+.dashb h2{
+  margin-top: 20px;
+  font-size: 20px;
+}
+.headernya>.akunInfo{
+  margin-top: 20px;
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .header h1{
-  position: absolute;
-  left: 77px;
-  margin-top: 2%;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
   line-height: 15px;
-  display: flex;
-  align-items: center;
-  text-align: right;
   letter-spacing: 1px;
+  margin-left: 30px;
   color: #FBFBFB;
 }  
-.headernya h2{
-  position: absolute;
-  margin-top: 2%;
+.headernya{
+  display: flex;
+  margin-right: 30px;
+  justify-content: space-between;
+}
+.headernya .dashb{
   color: var(--white-color);
   font-size: 15px;
   font-weight: bold;
   font-family: Montserrat;
-  left: 70%;
+
 }
 .headernya h2:hover{
 border-radius: 11px;
@@ -70,7 +74,7 @@ padding: 8px;
 height: fit-content;
 position: absolute;
 top: 11%;
-left: 83%;
+left: 92%;
 border-radius: 11px;
 border: 2px solid black;
 color: white;
@@ -295,10 +299,30 @@ width: 35%;
 display: flex;
 justify-content: space-between;
 }
+.ubahLink-flex{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+.ubahLink-flex>.ubahLink-b{
+  padding: 10px 20px;
+  color: white;
+  background-color: var(--green-color);
+  border: none;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
 .ubahLink-m{
 width: 100%;
 padding: 0 0 0 7%;
 font-size: 14px;
+}
+.cl{
+  cursor: pointer;
 }
 .ubahLink-m ul{
 list-style-type: none;
@@ -344,7 +368,11 @@ cursor: pointer;
     cursor: pointer;
     margin-top: 5%;
     text-align: right;
+    margin-right: 5%;
 }
+  .UbahLinkBatal>.header{
+    text-align: center;
+  }
   .poplink>.warn{
   width: 35%;
   display: flex;
@@ -521,8 +549,8 @@ cursor: pointer;
   border: none;
   box-shadow:  2px 3px 8px 1px #7a7878;
   border-radius: 18px;
-  height: 50%;
-  padding: 0 20px;
+  height: fit-content;
+  padding: 20px 20px;
   position: fixed; 
   z-index: 1; 
   top: 0;
@@ -592,25 +620,30 @@ cursor: pointer;
 .rekomendasi:hover{
   background:#AAECA0;
 }
-@media screen and (min-width: 450px){
-  
-}
+
 @media(max-width:768px){
-.navbardash>.header{
-  margin-top: 10px;
+.navbardash>.headernya{
+  width: 30%;
 }
-.dashb{
+.headernya>.dashb{
+  width: 70%;
+}
+.dashb h2{
   margin-top: 15px;
+  font-size: 15px;
+  padding-left: 20px;
 }
-.akun {
+.headernya>.akunInfo{
+  width: 30%;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.userbin{
   left: 85%;
-  margin-top: 10px;
-}
-.poly {
-  position: absolute;
-  left: 90%;
-  margin-top: 10px;
-}
+  }
+
 .flex1{
   display: flex;
   flex-direction:row;
@@ -652,46 +685,63 @@ h1 span{
 .options{
   width: 20%;
 }
+.buttonUbahLink {
+  font-size: 15px;
+  margin: 20% 30% auto 35%;
+  background-color: #fefefe;
+  width: 50%;
+  padding: 0 ;
 
-
+  }
+  .ubahLinkPopLanjut{
+    margin: 30% 25% auto 25%;
+  }
+  .ubahLinkPopLanjut2{
+    margin: 30% 25% auto 25%;
+   
+  }
 }
 
 @media(max-width:500px){
-  .dash{
-    margin-bottom: 0;
-    height: 30vh;
+  .navbardash>.header{
+    margin-top: 10px;
   }
-.dashb{
-  left:83%;
-}
-.akun {
-  left: 87%;
-  margin-top: 10px;
-}
-.poly {
-  position: absolute;
-  left: 94%;
-  margin-top: 10px;
-}
-.header h1{
-  left: 30px;
-  font-size: 20px;
-}  
-.userbin{
-  padding: 1px;
-}
-.dash>.ket{
-  font-size: 15px;
-  line-height: 1rem;
-}
-.ket-riwayat{
-  width: 85%;
-}
-.option-click, .just-now{
-  width: 10%;
-  font-size: 12px;
-}
-.ket-riwayat p{
-  font-size: 10px;
-}
-}
+    .dash{
+      margin-bottom: 0;
+      height: 30vh;
+    }
+    .navbardash>.headernya{
+      width: 35%;
+    }
+    .headernya>.dashb{
+      width: 75%;
+    }
+    .dashb h2{
+      padding-left: 0;
+    }
+    .headernya>.akunInfo{
+      width: 35%;
+    }
+
+    .header h1{
+      left: 30px;
+      font-size: 25px;
+    }  
+    .userbin{
+      padding: 1px;
+    }
+    .dash>.ket{
+      font-size: 15px;
+      line-height: 1rem;
+    }
+    .ket-riwayat{
+      width: 85%;
+    }
+    .option-click, .just-now{
+      width: 10%;
+      font-size: 12px;
+    }
+    .ket-riwayat p{
+      font-size: 10px;
+    }
+    }
