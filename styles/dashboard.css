@@ -187,6 +187,10 @@ height: 260px;
 margin-bottom: 10%;
 overflow-y: scroll;
 }
+.riwayat1:hover {
+  background-color:#E2FEDB;
+
+}
 .riwayat::-webkit-scrollbar {
   width: 20px;
 }
