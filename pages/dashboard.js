@@ -62,6 +62,11 @@ function coba(){
       document.body.style.backgroundColor = "#ffffff";
       tutup1.style.display = "none";
     }
+    function shareLink(){
+      const shareLink = document.getElementById('shareLink')
+      shareLink.style.display = 'block'
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
 
   return (
     <div>
@@ -123,7 +128,8 @@ function coba(){
             </div>
           <div class="options">
             {/* <Copy/> */}
-            <Image src="/blutit.png" alt="sha1e"width={25} height={25} objectFit="contain"/>
+            <Image src="/blutit.png" onClick={shareLink} alt="sha1e"width={25} height={25} objectFit="contain"/>
+            <Image src="/copy.png" alt="copy"width={25} height={25} objectFit="contain"/>
             <Image src="/del.png" alt="delete"width={25} height={25} objectFit="contain"/>
           </div>
         </div>
@@ -151,6 +157,20 @@ function coba(){
             </ul>
             <button className="ubahLink-b" onClick={ubahLinkB}>Ubah Link</button>
         </div>
+    </div>
+
+    <div className= "shareLinkPop" id="shareLink">
+      <div className="shareLinkPop-a">
+        <h1><b>Berbagi ke</b></h1>
+        <Image src="/wa.png" alt="Whatsapp"width={25} height={25} objectFit="contain"/>
+        <p><b>Whatsapp</b></p>
+        <Image src="/tele.png" alt="Telegram"width={25} height={25} objectFit="contain"/>
+        <p><b>Telegram</b></p>
+        <Image src="/tw.png" alt="Twitter"width={25} height={25} objectFit="contain"/>
+        <p><b>Twitter</b></p>
+        <Image src="/fb.png" alt="Facebook"width={25} height={25} objectFit="contain"/>
+        <p><b>Facebook</b></p>
+      </div>
     </div>
 
     <div className="buttonUbahLink" id="buttonUbah1">
