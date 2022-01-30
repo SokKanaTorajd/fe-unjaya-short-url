@@ -5,131 +5,151 @@ import React from 'react'
 import Linechart from '../components/Linechart'
 
 function coba(){
-    function ubahLink(){
-        const ubahLink = document.getElementById('ubahLink')
-        ubahLink.style.display = 'block'
-        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  function ubahLink(){
+    const ubahLink = document.getElementById('ubahLink')
+    ubahLink.style.display = 'block'
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 
+  }
+  function ubahLinkB(){
+    const ubahtutup = document.getElementById('ubahLink')
+    const ubahLinkB = document.getElementById('buttonUbah1')
+    ubahLinkB.style.display = 'block'
+    ubahtutup.style.display = "none"
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+  function ubahLinkBatal(){
+    const ubahLinkBatal = document.getElementById('buttonUbah1')
+    ubahLinkBatal.style.display = 'none'
+    document.body.style.backgroundColor = 'white'
+  }
+  function ubahLinkBatal2(){
+    const ubahLinkBatal = document.getElementById('LanjutUbah')
+    ubahLinkBatal.style.display = 'none'
+    document.body.style.backgroundColor = 'white'
+  }
+  function lanjut(){
+    const nextedit = document.getElementById('LanjutUbah')
+    const ubahLinkBcl = document.getElementById('buttonUbah1')
+    nextedit.style.display = 'block'
+    ubahLinkBcl.style.display = 'none'
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+  function Simpan(){
+    const toSave =  document.getElementById('UbahtoSave')
+    const nextedit = document.getElementById('LanjutUbah')
+    toSave.style.display = 'block'
+    nextedit.style.display='none'
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+  function close(){
+    const tutup = document.getElementById('ubahLink')
+    document.body.style.backgroundColor = "#ffffff";
+    tutup.style.display = "none";
+  }
+  function closeUbah(){
+    const tutup = document.getElementById('buttonUbah1')
+    document.body.style.backgroundColor = "#ffffff";
+    tutup.style.display = "none";
+  }
+  function closeNext(){
+    const tutup1 = document.getElementById('LanjutUbah')
+    document.body.style.backgroundColor = "#ffffff";
+    tutup1.style.display = "none";
+  }
+  function closeSave(){
+    const tutup1 = document.getElementById('UbahtoSave')
+    document.body.style.backgroundColor = "#ffffff";
+    tutup1.style.display = "none";
+  }
+  var lastopen = null;
+  function shareLink(){
+    var shareLink1 = document.getElementById('shareLink');
+    shareLink1.style.display = 'block';
+    if (lastopen){
+      closepop(lastopen);
     }
-    function ubahLinkB(){
-        const ubahtutup = document.getElementById('ubahLink')
-        const ubahLinkB = document.getElementById('buttonUbah1')
-        ubahLinkB.style.display = 'block'
-        ubahtutup.style.display = "none"
-        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-    }
-    function ubahLinkBatal(){
-      const ubahLinkBatal = document.getElementById('buttonUbah1')
-      ubahLinkBatal.style.display = 'none'
-      document.body.style.backgroundColor = 'white'
-    }
-    function ubahLinkBatal2(){
-      const ubahLinkBatal = document.getElementById('LanjutUbah')
-      ubahLinkBatal.style.display = 'none'
-      document.body.style.backgroundColor = 'white'
-    }
-    function lanjut(){
-      const nextedit = document.getElementById('LanjutUbah')
-      const ubahLinkBcl = document.getElementById('buttonUbah1')
-      nextedit.style.display = 'block'
-      ubahLinkBcl.style.display = 'none'
-      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-    }
-    function Simpan(){
-     const toSave =  document.getElementById('UbahtoSave')
-     const nextedit = document.getElementById('LanjutUbah')
-     toSave.style.display = 'block'
-     nextedit.style.display='none'
-     document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-    }
-    function close(){
-      const tutup = document.getElementById('ubahLink')
-      document.body.style.backgroundColor = "#ffffff";
-      tutup.style.display = "none";
-    }
-    function closeUbah(){
-      const tutup = document.getElementById('buttonUbah1')
-      document.body.style.backgroundColor = "#ffffff";
-      tutup.style.display = "none";
-    }
-    function closeNext(){
-      const tutup1 = document.getElementById('LanjutUbah')
-      document.body.style.backgroundColor = "#ffffff";
-      tutup1.style.display = "none";
-    }
-    function closeSave(){
-      const tutup1 = document.getElementById('UbahtoSave')
-      document.body.style.backgroundColor = "#ffffff";
-      tutup1.style.display = "none";
-    }
-    function shareLink(){
-      const shareLink = document.getElementById('shareLink')
-      shareLink.style.display = 'block'
-      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-    }
+    lastopen=shareLink1;
+  }
+  function closepop(){
+    var shareLink2 = document.getElementById('shareLink');
+    shareLink2.style.display="none";
+    lastopen=null;
+  }
 
   return (
     <div>
       <div className="dash">
-          <div className="ket">
-              <div className="total-link">
-                <p> 0 Total Link</p>
-              </div>
-              <div className="total-klik">
-              <p> 0 Total Klik</p>
-              </div>
+        <div className="ket">
+          <div className="total-link">
+            <p> 0 Total Link</p>
           </div>
+          <div className="total-klik">
+            <p> 0 Total Klik</p>
+          </div>
+        </div>
         <div className="grafik-n">
         <Linechart/>
         </div>
       </div>
       <div className='ubahlinknya'>
         <div className="flex1">
-        <Image src="/kkk.png" alt="img" className="v-input1" width={25} height={20} objectFit="contain"/>
-        <form method="" action="" className="g-flex1">
+          <Image src="/kkk.png" alt="img" className="v-input1" width={25} height={20} objectFit="contain"/>
+          <form method="" action="" className="g-flex1">
             <input type="text" name="isi" id="isi" placeholder="Paste atau klik link panjangmu disini" />
             <button type="submit"  id="submit" className="kanan">Singkatkan</button>
-        </form>
+          </form>
         </div>
       </div>
     
-    <div className="riwayat">
+      <div className="riwayat">
         <div className="riwayat1">
-            <div class="img-fig">
+          <div class="img-fig">
             <Image src="/image1.png" alt = "figma" width={16} height={26}/>
-            </div>
-            <div className="ket-riwayat">
-              <h1>Unjaya.id/uiux</h1>
-              <p id="hasil" value="aku imut">https:/www.figma.com/file/nXmrtlVVKFIXe9PxrzXBcm/Shorten-link?node-id=204%3A320</p>
-            </div>
-            <div class="option-click"><span>0 Klik</span></div>
-            <div class="just-now"><span> Baru Saja</span> </div>
+          </div>
+          <div className="ket-riwayat">
+            <h1>Unjaya.id/uiux</h1>
+            <p id="hasil" value="aku imut">https:/www.figma.com/file/nXmrtlVVKFIXe9PxrzXBcm/Shorten-link?node-id=204%3A320</p>
+          </div>
+          <div class="option-click"><span>0 Klik</span></div>
+          <div class="just-now"><span> Baru Saja</span></div>
         </div>
         <div className="riwayat1" id="edit">
-            <div class="img-fig">
+          <div class="img-fig">
             <Image src="/image1.png" alt = "figma" width={16} height={26}/>
-            </div>
-            <div className="ket-riwayat">
-              <h1>Unjaya.id/uiux</h1>
-              <p>https:/www.figma.com/file/nXmrtlVVKFIXe9PxrzXBcm/Shorten-link?node-id=204%3A320</p>
-            </div>
-            <div class="option-click"><span>5 Klik</span></div>
-            <div class="just-now"><span> 1 jam yang lalu</span> </div>
+          </div>
+          <div className="ket-riwayat">
+            <h1>Unjaya.id/uiux</h1>
+            <p>https:/www.figma.com/file/nXmrtlVVKFIXe9PxrzXBcm/Shorten-link?node-id=204%3A320</p>
+          </div>
+          <div class="option-click"><span>5 Klik</span></div>
+          <div class="just-now"><span> 1 jam yang lalu</span> </div>
         </div>
-        <div className="riwayat1 option">
-            <div class="img-fig">
+        <div className="riwayat1" id="edit">
+          <div class="img-fig">
             <Image src="/image1.png" alt = "figma" width={16} height={26}/>
-            </div>
-            <div className="ket-riwayat">
-              <h1>Unjaya.id/uiux
-                <span><Image src="/pen.png" onClick={ubahLink} alt="pen"  width={18} height={18}/></span>
-              </h1>
-              <p id="hasil">https:/www.figma.com/file/nXmrtlVVKFIXe9PxrzXBcm/Shorten-link?node-id=204%3A320</p>
-            </div>
+          </div>
+          <div className="ket-riwayat">
+            <h1>Unjaya.id/uiux</h1>
+            <p>https:/www.figma.com/file/nXmrtlVVKFIXe9PxrzXBcm/Shorten-link?node-id=204%3A320</p>
+          </div>
+          <div class="option-click"><span>5 Klik</span></div>
+          <div class="just-now"><span> 1 jam yang lalu</span> </div>
+        </div>
+
+        <div className="riwayat1 option">
+          <div class="img-fig">
+            <Image src="/image1.png" alt = "figma" width={16} height={26}/>
+          </div>
+          <div className="ket-riwayat">
+            <h1>Unjaya.id/uiux
+              <span><Image src="/pen.png" onClick={ubahLink} alt="pen"  width={18} height={18}/></span>
+            </h1>
+            <p id="hasil">https:/www.figma.com/file/nXmrtlVVKFIXe9PxrzXBcm/Shorten-link?node-id=204%3A320</p>
+          </div>
           <div class="options">
-            {/* <Copy/> */}
+            <Image src="/copy.png" alt="copy"width={20} height={20} objectFit="contain"/>
             <Image src="/blutit.png" onClick={shareLink} alt="sha1e"width={25} height={25} objectFit="contain"/>
-            <Image src="/copy.png" alt="copy"width={25} height={25} objectFit="contain"/>
             <Image src="/del.png" alt="delete"width={25} height={25} objectFit="contain"/>
           </div>
         </div>
@@ -142,7 +162,6 @@ function coba(){
                     <span>Unjaya.id/uiux</span> </h1>
             </div>
         </div>
-
         <div className="ubahLink-m">
             <p>https://www.figma.com/file/nXmrtlVVKFIXe9PxrzXBcm/Shorten-link?node-id=0%3A1</p>
             <ul>
@@ -157,22 +176,24 @@ function coba(){
             </ul>
             <button className="ubahLink-b" onClick={ubahLinkB}>Ubah Link</button>
         </div>
-    </div>
-
+      </div>
     <div className= "shareLinkPop" id="shareLink">
+      <h1><b>Berbagi ke</b></h1>
       <div className="shareLinkPop-a">
-        <h1><b>Berbagi ke</b></h1>
-        <Image src="/wa.png" alt="Whatsapp"width={25} height={25} objectFit="contain"/>
-        <p><b>Whatsapp</b></p>
-        <Image src="/tele.png" alt="Telegram"width={25} height={25} objectFit="contain"/>
-        <p><b>Telegram</b></p>
-        <Image src="/tw.png" alt="Twitter"width={25} height={25} objectFit="contain"/>
-        <p><b>Twitter</b></p>
-        <Image src="/fb.png" alt="Facebook"width={25} height={25} objectFit="contain"/>
-        <p><b>Facebook</b></p>
+        <div className="share">
+          <a href="https://web.whatsapp.com/" class="s"><Image src="/wa.png" alt="Whatsapp"width={25} height={25} objectFit="contain"/>Whatsapp</a> 
+          <a href="https://web.telegram.org/" class="s"><Image src="/tele.png" alt="Telegram"width={25} height={25} objectFit="contain"/>Telegram </a>
+          <a href="https://twitter.com/" class="s"><Image src="/tw.png" alt="Twitter"width={25} height={25} objectFit="contain"/> Twitter</a>
+          <a href="https://web.facebook.com/" class="s"><Image src="/fb.png" alt="Facebook"width={25} height={25} objectFit="contain"/>Facebook </a>
+        </div>
+        {/* <div className="kolom">
+          <p><b>Whatsapp</b></p>
+          <p><b>Telegram</b></p>
+          <p><b>Twitter</b></p>
+          <p><b>Facebook</b></p>
+        </div> */}
       </div>
     </div>
-
     <div className="buttonUbahLink" id="buttonUbah1">
       <div class="cancel" onClick={closeUbah}>&times;</div>
         <div className="UbahLinkBatal">
@@ -195,7 +216,8 @@ function coba(){
             </ul>
         </div>
     </div>
-  </div>
+    
+    </div>
     <div className="ubahLinkPopLanjut" id="LanjutUbah">
       <div class="cl" onClick={closeNext}>&times;</div>
       <div className="ubahLinkPop-L">
@@ -231,10 +253,10 @@ function coba(){
         <div className="rekomendasi">Unjaya.id/uiux1</div>
         <div className="rekomendasi">Unjaya.id/uiux2</div>
         <div className="rekomendasi">Unjaya.id/uiux3</div>
-      </div>      
+      </div>
+      
     </div>
     </div>
-   
   )
 }
 export default coba
