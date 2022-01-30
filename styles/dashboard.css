@@ -91,6 +91,34 @@ a:hover {
   color: black;
 }
 
+
+/* share link popup*/
+.shareLinkPop{
+display: none;
+margin: 35% 50% auto 75%;
+background-color: #fefefe;
+width: 15%;
+border: none;
+box-shadow:  2px 3px 8px 1px #7a7878;
+border-radius: 18px;
+height:fit-content;
+object-fit: scale-down;
+padding: 0 10px;
+position: fixed; 
+top: 0;
+padding-bottom: 2%;
+}
+
+.shareLinkPop>.shareLinkPop-a{
+width: 100%;
+padding-top: 10px;
+display: grid;
+padding: 5px;
+object-fit: scale-down;
+align-content: space-evenly;
+font-size: 10px;
+}
+
 /* ubah Link */
 .ubahlinknya{
 left: 0px;
