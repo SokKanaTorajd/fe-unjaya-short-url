@@ -94,29 +94,36 @@ a:hover {
 
 /* share link popup*/
 .shareLinkPop{
-display: none;
-margin: 35% 50% auto 75%;
-background-color: #fefefe;
-width: 15%;
-border: none;
-box-shadow:  2px 3px 8px 1px #7a7878;
-border-radius: 18px;
-height:fit-content;
-object-fit: scale-down;
-padding: 0 10px;
-position: fixed; 
-top: 0;
-padding-bottom: 2%;
+  display: none;
+  margin: 85% 80% auto 78%;
+  background-color: #fefefe;
+  width: 150px;
+  border: none;
+  box-shadow:  2px 3px 8px 1px #7a7878;
+  border-radius: 18px;
+  height:fit-content;
+  padding: 0 10px;
+  position:absolute; 
+  top: 0;
+  padding-bottom: 2%;
+  }
+.shareLinkPop h1{
+  font-size:18px;
+  padding-top: 5px;
+  padding-left: 5px;
 }
-
-.shareLinkPop>.shareLinkPop-a{
-width: 100%;
-padding-top: 10px;
-display: grid;
-padding: 5px;
-object-fit: scale-down;
-align-content: space-evenly;
-font-size: 10px;
+  .shareLinkPop-a>.share{
+  width: 100%;
+  display: grid;
+  font-size: 15px;
+  padding-left: 5px;
+  }
+.share .s {
+  padding: 0.3rem 0;
+  color: black;
+}
+.share .s:hover{
+  color: var(--green-color);
 }
 
 /* ubah Link */
