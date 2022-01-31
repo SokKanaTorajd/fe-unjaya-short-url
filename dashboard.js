@@ -132,7 +132,7 @@ function coba(){
               <p id="hasil">https:/www.figma.com/file/nXmrtlVVKFIXe9PxrzXBcm/Shorten-link?node-id=204%3A320</p>
             </div>
           <div class="options">
-            {/* <Copy/> */}
+            <Image src="/copy.png" alt="copy"width={20} height={20} objectFit="contain"/>
             <Image src="/blutit.png" onClick={shareLink} alt="sha1e"width={25} height={25} objectFit="contain"/>
             <Image src="/del.png" alt="delete"width={25} height={25} objectFit="contain"/>
           </div>
@@ -161,17 +161,9 @@ function coba(){
             </tr>
           </table>
         </div>
-        {/* <div className="kolom">
-          <p><b>Whatsapp</b></p>
-          <p><b>Telegram</b></p>
-          <p><b>Twitter</b></p>
-          <p><b>Facebook</b></p>
-        </div> */}
       </div>
     </div>
 
-
-    
     <div className="ubahLinkPop" id="ubahLink">
       <div class="cl" onClick={close}>&times;</div>
         <div className="ubahLinkPop-h">
