@@ -11,91 +11,92 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  top: 65px;
   position: fixed;
 }
 .navbardash>.header{
   font-weight: bold;
   font-size: 50px;
   line-height: 56px;
+  letter-spacing: 0.2px;
   color: var(--white-color2);
 }
-.navbardash>.headernya{
-  width: 23%;
+.akun {
+  position: absolute;
+  left: 68%;
+  margin-top: 23px;
 }
-.headernya>.dashb{
-  padding-left: 20px;
-  font-size: 15px;
-  width: 80%;
-}
-.dashb h2{
-  margin-top: 20px;
-  font-size: 20px;
-}
-.headernya>.akunInfo{
-  margin-top: 20px;
-  width: 20%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.poly {
+  position: absolute;
+  left: 83%;
+  margin-top: 23px;
+  cursor: pointer;
 }
 .header h1{
+  position: absolute;
+  left: 77px;
+  margin-top: 2%;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
   line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: right;
   letter-spacing: 1px;
-  margin-left: 30px;
   color: #FBFBFB;
 }  
-.headernya{
-  display: flex;
-  margin-right: 30px;
-  justify-content: space-between;
-}
-.headernya .dashb{
+.headernya h2{
+  position: absolute;
+  margin-top: 2%;
   color: var(--white-color);
   font-size: 15px;
   font-weight: bold;
   font-family: Montserrat;
-
-}
-.headernya h2:hover{
-border-radius: 11px;
-height: 18px;
-width: 138px;
+  left: 70%;
 }
 /* userbin */
 .userbin{
 position: fixed;
 display: none;
-width: fit-content;
+width: 10%;
 padding: 8px;
 height: fit-content;
 position: absolute;
-top: 11%;
-left: 92%;
+top: 10%;
+left: 83%;
 border-radius: 11px;
-border: 2px solid black;
-color: white;
-background-color: var(--green-color);
+box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+background-color: white;
+z-index: -1;
 }
 a{
 text-decoration: none;
 }
 .userbin a{
-color: white;
+color: var(--green-color);
+cursor: pointer;
 }
 
-a:hover {
+.userbin a:hover{
+  color: black;
+  }
+
+.btn-dashboard:hover {
+  color: black;
+}
+.btn-setting:hover {
+  color: black;
+}
+.btn-out:hover {
   color: black;
 }
 
-
-/* share link popup*/
+/* sharelink*/
 .shareLinkPop{
   display: none;
-  margin: 85% 80% auto 78%;
+  margin: 81% 80% auto 78%;
   background-color: #fefefe;
   width: 150px;
   border: none;
@@ -103,14 +104,18 @@ a:hover {
   border-radius: 18px;
   height:fit-content;
   padding: 0 10px;
+  padding-top: 3px;
   position:absolute; 
   top: 0;
   padding-bottom: 2%;
+  /* z-index: -1; */
+  color: black;
   }
 .shareLinkPop h1{
   font-size:18px;
   padding-top: 5px;
   padding-left: 5px;
+  color: var(--green-color);
 }
   .shareLinkPop-a>.share{
   width: 100%;
@@ -118,14 +123,13 @@ a:hover {
   font-size: 15px;
   padding-left: 5px;
   }
-.share .s {
+.share a {
   padding: 0.3rem 0;
   color: black;
 }
-.share .s:hover{
+.share a:hover{
   color: var(--green-color);
 }
-
 /* ubah Link */
 .ubahlinknya{
 left: 0px;
@@ -214,17 +218,13 @@ line-height: 2rem;
   padding-left:5%  ;
 }
 
-/* riwayat */
-/* .scroll {
-  width: 100%;
-  height:20px;
-  margin-bottom: 10%;
-} */
 .riwayat {
 width: 100%;
 height: 260px;
 margin-bottom: 10%;
 overflow-y: scroll;
+font-size: 15px;
+cursor:pointer;
 }
 .riwayat1:hover {
   background-color:#E2FEDB;
@@ -259,7 +259,7 @@ text-align: end;
 width: 65%;
 }
 .ket-riwayat h1{
-font-size: 22px;
+font-size: 15px;
 color: black;
 }
 h1 span{
@@ -268,7 +268,7 @@ padding-left: 18px;
 .option-click, .just-now{
 width: 15%;
 color: black;
-font-size: 18px;
+font-size: 15px;
 margin-top: 40px;
 text-align: center;
 }
@@ -282,113 +282,12 @@ display: flex;
 justify-content:space-around;
 }
 
-
-#edit.open{
-  
-  -webkit-transition:max-height 0.7s;
-  -moz-transition: max-height 0.7s;
-  transition: max-height 0.7s;
-  padding: 0 5px;
-  display: flex;
-  justify-content: space-between;
-  border-bottom:1px solid black ;
-  width: 100%;
-}
-
-
-
 /* ubah link popup */
 .ubahLinkPop{
-display: none;
-margin: 15% 25% auto 25%;
-background-color: #fefefe;
-width: 50%;
-border: none;
-box-shadow:  2px 3px 8px 1px #7a7878;
-border-radius: 18px;
-height: fit-content;
-padding: 0 20px;
-position: fixed; 
-z-index: 1; 
-top: 0;
-padding-bottom: 2%;
-}
-.ubahLinkPop>.cl{
-  cursor: pointer;
-  margin-top: 3%;
-  text-align: right;
-  margin-right: 10px;
-}
-.ubahLinkPop>.ubahLinkPop-h{
-width: 100%;
-padding-top: 10px;
-display: flex;
-justify-content: space-between;
-font-size: 10px;
-}
-.ubahLinkPop-h>.ki{
-width: 65%;
-}
-.ubahLinkPop-h>.ka{
-width: 35%;
-display: flex;
-justify-content: space-between;
-}
-.ubahLink-flex{
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 50px;
-}
-.ubahLink-flex>.ubahLink-b{
-  padding: 10px 20px;
-  color: white;
-  background-color: var(--green-color);
-  border: none;
-  font-family: Montserrat;
-  font-weight: bold;
-  font-size: 15px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.ubahLink-m{
-width: 100%;
-padding: 0 0 0 7%;
-font-size: 14px;
-}
-.cl{
-  cursor: pointer;
-}
-.ubahLink-m ul{
-list-style-type: none;
-display: flex;
-text-align: start;
-padding-left: 0px;
-}
-.ubahLink-m li{
-padding: 10px;
-}
-li span{
-margin-left: 5px;
-}
-.ubahLink-m>.ubahLink-b{
-padding: 10px 20px;
-color: white;
-background-color: var(--green-color);
-border: none;
-font-family: Montserrat;
-font-weight: bold;
-font-size: 15px;
-border-radius: 8px;
-cursor: pointer;
-}
-/* P O P  U P   K E D U A */
-.buttonUbahLink {
   display: none;
-  /* justify-content: center; */
-  margin: 10% 30% auto 35%;
+  margin: 15% 25% auto 25%;
   background-color: #fefefe;
-  width: 30%;
+  width: 50%;
   border: none;
   box-shadow:  2px 3px 8px 1px #7a7878;
   border-radius: 18px;
@@ -399,53 +298,33 @@ cursor: pointer;
   top: 0;
   padding-bottom: 2%;
   }
-  .buttonUbahLink>.cancel{
-    cursor: pointer;
-    margin-top: 5%;
-    text-align: right;
-    margin-right: 5%;
+.ubahLinkPop>.cl{
+  cursor: pointer;
+  margin-top: 3%;
+  text-align: right;
+  margin-right: 10px;
 }
-  .UbahLinkBatal>.header{
-    text-align: center;
+  .ubahLinkPop>.ubahLinkPop-h{
+  width: 100%;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
   }
-  .poplink>.warn{
+  .ubahLinkPop-h>.ki{
+  width: 65%;
+  }
+  .ubahLinkPop-h>.ka{
   width: 35%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   }
-  .warn{
-    margin: auto;
-    width: 100px;
-  }
-  .poplink {
-    color:black;
-    margin-left: 50px;
-  }
-  .poplink p{
-    justify-items: center;
-  }
-  .buttonUbahLink ul {
-    list-style-type: none;
+  .ubahLink-flex{
     display: flex;
-    text-align: start;
-    margin-top: auto;
-    color: green ;
+    justify-content: space-between;
+    padding: 20px 50px;
   }
-  .btn-pop>.batal{
-    float: left;
-   
-    padding: 10px 20px;
-    /* color: white; */
-    background-color: var(--green-color);
-    border: none;
-    font-family: Montserrat;
-    font-weight: bold;
-    font-size: 15px;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-left: 40px;
-  }
-  .btn-pop>.lanjutkan{
+  .ubahLink-flex>.ubahLink-b{
     padding: 10px 20px;
     color: white;
     background-color: var(--green-color);
@@ -455,230 +334,331 @@ cursor: pointer;
     font-size: 15px;
     border-radius: 8px;
     cursor: pointer;
-    float: right;
-    
-    margin-right: 40px;
-  }
-  .b-batal{
-    color: white;
-    background-color: transparent;
-    border: none;
-    font-family: Montserrat;
-    font-weight: bold;
-    font-size: 15px;
-    border-radius: 8px;
-    cursor: pointer;
-    background-repeat:no-repeat;
-    cursor:pointer;
-    overflow: hidden;
-  }
-  .b-lanjutkan{
-    color: white;
-    background-color: transparent;
-    border: none;
-    font-family: Montserrat;
-    font-weight: bold;
-    font-size: 15px;
-    border-radius: 8px;
-    cursor: pointer;
-    background-repeat:no-repeat;
-    cursor:pointer;
-    overflow: hidden;
   }
   
-
-  .ubahLinkPopLanjut{
-    display:none;
-    margin: 10% 25% auto 25%;
+  .ubahLink-m{
+  width: 100%;
+  padding: 0 0 0 7%;
+  font-size: 14px;
+  }
+  .cl{
+    cursor: pointer;
+  }
+  .ubahLink-m ul{
+  list-style-type: none;
+  display: flex;
+  text-align: start;
+  padding-left: 0px;
+  }
+  .ubahLink-m li{
+  padding: 10px;
+  }
+  li span{
+  margin-left: 5px;
+  }
+  .ubahLink-m>.ubahLink-b{
+  padding: 10px 20px;
+  color: white;
+  background-color: var(--green-color);
+  border: none;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  }
+  /* P O P  U P   K E D U A */
+  .buttonUbahLink {
+    display: none;
+    /* justify-content: center; */
+    margin: 10% 30% auto 35%;
     background-color: #fefefe;
-    width: 55%;
+    width: 30%;
     border: none;
     box-shadow:  2px 3px 8px 1px #7a7878;
     border-radius: 18px;
-    height: 35%;
+    height: fit-content;
     padding: 0 20px;
     position: fixed; 
     z-index: 1; 
     top: 0;
-
+    padding-bottom: 2%;
     }
-    .ubahLinkPopLanjut>.ubahLinkPop-L{
-    width: 100%;
-    padding-top: 10px;
-    display: block;
-    justify-content: space-between;
-    font-size: 10px;
+    .buttonUbahLink>.cancel{
+      cursor: pointer;
+      margin-top: 5%;
+      text-align: right;
+      margin-right: 5%;
+  }
+    .UbahLinkBatal>.header{
+      text-align: center;
     }
-    .ubahLinkPop-L>.ki{
-    width: 100%;
-    font-size: 8px;
+    .poplink>.warn{
+    width: 35%;
     display: flex;
+    justify-content: center;
     }
-   .tombol{
-    display:flex;
-    justify-content:space-around;
-    margin-bottom: 5%;
-    margin-top: 2%;
-   } 
-
-   .batal-b{
-    color: var(--green-color);
-    background-color: transparent;
-    border: solid 2px var(--green-color);
-    font-family: Montserrat;
-    font-weight: bold;
-    font-size: 15px;
-    border-radius: 8px;
-    cursor: pointer;
-    background-repeat:no-repeat;
-    cursor:pointer;
-    overflow: hidden;
-    width: 30%;
-  }
-
-   .simpan-b{
-    padding: 10px 20px;
-    color: white;
-    background-color: var(--green-color);
+    .warn{
+      margin: auto;
+      width: 100px;
+    }
+    .poplink {
+      color:black;
+      margin-left: 50px;
+    }
+    .poplink p{
+      justify-items: center;
+    }
+    .buttonUbahLink ul {
+      list-style-type: none;
+      display: flex;
+      text-align: start;
+      margin-top: auto;
+      color: green ;
+    }
+    .btn-pop>.batal{
+      float: left;
+     
+      padding: 10px 20px;
+      /* color: white; */
+      background-color: var(--green-color);
+      border: none;
+      font-family: Montserrat;
+      font-weight: bold;
+      font-size: 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-left: 40px;
+    }
+    .btn-pop>.lanjutkan{
+      padding: 10px 20px;
+      color: white;
+      background-color: var(--green-color);
+      border: none;
+      font-family: Montserrat;
+      font-weight: bold;
+      font-size: 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      float: right;
+      
+      margin-right: 40px;
+    }
+    .b-batal{
+      color: white;
+      background-color: transparent;
+      border: none;
+      font-family: Montserrat;
+      font-weight: bold;
+      font-size: 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      background-repeat:no-repeat;
+      cursor:pointer;
+      overflow: hidden;
+    }
+    .b-lanjutkan{
+      color: white;
+      background-color: transparent;
+      border: none;
+      font-family: Montserrat;
+      font-weight: bold;
+      font-size: 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      background-repeat:no-repeat;
+      cursor:pointer;
+      overflow: hidden;
+    }
+    
+  
+    .ubahLinkPopLanjut{
+      display:none;
+      margin: 10% 25% auto 25%;
+      background-color: #fefefe;
+      width: 55%;
+      border: none;
+      box-shadow:  2px 3px 8px 1px #7a7878;
+      border-radius: 18px;
+      height: 35%;
+      padding: 0 20px;
+      position: fixed; 
+      z-index: 1; 
+      top: 0;
+  
+      }
+      .ubahLinkPopLanjut>.ubahLinkPop-L{
+      width: 100%;
+      padding-top: 10px;
+      display: block;
+      justify-content: space-between;
+      font-size: 10px;
+      }
+      .ubahLinkPop-L>.ki{
+      width: 100%;
+      font-size: 8px;
+      display: flex;
+      }
+     .tombol{
+      display:flex;
+      justify-content:space-around;
+      margin-bottom: 5%;
+      margin-top: 2%;
+     } 
+  
+     .batal-b{
+      color: var(--green-color);
+      background-color: transparent;
+      border: solid 2px var(--green-color);
+      font-family: Montserrat;
+      font-weight: bold;
+      font-size: 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      background-repeat:no-repeat;
+      cursor:pointer;
+      overflow: hidden;
+      width: 30%;
+    }
+  
+     .simpan-b{
+      padding: 10px 20px;
+      color: white;
+      background-color: var(--green-color);
+      border: none;
+      font-family: Montserrat;
+      font-weight: bold;
+      font-size: 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 30%;
+      justify-content: space-around;
+      }
+    .kotak1 {
+      display:flex;
+      justify-content:space-around;
+      margin-top: 2%;
+    }
+    .linknya {
+      border-radius: 10px;
+      padding: 10px;
+      cursor: pointer;
+      font-family: Montserrat;
+      width:40%;
+      background: transparent;
+      border: 2px solid var(--green-color);
+      text-align: center;
+    }
+    .linknyaa{
+      border-radius: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 10px;
+      cursor: pointer;
+      font-family: Montserrat;
+      width:40%;
+      background: transparent;
+      border: 2px solid var(--green-color);
+      text-align: center;
+    }
+  .ubahLinkPopLanjut2{
+    display:none;
+    margin: 10% 25% auto 25%;
+    background-color: #fefefe;
+    width: 50%;
     border: none;
-    font-family: Montserrat;
-    font-weight: bold;
-    font-size: 15px;
+    box-shadow:  2px 3px 8px 1px #7a7878;
+    border-radius: 18px;
+    height: fit-content;
+    padding: 20px 20px;
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    
+  }
+  .flexx1{
+    display: flex;
+    flex-direction:row;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .g-flex11{
+    margin-top: 10px;
+    margin-left: 5px;
+    display: flex;
+    width: 100%;
+    border: 2px solid var(--green-color) ;
+    border-radius: 11px;
+    box-sizing: border-box; 
+  }
+  .g-flex11 button{
+    margin-left: 5px;
+    flex: 1;
+    /* width: 80%; */
+    padding: 6px 9px;
+    border: 2px solid var(--green-color);
+    background: var(--green-color);
+    color: var(#fff);
+    cursor: pointer;
+    font-size: 13px;
+    color: var(--white-color);
+    font-weight: 600;
+    border-radius: 4px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    line-height: 20px;
+  }
+  .g-flex11 input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 11px;
+    background-color: transparent;
+  }
+  .rekom {
+    display: block;
+    justify-content: center;
+    color: black;
+  
+  }
+  .rekom h1 {
+    font-size: 17px;
+    text-align: center;
+  }
+  .rekomendasi{
+    border: solid 2px green;
     border-radius: 8px;
-    cursor: pointer;
-    width: 30%;
-    justify-content: space-around;
-    }
-  .kotak1 {
-    display:flex;
-    justify-content:space-around;
-    margin-top: 2%;
+    padding:5px;
+    margin-bottom: 5px;
+    width: 70%;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
   }
-  .linknya {
-    border-radius: 10px;
-    padding: 10px;
-    cursor: pointer;
-    font-family: Montserrat;
-    width:40%;
-    background: transparent;
-    border: 2px solid var(--green-color);
-    text-align: center;
+  .rekomendasi:hover{
+    background:#AAECA0;
   }
-  .linknyaa{
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 10px;
-    cursor: pointer;
-    font-family: Montserrat;
-    width:40%;
-    background: transparent;
-    border: 2px solid var(--green-color);
-    text-align: center;
-  }
-.ubahLinkPopLanjut2{
-  display:none;
-  margin: 10% 25% auto 25%;
-  background-color: #fefefe;
-  width: 50%;
-  border: none;
-  box-shadow:  2px 3px 8px 1px #7a7878;
-  border-radius: 18px;
-  height: fit-content;
-  padding: 20px 20px;
-  position: fixed; 
-  z-index: 1; 
-  top: 0;
+@media screen and (min-width: 450px){
   
 }
-.flexx1{
-  display: flex;
-  flex-direction:row;
-  width: 70%;
-  margin: auto;
-  margin-bottom: 20px;
-}
-.g-flex11{
-  margin-top: 10px;
-  margin-left: 5px;
-  display: flex;
-  width: 100%;
-  border: 2px solid var(--green-color) ;
-  border-radius: 11px;
-  box-sizing: border-box; 
-}
-.g-flex11 button{
-  margin-left: 5px;
-  flex: 1;
-  /* width: 80%; */
-  padding: 6px 9px;
-  border: 2px solid var(--green-color);
-  background: var(--green-color);
-  color: var(#fff);
-  cursor: pointer;
-  font-size: 13px;
-  color: var(--white-color);
-  font-weight: 600;
-  border-radius: 4px;
-  letter-spacing: 0.2px;
-  text-align: center;
-  line-height: 20px;
-}
-.g-flex11 input{
-  width: 100%;
-  border: none;
-  outline: none;
-  border-radius: 11px;
-  background-color: transparent;
-}
-.rekom {
-  display: block;
-  justify-content: center;
-  color: black;
-
-}
-.rekom h1 {
-  font-size: 17px;
-  text-align: center;
-}
-.rekomendasi{
-  border: solid 2px green;
-  border-radius: 8px;
-  padding:5px;
-  margin-bottom: 5px;
-  width: 70%;
-  margin-top: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 5px;
-}
-.rekomendasi:hover{
-  background:#AAECA0;
-}
-
 @media(max-width:768px){
-.navbardash>.headernya{
-  width: 30%;
+.navbardash>.header{
+  margin-top: 10px;
 }
-.headernya>.dashb{
-  width: 70%;
-}
-.dashb h2{
+.dashb{
   margin-top: 15px;
-  font-size: 15px;
-  padding-left: 20px;
 }
-.headernya>.akunInfo{
-  width: 30%;
-  font-size: 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.userbin{
+.akun {
   left: 85%;
-  }
-
+  margin-top: 10px;
+}
+.poly {
+  position: absolute;
+  left: 90%;
+  margin-top: 10px;
+}
 .flex1{
   display: flex;
   flex-direction:row;
@@ -720,63 +700,46 @@ h1 span{
 .options{
   width: 20%;
 }
-.buttonUbahLink {
-  font-size: 15px;
-  margin: 20% 30% auto 35%;
-  background-color: #fefefe;
-  width: 50%;
-  padding: 0 ;
 
-  }
-  .ubahLinkPopLanjut{
-    margin: 30% 25% auto 25%;
-  }
-  .ubahLinkPopLanjut2{
-    margin: 30% 25% auto 25%;
-   
-  }
+
 }
 
 @media(max-width:500px){
-  .navbardash>.header{
-    margin-top: 10px;
+  .dash{
+    margin-bottom: 0;
+    height: 30vh;
   }
-    .dash{
-      margin-bottom: 0;
-      height: 30vh;
-    }
-    .navbardash>.headernya{
-      width: 35%;
-    }
-    .headernya>.dashb{
-      width: 75%;
-    }
-    .dashb h2{
-      padding-left: 0;
-    }
-    .headernya>.akunInfo{
-      width: 35%;
-    }
-
-    .header h1{
-      left: 30px;
-      font-size: 25px;
-    }  
-    .userbin{
-      padding: 1px;
-    }
-    .dash>.ket{
-      font-size: 15px;
-      line-height: 1rem;
-    }
-    .ket-riwayat{
-      width: 85%;
-    }
-    .option-click, .just-now{
-      width: 10%;
-      font-size: 12px;
-    }
-    .ket-riwayat p{
-      font-size: 10px;
-    }
-    }
+.dashb{
+  left:83%;
+}
+.akun {
+  left: 87%;
+  margin-top: 10px;
+}
+.poly {
+  position: absolute;
+  left: 94%;
+  margin-top: 10px;
+}
+.header h1{
+  left: 30px;
+  font-size: 20px;
+}  
+.userbin{
+  padding: 1px;
+}
+.dash>.ket{
+  font-size: 15px;
+  line-height: 1rem;
+}
+.ket-riwayat{
+  width: 85%;
+}
+.option-click, .just-now{
+  width: 10%;
+  font-size: 12px;
+}
+.ket-riwayat p{
+  font-size: 10px;
+}
+}
