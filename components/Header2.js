@@ -36,7 +36,7 @@ function Header2(){
           <p>
           <Image src="/dasbor.png"alt="akun" width={16} height={16} padding-right={10} />
             <Link href='/dashboard'>
-                <a className="btn-dashboard">  Dasbor</a> 
+                <a className="btn-dashboard">  Dasboard</a> 
             </Link>
           </p>
 
