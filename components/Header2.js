@@ -20,28 +20,36 @@ function Header2(){
               <h1>Unjaya.id</h1>
             </div>
             <div className="headernya">
+                <div className="akun">
+                  <Image src="/Group.png" alt="akun" width={23} height={23}/>
+                </div>
                 <div className="dashb">
                   <h2>Wijatama Diwangkara</h2>
                 </div>
-                <div className="akunInfo">
-                  <div className="akun">
-                    <Image src="/Group.png" alt="akun" width={23} height={23}/>
-                  </div>
-                  <div className="poly" onClick={userbin}>
-                    <Image src="/polygon.png" alt="poly" width={25} height={8}/>
-                  </div>
+                <div className="poly" onClick={userbin}>
+                  <Image src="/polygon.png" alt="poly" width={25} height={8}/>
                 </div>
             </div>
         </div>
       </div>
       <div className="userbin" id='userbin'>
-          <Link href='/setting'>
-                <a className="btn-setting">Setting</a> 
-            </Link>
           <p>
-          <Image src="/out.png"alt="akun" width={15} height={15}/>
+          <Image src="/dasbor.png"alt="akun" width={16} height={16} padding-right={10} />
+            <Link href='/dashboard'>
+                <a className="btn-dashboard">  Dasbor</a> 
+            </Link>
+          </p>
+
+          <p>
+            <Image src="/pengaturan.png"alt="akun" width={16} height={16} padding-right={10} />
+            <Link href='/setting'>
+                <a className="btn-setting">  Pengaturan</a> 
+            </Link>
+          </p>
+          <p>
+          <Image src="/out.png"alt="akun" width={14} height={14} padding-right={10} />
           <Link href='/logout'>
-              <a>Keluar</a>
+              <a>  Keluar</a>
           </Link>
           </p>
       </div>
