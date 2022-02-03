@@ -36,9 +36,8 @@ function setting (){
                     <div className="form-set">
                         <label>Kata Sandi</label>
                         <p>Silahkan ubah kata sandi lama dengan kata sandi baru</p>
-                        <input type="password" value="password" class="myInput"/>
+                        <input type="password" class="myInput"/>
                         <span id="mybutton" onclick="change()"><i class="glyphicon glyphicon-eye-open"></i></span>
-                            {/* <span className="forgot">Lupa Password?</span> */}
                     </div>
                     <div className="form-set">
                         <button type="submit" name="masuk" className="btn-masuk">Simpan</button>
@@ -48,10 +47,7 @@ function setting (){
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
         
-=======
->>>>>>> 78711f94dfad4729b7b7733f8b47bb2f085c59fd
     )
 }
 function change()
