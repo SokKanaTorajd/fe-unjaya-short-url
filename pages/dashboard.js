@@ -3,6 +3,7 @@ import Header2 from '../components/Header2'
 import Image from 'next/image'
 import React from 'react'
 import Linechart from '../components/Linechart'
+import Datepicker from '../components/Copytext'
 
 function coba(){
   function ubahLink(){
@@ -148,7 +149,7 @@ function coba(){
             <p id="hasil">https:/www.figma.com/file/nXmrtlVVKFIXe9PxrzXBcm/Shorten-link?node-id=204%3A320</p>
           </div>
           <div class="options">
-            <Image src="/copy.png" alt="copy"width={20} height={20} objectFit="contain"/>
+            <Datepicker/>
             <Image src="/blutit.png" onClick={shareLink} alt="sha1e"width={25} height={25} objectFit="contain"/>
             <Image src="/del.png" alt="delete"width={25} height={25} objectFit="contain"/>
           </div>
