@@ -281,7 +281,16 @@ width: 30%;
 display: flex;
 justify-content:space-around;
 }
-
+.btn-icon-clipboard{
+  background:transparent;
+  cursor: pointer;
+  border:none;
+  margin-top: 100%;
+}
+.textcopy{
+  font-size: 12px;
+  color: black;
+}
 /* ubah link popup */
 .ubahLinkPop{
   display: none;
