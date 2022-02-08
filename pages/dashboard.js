@@ -63,21 +63,15 @@ function coba(){
     document.body.style.backgroundColor = "#ffffff";
     tutup1.style.display = "none";
   }
-  var lastopen = null;
   function shareLink(){
-    var shareLink1 = document.getElementById('shareLink');
-    shareLink1.style.display = 'block';
-    if (lastopen){
-      closepop(lastopen);
+    const shareLink = document.getElementById('shareLink')
+    if(shareLink.style.display === 'none'){
+      shareLink.style.display='block'
     }
-    lastopen=shareLink1;
+    else{
+      shareLink.style.display='none'
+    }
   }
-  function closepop(){
-    var shareLink2 = document.getElementById('shareLink');
-    shareLink2.style.display="none";
-    lastopen=null;
-  }
-
   return (
     <div>
       <div className="dash">
@@ -105,54 +99,96 @@ function coba(){
     
       <div className="riwayat">
         <div className="riwayat1">
-          <div class="img-fig">
+          {/* <div class="img-fig">
             <Image src="/image1.png" alt = "figma" width={16} height={26}/>
-          </div>
+          </div> */}
           <div className="ket-riwayat">
-            <h1>Unjaya.id/uiux</h1>
-            <p id="hasil" value="aku imut">https:/www.figma.com/file/nXmrtlVVKFIXe9PxrzXBcm/Shorten-link?node-id=204%3A320</p>
-          </div>
-          <div class="option-click"><span>0 Klik</span></div>
-          <div class="just-now"><span> Baru Saja</span></div>
-        </div>
-        <div className="riwayat1" id="edit">
-          <div class="img-fig">
-            <Image src="/image1.png" alt = "figma" width={16} height={26}/>
-          </div>
-          <div className="ket-riwayat">
-            <h1>Unjaya.id/uiux</h1>
-            <p>https:/www.figma.com/file/nXmrtlVVKFIXe9PxrzXBcm/Shorten-link?node-id=204%3A320</p>
-          </div>
-          <div class="option-click"><span>5 Klik</span></div>
-          <div class="just-now"><span> 1 jam yang lalu</span> </div>
-        </div>
-        <div className="riwayat1" id="edit">
-          <div class="img-fig">
-            <Image src="/image1.png" alt = "figma" width={16} height={26}/>
-          </div>
-          <div className="ket-riwayat">
-            <h1>Unjaya.id/uiux</h1>
-            <p>https:/www.figma.com/file/nXmrtlVVKFIXe9PxrzXBcm/Shorten-link?node-id=204%3A320</p>
-          </div>
-          <div class="option-click"><span>5 Klik</span></div>
-          <div class="just-now"><span> 1 jam yang lalu</span> </div>
-        </div>
-
-        <div className="riwayat1 option">
-          <div class="img-fig">
-            <Image src="/image1.png" alt = "figma" width={16} height={26}/>
-          </div>
-          <div className="ket-riwayat">
-            <h1>Unjaya.id/uiux
-              <span><Image src="/pen.png" onClick={ubahLink} alt="pen"  width={18} height={18}/></span>
+            <h1>Figma
+            <span><Image src="/pen.png" onClick={ubahLink} alt="pen"  width={20} height={20}/></span>
             </h1>
             <p id="hasil">https:/www.figma.com/file/nXmrtlVVKFIXe9PxrzXBcm/Shorten-link?node-id=204%3A320</p>
+            <div className='link-hasil'>
+              <span><b>https://unjaya.id/aisyahajah</b></span>
+              <span><Datepicker/></span>
+              <span><Image src="/blutit.png" onClick={shareLink} alt="sha1e"width={20} height={20} objectFit="contain"/></span>
+              <span><Image src="/del.png" alt="delete"width={20} height={20} objectFit="contain"/></span>
+              <span>Baru Saja</span>
+            </div>
           </div>
-          <div class="options">
-            <Datepicker/>
-            <Image src="/blutit.png" onClick={shareLink} alt="sha1e"width={25} height={25} objectFit="contain"/>
-            <Image src="/del.png" alt="delete"width={25} height={25} objectFit="contain"/>
+          <div class="option-click"><span>0 Klik</span></div>
+        </div>
+        <div className="riwayat1">
+          {/* <div class="img-fig">
+            <Image src="/git.png" alt = "figma" width={30} height={30}/>
+          </div> */}
+          <div className="ket-riwayat">
+            <h1>Github
+            <span><Image src="/pen.png" onClick={ubahLink} alt="pen"  width={20} height={20}/></span>
+            </h1>
+            <p id="hasil">https:/www.figma.com/file/nXmrtlVVKFIXe9PxrzXBcm/Shorten-link?node-id=204%3A320</p>
+            <div className='link-hasil'>
+              <span><b>https://unjaya.id/aisyahajah</b></span>
+              <span><Datepicker/></span>
+              <span><Image src="/blutit.png" onClick={shareLink} alt="sha1e"width={20} height={20} objectFit="contain"/></span>
+              <span><Image src="/del.png" alt="delete"width={20} height={20} objectFit="contain"/></span>
+              <span>Baru Saja</span>
+            </div>
           </div>
+          <div class="option-click"><span>0 Klik</span></div>
+        </div>
+        <div className="riwayat1">
+          {/* <div class="img-fig">
+            <Image src="/image1.png" alt = "figma" width={16} height={26}/>
+          </div> */}
+          <div className="ket-riwayat">
+            <h1>Figma
+            <span><Image src="/pen.png" onClick={ubahLink} alt="pen"  width={20} height={20}/></span>
+            </h1>
+            <p id="hasil">https:/www.figma.com/file/nXmrtlVVKFIXe9PxrzXBcm/Shorten-link?node-id=204%3A320</p>
+            <div className='link-hasil'>
+              <span><b>https://unjaya.id/aisyahajah</b></span>
+              <span><Datepicker/></span>
+              <span><Image src="/blutit.png" onClick={shareLink} alt="sha1e"width={20} height={20} objectFit="contain"/></span>
+              <span><Image src="/del.png" alt="delete"width={20} height={20} objectFit="contain"/></span>
+              <span>Baru Saja</span>
+            </div>
+          </div>
+          <div class="option-click"><span>0 Klik</span></div>
+        </div>
+        <div className="riwayat1">
+          {/* <div class="img-fig">
+            <Image src="/image1.png" alt = "figma" width={16} height={26}/>
+          </div> */}
+          <div className="ket-riwayat">
+            <h1>Figma
+            <span><Image src="/pen.png" onClick={ubahLink} alt="pen"  width={20} height={20}/></span>
+            </h1>
+            <p id="hasil">https:/www.figma.com/file/nXmrtlVVKFIXe9PxrzXBcm/Shorten-link?node-id=204%3A320</p>
+            <div className='link-hasil'>
+              <span><b>https://unjaya.id/aisyahajah</b></span>
+              <span><Datepicker/></span>
+              <span><Image src="/blutit.png" onClick={shareLink} alt="sha1e"width={20} height={20} objectFit="contain"/></span>
+              <span><Image src="/del.png" alt="delete"width={20} height={20} objectFit="contain"/></span>
+              <span>Baru Saja</span>
+            </div>
+          </div>
+          <div class="option-click"><span>0 Klik</span></div>
+        </div>
+        <div className="riwayat1">
+          <div className="ket-riwayat">
+            <h1>Figma
+            <span><Image src="/pen.png" onClick={ubahLink} alt="pen"  width={20} height={20}/></span>
+            </h1>
+            <p id="hasil">https:/www.figma.com/file/nXmrtlVVKFIXe9PxrzXBcm/Shorten-link?node-id=204%3A320</p>
+            <div className='link-hasil'>
+              <span><b>https://unjaya.id/aisyahajah</b></span>
+              <span><Datepicker/></span>
+              <span><Image src="/blutit.png" onClick={shareLink} alt="sha1e"width={20} height={20} objectFit="contain"/></span>
+              <span><Image src="/del.png" alt="delete"width={20} height={20} objectFit="contain"/></span>
+              <span>Baru Saja</span>
+            </div>
+          </div>
+          <div class="option-click"><span>0 Klik</span></div>
         </div>
     </div>
     <div className="ubahLinkPop" id="ubahLink">
@@ -178,21 +214,29 @@ function coba(){
             <button className="ubahLink-b" onClick={ubahLinkB}>Ubah Link</button>
         </div>
       </div>
-    <div className= "shareLinkPop" id="shareLink">
+      <div className= "shareLinkPop" id="shareLink">
       <h1><b>Berbagi ke</b></h1>
       <div className="shareLinkPop-a">
         <div className="share">
-          <a href="https://web.whatsapp.com/" class="s"><Image src="/wa.png" alt="Whatsapp"width={25} height={25} objectFit="contain"/>Whatsapp</a> 
-          <a href="https://web.telegram.org/" class="s"><Image src="/tele.png" alt="Telegram"width={25} height={25} objectFit="contain"/>Telegram </a>
-          <a href="https://twitter.com/" class="s"><Image src="/tw.png" alt="Twitter"width={25} height={25} objectFit="contain"/> Twitter</a>
-          <a href="https://web.facebook.com/" class="s"><Image src="/fb.png" alt="Facebook"width={25} height={25} objectFit="contain"/>Facebook </a>
+          <table>
+            <tr>
+              <td><Image src="/wa.png" alt="Whatsapp"width={25} height={25} objectFit="contain"/></td>
+              <td><a href="https://web.whatsapp.com/">Whatsapp</a></td>
+            </tr>
+            <tr>
+              <td><Image src="/tele.png" alt="Telegram"width={25} height={25} objectFit="contain"/></td>
+              <td><a href="https://web.telegram.org/">Telegram</a></td>
+            </tr>
+            <tr>
+              <td><Image src="/tw.png" alt="Twitter"width={25} height={25} objectFit="contain"/></td>
+              <td><a href="https://twitter.com/">Twitter</a></td>
+            </tr>
+            <tr>
+              <td><Image src="/fb.png" alt="Facebook"width={25} height={25} objectFit="contain"/></td>
+              <td><a href="https://web.facebook.com/">Facebook</a></td>
+            </tr>
+          </table>
         </div>
-        {/* <div className="kolom">
-          <p><b>Whatsapp</b></p>
-          <p><b>Telegram</b></p>
-          <p><b>Twitter</b></p>
-          <p><b>Facebook</b></p>
-        </div> */}
       </div>
     </div>
     <div className="buttonUbahLink" id="buttonUbah1">
@@ -255,7 +299,6 @@ function coba(){
         <div className="rekomendasi">Unjaya.id/uiux2</div>
         <div className="rekomendasi">Unjaya.id/uiux3</div>
       </div>
-      
     </div>
     </div>
   )
