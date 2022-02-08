@@ -2,8 +2,9 @@ import React from "react";
 // react component that copies the given text inside your clipboard
 import { CopyToClipboard } from "react-copy-to-clipboard";
 // reactstrap components
-import { Button, Col, UncontrolledTooltip } from "reactstrap";
+import { Button, Col, UncontrolledTooltip, Tooltip} from "reactstrap";
 import Image from 'next/image'
+// import { Tooltip } from "chart.js";
 
 class Datepicker extends React.Component {
   state = {};
@@ -19,17 +20,17 @@ class Datepicker extends React.Component {
               className="btn-icon-clipboard"
               id="tooltip982655500"
               type="button"
-            ><Image src="/copy.png" alt="copy"width={20} height={20} objectFit="contain"/>
+            ><Image src="/copy.png" alt="copy"width={18} height={18} objectFit="contain"/>
             </Button>
           </CopyToClipboard>
           <UncontrolledTooltip
+            placement="top"
+            trigger="click"
+            flip
             className="textcopy"
             delay={0}
-            trigger="hover focus"
             target="tooltip982655500"
-          >
-            {this.state.copiedText === "dhttps:/www.figma.com/file/nXmrtlVVKFIXe9PxrzXBcm/Shorten-link?node-id=204%3A320"
-              ? "Copied":'Salin'}
+          >Telah salin!
           </UncontrolledTooltip>
         </Col>
       </>
