@@ -58,25 +58,25 @@
 }
 /* userbin */
 .userbin{
-position: fixed;
-display: none;
-width: 10%;
-padding: 8px;
-height: fit-content;
-position: absolute;
-top: 10%;
-left: 83%;
-border-radius: 11px;
-box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
-background-color: white;
-z-index: -1;
+  position: fixed;
+  display: none;
+  width: 10%;
+  padding: 8px;
+  height: fit-content;
+  position: absolute;
+  top: 10%;
+  left: 83%;
+  border-radius: 11px;
+  box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+  background-color: white;
+  z-index: -1;
 }
 a{
-text-decoration: none;
+  text-decoration: none;
 }
 .userbin a{
-color: var(--green-color);
-cursor: pointer;
+  color: var(--green-color);
+  cursor: pointer;
 }
 
 .userbin a:hover{
@@ -132,83 +132,83 @@ cursor: pointer;
 }
 /* ubah Link */
 .ubahlinknya{
-left: 0px;
-margin-top: auto;
-margin-left: auto;
-margin-right: auto;
-width: 80%;
-line-height: 1.5;
-font-size: 15px;
-text-align: center;
-height: fit-content;
-margin-bottom: 10%;
+  left: 0px;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  line-height: 1.5;
+  font-size: 15px;
+  text-align: center;
+  height: fit-content;
+  margin-bottom: 10%;
 }
 .ubahlinknya-d{
-left: 0px;
-margin-top: 40%;
-margin-left: auto;
-margin-right: auto;
-width: 80%;
-line-height: 1.5;
-font-size: 15px;
-text-align: center;
-height: fit-content;
-margin-bottom: 10%;
+  left: 0px;
+  margin-top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  line-height: 1.5;
+  font-size: 15px;
+  text-align: center;
+  height: fit-content;
+  margin-bottom: 10%;
 }
 .flex1{
-display: flex;
-flex-direction:row;
-width: 50%;
-margin: auto;
-margin-bottom: 20px;
+  display: flex;
+  flex-direction:row;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 20px;
 }
 .g-flex1{
-margin-top: 10px;
-margin-left: 5px;
-display: flex;
-width: 100%;
-border: 2px solid var(--green-color) ;
-border-radius: 11px;
-box-sizing: border-box; 
+  margin-top: 10px;
+  margin-left: 5px;
+  display: flex;
+  width: 100%;
+  border: 2px solid var(--green-color) ;
+  border-radius: 11px;
+  box-sizing: border-box; 
 }
 .g-flex1 button{
-margin-left: 5px;
-flex: 1;
-width: 30%;
-padding: 7px 0;
-border: 2px solid var(--green-color);
-background: var(--green-color);
-color: var(#fff);
-cursor: pointer;
-font-size: 13px;
-color: var(--white-color);
-font-weight: 600;
-border-radius: 5px;
-letter-spacing: 0.2px;
-text-align: center;
-line-height: 20px;
+  margin-left: 5px;
+  flex: 1;
+  width: 30%;
+  padding: 7px 0;
+  border: 2px solid var(--green-color);
+  background: var(--green-color);
+  color: var(#fff);
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--white-color);
+  font-weight: 600;
+  border-radius: 5px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  line-height: 20px;
 }
 .g-flex1 input{
-width: 70%;
-border: none;
-outline: none;
-border-radius: 11px;
-background-color: transparent;
+  width: 70%;
+  border: none;
+  outline: none;
+  border-radius: 11px;
+  background-color: transparent;
 }
 
 /* B A G I A N   G R A F I K */
 .dash{
-width: 100%;
-margin-top: 8%;
-display: grid;
-grid-template-columns: 20% 80%;
-margin-bottom: 10%;
+  width: 100%;
+  margin-top: 8%;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  margin-bottom: 10%;
 }
 .dash>.ket{
-text-align: end;
-padding-top: 20%;
-font-size: 20px;
-line-height: 2rem;
+  text-align: end;
+  padding-top: 20%;
+  font-size: 20px;
+  line-height: 2rem;
 }
 .grafik-n{
   width: 80%;
@@ -219,12 +219,14 @@ line-height: 2rem;
 }
 
 .riwayat {
-width: 100%;
-height: 260px;
-margin-bottom: 10%;
-overflow-y: scroll;
-font-size: 15px;
-cursor:pointer;
+  width: 95%;
+  height: 260px;
+  margin-bottom: 10%;
+  overflow-y: scroll;
+  font-size: 15px;
+  cursor:pointer;
+  margin-left: auto;
+  margin-right: auto;
 }
 .riwayat1:hover {
   background-color:#E2FEDB;
@@ -243,34 +245,64 @@ cursor:pointer;
   background-clip: content-box;
 }
 .riwayat>.riwayat1{
-padding: 0 5px;
-display: flex;
-justify-content: space-between;
-border-bottom:1px solid black ;
-width: 100%;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-around;
+  /* border-bottom:1px solid black ; */
+  width: 100%;
+}
+.riwayat1{
+  border: none;
+  box-shadow:  2px 3px 10px 1px #e0d2d2;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 .riwayat1>.img-fig{
-width: 5%;
-margin-top: 27px;
-margin-right: 20px;
-text-align: end;
+  width: 5%;
+  margin-top: 27px;
+  margin-right: 20px;
+  text-align: end;
 }
 .ket-riwayat{
-width: 65%;
+  width: 75%;
+  color: black;
+  font-size:small ;
+
 }
 .ket-riwayat h1{
-font-size: 15px;
-color: black;
+  font-size: 15px;
+  color: black;
 }
 h1 span{
-padding-left: 18px;
+  padding-left: 18px;
+  color: black;
 }
-.option-click, .just-now{
-width: 15%;
-color: black;
-font-size: 15px;
-margin-top: 40px;
-text-align: center;
+.ket-riwayat>.link-hasil{
+  display: grid;
+  float: left;
+  padding-bottom:auto;
+}
+.link-hasil{
+  margin: 0 0px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 20px;
+  color:var(--green-color);
+  font-size:larger;
+  font-weight: 20px;
+}
+.option-click{
+  width: 15%;
+  color: black;
+  font-size: 20px;
+  margin-top: 40px;
+  text-align: center;
+  margin-right: 2%;
+}
+.just-now{
+  display:block;
 }
 .riwayat>.option{
 background-color: #E2FEDB;
@@ -281,11 +313,11 @@ width: 30%;
 display: flex;
 justify-content:space-around;
 }
+
 .btn-icon-clipboard{
   background:transparent;
   cursor: pointer;
   border:none;
-  margin-top: 100%;
 }
 .textcopy{
   font-size: 12px;
@@ -313,46 +345,46 @@ justify-content:space-around;
   text-align: right;
   margin-right: 10px;
 }
-  .ubahLinkPop>.ubahLinkPop-h{
+.ubahLinkPop>.ubahLinkPop-h{
   width: 100%;
   padding-top: 10px;
   display: flex;
   justify-content: space-between;
   font-size: 10px;
-  }
-  .ubahLinkPop-h>.ki{
+}
+.ubahLinkPop-h>.ki{
   width: 65%;
-  }
-  .ubahLinkPop-h>.ka{
+}
+.ubahLinkPop-h>.ka{
   width: 35%;
   display: flex;
   justify-content: space-between;
-  }
-  .ubahLink-flex{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 50px;
-  }
-  .ubahLink-flex>.ubahLink-b{
-    padding: 10px 20px;
-    color: white;
-    background-color: var(--green-color);
-    border: none;
-    font-family: Montserrat;
-    font-weight: bold;
-    font-size: 15px;
-    border-radius: 8px;
-    cursor: pointer;
-  }
+}
+.ubahLink-flex{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+.ubahLink-flex>.ubahLink-b{
+  padding: 10px 20px;
+  color: white;
+  background-color: var(--green-color);
+  border: none;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
   
-  .ubahLink-m{
+.ubahLink-m{
   width: 100%;
   padding: 0 0 0 7%;
   font-size: 14px;
-  }
-  .cl{
-    cursor: pointer;
-  }
+}
+.cl{
+  cursor: pointer;
+}
   .ubahLink-m ul{
   list-style-type: none;
   display: flex;
