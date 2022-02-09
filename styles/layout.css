@@ -3,7 +3,8 @@
     background-color: var(--green-color);
     width: 100%;
     height: 100%; 
-    clip-path: ellipse(100px 100px at 2.5% 2%)
+    clip-path: ellipse(100px 100px at 2.5% 2%);
+    max-width: 100%;
     /* clip-path: ellipse(120px 110px at 7% 7%) */
 }
 .circle2{
@@ -12,6 +13,7 @@
     width: 100%;
     height: 100%; 
     clip-path: circle(5% at 100% 55%); 
+    max-width: 100%;
     /* (size, ke kanan, kebawah) */
 }
 .navbar{
@@ -21,17 +23,17 @@
     left: 832px;
     top: 65px;
 }
-.navbar>.left{  
+.navbar>.left{
     font-weight: bold;
     font-size: 50px;
     line-height: 56px;
     letter-spacing: 0.2px;
     color: var(--white-color2);
 }
+
 .navbar>.right{
-    font-weight: 700px;
     text-align: center;
-    line-height: 18px;
+    line-height: 10px;
     letter-spacing: 0.3px;
     color: var(--white-color2);
 }
@@ -75,6 +77,7 @@ li .masuk{
     color: var(--green-color)
 }
 .navbar ul{
+    color: var(--green-color); 
     list-style: none;
     font-weight: bold;
     font-size: 24px;
@@ -88,7 +91,7 @@ li .masuk{
     margin: 20px;
 }
 
-.navbar .left h2{
+.left h2{
     color: var(--white-color);
     z-index: 2;
     left: 0;
@@ -226,12 +229,12 @@ li .masuk{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    /* position: fixed; */
-    background-color:transparent;
+    position: fixed;
+    background-color:white;
     z-index: 1000;
 }
-.navLogin>.left h2{
-    margin-left: 10%;
+.navLogin h2{
+    margin-left: 7%;
     font-weight: bold;
     font-size: 30px;
     line-height: 56px;
@@ -263,21 +266,20 @@ li .masuk{
 
 /* login isi */
 .grid-2{
-    margin-top: auto;
     margin-bottom: 10%;
     display: grid;
     grid-template-columns: 0.8fr 1fr;
     height: fit-content;
     color: black;
     font-size: 20px;
-    padding: 10px;
+    padding: 30px;
 }
 .grid-2>.image{
-    margin-top: 6%;
+    margin-top: 2%;
 }
 .grid-2>.masuk{
-    margin-top:6%;
-    margin-left: 6%;
+    margin-top: 2%;
+    margin-left: 10%;
     width: 70%;
     border: none;
     box-shadow:  2px 3px 8px 1px #7a7878;
@@ -287,7 +289,7 @@ li .masuk{
 }
 .title>.unjaya{
     color: var(--green-color);
-    margin-left: 10%;
+    margin-left: 10px;
 }
 .masuk>.judul{
     font-style: normal;
@@ -341,6 +343,10 @@ li .masuk{
     color: #2F2E41;
 }
 
+/* .forgot {
+    margin-left: 45%;
+    color:green;
+} */
 
 .form-group button{
     margin-top:20px ;
@@ -578,17 +584,18 @@ p> .unjaya{
         background-color: var(--green-color);
         width: 100%;
         height: 100%; 
-        clip-path: ellipse(80px 80px at 2.5% 2%)
+        clip-path: ellipse(100px 80px at 3% 3%)
     }
     .circle2{
-        clip-path: circle(8% at 100% 60%); 
+        clip-path: circle(10% at 100% 60%); 
+        margin-top: 25%;
         /* (size, ke kanan, kebawah) */
     }
     .left h2{
         color: var(--white-color);
         z-index: 2;
         left: 0;
-        font-size: 10px;
+        font-size: 18px;
         position: absolute;
         margin-left: 7px;
     }
@@ -610,7 +617,7 @@ p> .unjaya{
     }
     .section1{
         margin-bottom: 70px;
-        margin-top: 50px;
+        margin-top: 150px;
     }
     .section1 span{
         font-size: 30px;

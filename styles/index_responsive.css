@@ -1,0 +1,28 @@
+@media only screen and (max-width: 480px){
+    li{
+        font-size: 12px;
+    }
+  .section1{
+      margin-top: 180px;
+      font-size: 12px;
+      height: 50vh;
+  }  
+  .section1 span{
+      font-size: 25px;
+  }
+
+  .section1 p{
+      font-size: 15px;
+  }
+  .circle1{
+    clip-path: ellipse(100px 100px at 4% 2%);
+  }
+  .circle2{
+      margin-top: 30%;
+      clip-path: circle(10% at 100% 55%); 
+  }
+  footer{
+      padding: 10px;
+  }
+}
+
