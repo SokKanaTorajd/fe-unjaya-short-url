@@ -48,7 +48,7 @@ function Header2(){
           </p>
           <p>
           <Image src="/out.png"alt="akun" width={14} height={14} padding-right={10} />
-          <Link href='/logout'>
+          <Link href='/index'>
               <a>  Keluar</a>
           </Link>
           </p>
