@@ -1,16 +1,15 @@
-import Head from 'next/head'
 import Header2 from '../components/Header2'
 import Image from 'next/image'
 import React from 'react'
 import Linechart from '../components/Linechart'
 import Datepicker from '../components/Copytext'
+import Share from '../components/Sharelink'
 
 function coba(){
   function ubahLink(){
     const ubahLink = document.getElementById('ubahLink')
     ubahLink.style.display = 'block'
     document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-
   }
   function ubahLinkB(){
     const ubahtutup = document.getElementById('ubahLink')
@@ -62,15 +61,7 @@ function coba(){
     const tutup1 = document.getElementById('UbahtoSave')
     document.body.style.backgroundColor = "#ffffff";
     tutup1.style.display = "none";
-  }
-  function shareLink(){
-    const shareLink = document.getElementById('shareLink')
-    if(shareLink.style.display === 'none'){
-      shareLink.style.display='block'
-    }
-    else{
-      shareLink.style.display='none'
-    }
+  
   }
   return (
     <div>
@@ -99,9 +90,6 @@ function coba(){
     
       <div className="riwayat">
         <div className="riwayat1">
-          {/* <div class="img-fig">
-            <Image src="/image1.png" alt = "figma" width={16} height={26}/>
-          </div> */}
           <div className="ket-riwayat">
             <h1>Figma
             <span><Image src="/pen.png" onClick={ubahLink} alt="pen"  width={20} height={20}/></span>
@@ -110,7 +98,7 @@ function coba(){
             <div className='link-hasil'>
               <span><b>https://unjaya.id/aisyahajah</b></span>
               <span><Datepicker/></span>
-              <span><Image src="/blutit.png" onClick={shareLink} alt="sha1e"width={20} height={20} objectFit="contain"/></span>
+              <span><Share/></span>
               <span><Image src="/del.png" alt="delete"width={20} height={20} objectFit="contain"/></span>
               <span>Baru Saja</span>
             </div>
@@ -118,9 +106,6 @@ function coba(){
           <div class="option-click"><span>0 Klik</span></div>
         </div>
         <div className="riwayat1">
-          {/* <div class="img-fig">
-            <Image src="/git.png" alt = "figma" width={30} height={30}/>
-          </div> */}
           <div className="ket-riwayat">
             <h1>Github
             <span><Image src="/pen.png" onClick={ubahLink} alt="pen"  width={20} height={20}/></span>
@@ -129,7 +114,7 @@ function coba(){
             <div className='link-hasil'>
               <span><b>https://unjaya.id/aisyahajah</b></span>
               <span><Datepicker/></span>
-              <span><Image src="/blutit.png" onClick={shareLink} alt="sha1e"width={20} height={20} objectFit="contain"/></span>
+              <span><Share/></span>
               <span><Image src="/del.png" alt="delete"width={20} height={20} objectFit="contain"/></span>
               <span>Baru Saja</span>
             </div>
@@ -148,26 +133,7 @@ function coba(){
             <div className='link-hasil'>
               <span><b>https://unjaya.id/aisyahajah</b></span>
               <span><Datepicker/></span>
-              <span><Image src="/blutit.png" onClick={shareLink} alt="sha1e"width={20} height={20} objectFit="contain"/></span>
-              <span><Image src="/del.png" alt="delete"width={20} height={20} objectFit="contain"/></span>
-              <span>Baru Saja</span>
-            </div>
-          </div>
-          <div class="option-click"><span>0 Klik</span></div>
-        </div>
-        <div className="riwayat1">
-          {/* <div class="img-fig">
-            <Image src="/image1.png" alt = "figma" width={16} height={26}/>
-          </div> */}
-          <div className="ket-riwayat">
-            <h1>Figma
-            <span><Image src="/pen.png" onClick={ubahLink} alt="pen"  width={20} height={20}/></span>
-            </h1>
-            <p id="hasil">https:/www.figma.com/file/nXmrtlVVKFIXe9PxrzXBcm/Shorten-link?node-id=204%3A320</p>
-            <div className='link-hasil'>
-              <span><b>https://unjaya.id/aisyahajah</b></span>
-              <span><Datepicker/></span>
-              <span><Image src="/blutit.png" onClick={shareLink} alt="sha1e"width={20} height={20} objectFit="contain"/></span>
+              <span><Share/></span>
               <span><Image src="/del.png" alt="delete"width={20} height={20} objectFit="contain"/></span>
               <span>Baru Saja</span>
             </div>
@@ -183,7 +149,23 @@ function coba(){
             <div className='link-hasil'>
               <span><b>https://unjaya.id/aisyahajah</b></span>
               <span><Datepicker/></span>
-              <span><Image src="/blutit.png" onClick={shareLink} alt="sha1e"width={20} height={20} objectFit="contain"/></span>
+              <span><Share/></span>
+              <span><Image src="/del.png" alt="delete"width={20} height={20} objectFit="contain"/></span>
+              <span>Baru Saja</span>
+            </div>
+          </div>
+          <div class="option-click"><span>0 Klik</span></div>
+        </div>
+        <div className="riwayat1">
+          <div className="ket-riwayat">
+            <h1>Figma
+            <span><Image src="/pen.png" onClick={ubahLink} alt="pen"  width={20} height={20}/></span>
+            </h1>
+            <p id="hasil">https:/www.figma.com/file/nXmrtlVVKFIXe9PxrzXBcm/Shorten-link?node-id=204%3A320</p>
+            <div className='link-hasil'>
+              <span><b>https://unjaya.id/aisyahajah</b></span>
+              <span><Datepicker/></span>
+              <span><Share/></span>
               <span><Image src="/del.png" alt="delete"width={20} height={20} objectFit="contain"/></span>
               <span>Baru Saja</span>
             </div>
@@ -214,31 +196,6 @@ function coba(){
             <button className="ubahLink-b" onClick={ubahLinkB}>Ubah Link</button>
         </div>
       </div>
-      <div className= "shareLinkPop" id="shareLink">
-      <h1><b>Berbagi ke</b></h1>
-      <div className="shareLinkPop-a">
-        <div className="share">
-          <table>
-            <tr>
-              <td><Image src="/wa.png" alt="Whatsapp"width={25} height={25} objectFit="contain"/></td>
-              <td><a href="https://web.whatsapp.com/">Whatsapp</a></td>
-            </tr>
-            <tr>
-              <td><Image src="/tele.png" alt="Telegram"width={25} height={25} objectFit="contain"/></td>
-              <td><a href="https://web.telegram.org/">Telegram</a></td>
-            </tr>
-            <tr>
-              <td><Image src="/tw.png" alt="Twitter"width={25} height={25} objectFit="contain"/></td>
-              <td><a href="https://twitter.com/">Twitter</a></td>
-            </tr>
-            <tr>
-              <td><Image src="/fb.png" alt="Facebook"width={25} height={25} objectFit="contain"/></td>
-              <td><a href="https://web.facebook.com/">Facebook</a></td>
-            </tr>
-          </table>
-        </div>
-      </div>
-    </div>
     <div className="buttonUbahLink" id="buttonUbah1">
       <div class="cancel" onClick={closeUbah}>&times;</div>
         <div className="UbahLinkBatal">
