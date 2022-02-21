@@ -26,3 +26,99 @@
   }
 }
 
+@media(max-width:768px){
+    .section1{
+        width: 100%;
+    }
+    .circle1{
+        position: absolute;
+        background-color: var(--green-color);
+        width: 100%;
+        height: 100%; 
+        clip-path: ellipse(100px 80px at 3% 3%)
+    }
+    .circle2{
+        clip-path: circle(10% at 100% 60%); 
+        margin-top: 25%;
+        /* (size, ke kanan, kebawah) */
+    }
+    .left h2{
+        color: var(--white-color);
+        z-index: 2;
+        left: 0;
+        font-size: 18px;
+        position: absolute;
+        margin-left: 7px;
+    }
+
+    .navbar>.right{
+        font-size: 15px;
+        text-align: center;
+        line-height: 18px;
+        letter-spacing: 0.3px;
+        color: var(--white-color2);
+    }
+    .navbar ul{
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.1px;
+    }
+    .navbar li{
+        margin: 10px;
+    }
+    .section1{
+        margin-bottom: 70px;
+        margin-top: 150px;
+    }
+    .section1 span{
+        font-size: 30px;
+    }
+    .section1 p{
+        opacity: 0.8;
+        font-size: 20px;
+    }
+
+    .flex{
+        display: flex;
+        flex-direction:row;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .section2{
+        padding: 60px 30px;
+        font-family: Montserrat;
+        padding-bottom: 200px;
+        background-color:  #E6FFDF;
+    }
+    .section2 h1{
+        font-size: 35px;
+        letter-spacing: 0.2px;
+    }
+    .section2 h2{
+        font-weight: 900;
+        text-align: center;
+        font-size: 25px;
+        line-height: 27px;
+        letter-spacing: 0.01px;
+    }
+    .section2 p{
+        font-size: 20px;
+        letter-spacing: 0.01px;
+    }
+    .section2>.grid-3{
+        grid-template-columns: 1fr;
+        grid-column-gap: 10px;
+        text-align: center;
+        margin: auto;
+        grid-row-gap: 5px;
+    }
+    .grid-3>.g-1{
+        margin: auto;
+        width: 50%;
+        height: 50%;
+        left: 580px;
+        top: 1051px;
+    }
+}
+
