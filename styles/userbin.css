@@ -1,0 +1,62 @@
+.poly {
+  position: fixed;
+  display: inline-block;
+}
+.buttonpol {
+  background-color: transparent;
+  cursor: pointer;
+  outline: 0;
+  border: none;
+}
+.userbinn {
+  position: absolute;
+  top: 100%;
+  width: 170px;
+  height: auto;
+  z-index: 2;
+  background-color:white;
+  border-radius: 10px;
+  border: 1px solid rgba(252, 92, 92, 0.04);
+  box-shadow: 1px 12px 15px 4px rgba(1, 7, 3, 0.14);
+  padding-top: 15px;
+  padding-bottom:15px;
+  margin-top: 20px;
+}
+.userbinn a{
+  font-size:18px;
+  color: black;
+  /* position:absolute; */
+}
+
+.userbinn p {
+  list-style: none;
+  line-height:40px;
+  margin: 0;
+
+  display: block;
+  justify-content: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-weight:medium;
+  
+}
+.userbinn Image {
+  float: left;
+}
+.userbinn p:hover{
+  background-color: #E2FEDB;
+}
+
+.userbinn::after{
+  content: "";
+  position:absolute;
+  width:15px;
+  height: 15px;
+  border-top:inherit;
+  border-left:inherit;
+  background-color: inherit;
+  top: 0;
+  left: 10px;
+  z-index: 4;
+  transform: translateY(-50%) rotate(45deg) ;
+}
