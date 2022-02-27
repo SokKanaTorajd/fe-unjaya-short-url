@@ -1,6 +1,8 @@
 .poly {
-  position: fixed;
-  display: inline-block;
+  position: absolute;
+  left: 83%;
+  margin-top: 23px;
+  cursor: pointer;
 }
 .buttonpol {
   background-color: transparent;
