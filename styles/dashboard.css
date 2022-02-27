@@ -26,12 +26,7 @@
   left: 68%;
   margin-top: 23px;
 }
-.poly {
-  position: absolute;
-  left: 83%;
-  margin-top: 23px;
-  cursor: pointer;
-}
+
 .header h1{
   position: absolute;
   left: 77px;
@@ -55,42 +50,6 @@
   font-weight: bold;
   font-family: Montserrat;
   left: 70%;
-}
-/* userbin */
-.userbin{
-  position: fixed;
-  display: none;
-  width: 10%;
-  padding: 8px;
-  height: fit-content;
-  position: absolute;
-  top: 10%;
-  left: 83%;
-  border-radius: 11px;
-  box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
-  background-color: white;
-  z-index: 1;
-}
-a{
-  text-decoration: none;
-}
-.userbin a{
-  color: var(--green-color);
-  cursor: pointer;
-}
-
-.userbin a:hover{
-  color: black;
-  }
-
-.btn-dashboard:hover {
-  color: black;
-}
-.btn-setting:hover {
-  color: black;
-}
-.btn-out:hover {
-  color: black;
 }
 
 /* sharelink*/
