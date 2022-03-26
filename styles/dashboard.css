@@ -706,40 +706,64 @@ h1 span{
 
 @media(max-width:500px){
   .dash{
-    margin-bottom: 0;
-    height: 30vh;
+    display: none;
   }
-.dashb{
-  left:83%;
-}
-.akun {
-  left: 87%;
-  margin-top: 10px;
-}
-.poly {
-  position: absolute;
-  left: 94%;
-  margin-top: 10px;
-}
-.header h1{
-  left: 30px;
-  font-size: 20px;
-}  
-.userbin{
-  padding: 1px;
-}
-.dash>.ket{
-  font-size: 15px;
-  line-height: 1rem;
-}
-.ket-riwayat{
-  width: 85%;
-}
-.option-click, .just-now{
-  width: 10%;
-  font-size: 12px;
-}
-.ket-riwayat p{
-  font-size: 10px;
-}
+  .dashb h2{
+    left:50%;
+    font-size:12px;
+    margin-top: 10px;
+  }
+  .akun {
+    width: 15px;
+    left: 80%;
+    margin-top: 23px;
+  
+  }
+  .poly button{
+    width:40px;
+    position: absolute;
+    left: 50%;
+    margin-top: -13px;
+  }
+  .header h1{
+    z-index: 2;
+    left: 30px;
+    font-size: 20px;
+  }  
+  .userbinn{
+    padding: 1px;
+  }
+  .ket-riwayat{
+    width: 85%;
+    padding:10px 20px;
+  }
+  .option-click{
+    width: 20px;
+    align-items:justify;
+    font-size: 14px;
+    margin:auto;
+  }
+  .ket-riwayat p{
+    font-size: 10px;
+  }
+  .grafik-n{
+    display: none;
+  }
+  .ket p{
+    font-size:10px;
+  }
+  .flex1 {
+    margin-top:20%;
+    width: 100%;
+  }
+  .link-hasil{
+    font-size: 11px;
+    grid-column-gap: 10px;
+  }
+  .salinn, .share{
+    width: 25px;
+  }
+  .dele{
+    width:15px;
+  }
 }
