@@ -15,10 +15,13 @@
     text-align: center;
     background-color: #037245;
     padding: 20px 30px;
+    box-shadow:  2px 3px 8px 1px #7a7878;
   }
   #about .abt-1 p{
     font-size: 160%;
     color: black;
+    text-align: justify;
+    line-height: 35px;
   }
   #about h1 span{
     color: white;
@@ -248,10 +251,10 @@ li .masuk{
     z-index: 1000;
 }
 .navLogin>.left h2{
-    margin-left: 10%;
+    margin-left: 40%;
     font-weight: bold;
     font-size: 30px;
-    line-height: 56px;
+    line-height: 45px;
     letter-spacing: 0.2px;
     color: var(--green-color);
 }
@@ -694,4 +697,67 @@ p> .unjaya{
     .buatAkun h2{
         font-size: 17px;
     }
+}
+
+@media(max-width:768px){
+    .grid-2{
+        display: block;
+        /* grid-template-columns: 1fr; */
+    }
+    .image{
+        display: none;
+    }
+    .grid-2>.masuk{
+        width: 70%;
+        margin: 15% auto;
+    }
+    .masuk{
+        margin: 0px auto;
+    }
+    .title{
+        font-size: 20px;
+        line-height: 5px;
+    }
+    .form-group input, .form-group button{
+        padding: 6px;
+    }
+    .form-group input{
+        padding: 10px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    /* buauat akun */
+    .buatAkun h2{
+        font-size: 20px;
+    }
+
+    .btn-name{
+        font-size: 20px;
+        line-height: 5px;
+    }
+    .navLogin>.left h2{
+        font-size: 25px;
+        line-height: 40px;
+        margin-left: 5%;
+    }
+    .navLogin>.right{
+        font-size: 17px;
+        line-height: 12px;
+    }
+}
+@media (max-width:768px){
+    .container{
+        padding: 15% 100px;
+      }
+      #about{
+        padding: 10px 30px 50px 30px;
+        height: 60%;
+      }
+      #about .abt-1 p{
+        font-size: 120%;
+        line-height: 25px;
+      }
+      #about h1 span{
+        font-size: 35px;
+      }
 }
