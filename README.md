@@ -5,9 +5,7 @@ Front-End of URL Shortening project for UNJAYA. Initiated by Wijatama Diwangkara
 Front-End Team members:
 1. Dewi Arumsari
 2. Mohammad Yudatama
-3. Rachel Marta Maria
-4. Latifah Arum Sulistyaningsih
-5. Ahmad Fadhil
-6. Yatinah
-7. Dennis Fitri Salsabila Arianti
-8. ets
+3. Latifah Arum Sulistyaningsih
+4. Yatinah
+5. Dennis Fitri Salsabila Arianti
+6. ets
