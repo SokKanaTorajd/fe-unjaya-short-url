@@ -138,3 +138,38 @@ form{
     text-align: center;
     font-size: 13px;
 }
+
+@media(max-width:500px){
+    .boxprofil{
+        margin-top:20%;
+        box-shadow:  2px 1px 8px 1px #7a7878;
+        padding: 5px 20px;
+    }
+    .change{
+        box-shadow:  2px 1px 8px 1px #7a7878;
+    }
+    .change h1{
+        font-size:20px;
+    }
+    .boxinfo form{
+        width: 100%;
+    }
+    .boxpro h1{
+        font-size:18px;
+    }
+    .boxpro h2{
+        font-size:14px
+    }
+    .form-set label, p{
+        font-size:14px;
+    }
+}
+
+@media(max-width:768px){
+    .boxinfo form{
+        width: 100%;
+    }
+    .boxprofil{
+        margin-top: 15%;
+    }
+}
