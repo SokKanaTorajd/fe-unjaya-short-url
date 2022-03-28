@@ -761,3 +761,50 @@ p> .unjaya{
         font-size: 35px;
       }
 }
+
+/* bagian login */
+@media(max-width:500px){
+    .grid-2{
+        display: block;
+        /* grid-template-columns: 1fr; */
+    }
+    .image{
+        display: none;
+    }
+    .grid-2>.masuk{
+        width: 72%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .title{
+        font-size: 19px;
+        line-height: 5px;
+        font-weight: bolder;
+    }
+    .form-group input, .form-group button{
+        padding: 6px;
+    }
+    .form-group input{
+        padding: 10px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .form-group input{
+        font-size: 12px;
+    }
+    /* buauat akun */
+    .buatAkun h2{
+        font-size: 17px;
+    }
+    .form-group .buat-akun{
+        font-size:12px;
+    }
+    .ingat label{
+        font-size: 11px;
+        font-weight: medium;
+    }
+    footer{
+        font-size: 12px;
+        padding: 10px;
+    }
+}
