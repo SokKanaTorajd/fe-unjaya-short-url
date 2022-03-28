@@ -36,3 +36,8 @@
   padding: 0;
   margin: 0;
 }
+@media(max-width:500px){
+  .dropdown h1{
+    font-size:15px;
+  }
+}
