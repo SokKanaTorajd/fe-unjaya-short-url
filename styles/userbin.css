@@ -62,3 +62,31 @@
   z-index: 4;
   transform: translateY(-50%) rotate(45deg) ;
 }
+@media(max-width:768px){
+  .poly{
+    position: absolute;
+    left: 72%;
+    margin-top: 28px;
+    cursor: pointer;
+  }
+}
+@media(max-width:500px){
+  .poly{
+    position: absolute;
+    left: 70%;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  .userbinn a{
+    font-size: 12px;
+  }
+  .userbinn{
+    width: max-content;
+  }
+  .userbinn p{
+    line-height:35px;
+  }
+  .userbinn Image{
+    width:15px;
+  }
+}
