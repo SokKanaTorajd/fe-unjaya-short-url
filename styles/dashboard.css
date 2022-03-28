@@ -767,3 +767,122 @@ h1 span{
     width:15px;
   }
 }
+
+@media(max-width:768px){
+  .navbardash>.header{
+    margin-top: 15px;
+  }
+  .dashb h2{
+    left:50%;
+    text-align: end;
+    padding-top: 15px;
+    font-size:13px;
+  }
+  .akun {
+    display:none;
+    left:68%;
+    padding-top: 8px;
+  }
+  /* .buttonpol{
+    padding-left: 23px;
+    padding-top: 12px;
+  } */
+  .flex1{
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  /* grafik */
+  .dash{
+    width: 100%;
+    margin-top: 15%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin-bottom: 5%;
+    height: 40vh;
+  }
+  .riwayat>.riwayat1{
+    padding: 0 7px;
+  }
+  .riwayat1>.img-fig{
+    width: 4%;
+    margin-top: 15px;
+    margin-right: 0px; 
+  }
+  .ket-riwayat{
+    width: 75%;
+  }
+  .ket-riwayat h1{
+    font-size: 15px;
+  }
+  h1 span{
+    padding-left: 10px;
+  }
+  .option-click, .just-now{
+    width: 10%;
+    font-size: 15px;
+    margin-top: 35px;
+  }
+  .options{
+    width: 20%;
+  }
+}
+
+@media(max-width:500px){
+  .dash{
+    display: none;
+  }
+  .akun {
+    display: block;
+    width: 15px;
+    left: 66%;
+    margin-top: 15px;
+  
+  }
+  .dashb h2{
+    display: none;
+  }
+  .header h1{
+    z-index: 2;
+    left: 30px;
+    font-size: 20px;
+  }  
+  .btn-dashboard {
+    font-size:5px;
+  }
+  .ket-riwayat{
+    width: 85%;
+    padding:10px 20px;
+  }
+  .option-click{
+    width: 20px;
+    align-items:justify;
+    font-size: 14px;
+    margin:auto;
+  }
+  .ket-riwayat p{
+    font-size: 10px;
+  }
+  .grafik-n{
+    display: none;
+  }
+  .ket p{
+    font-size:10px;
+  }
+  .flex1 {
+    margin-top:20%;
+    width: 100%;
+  }
+  .link-hasil{
+    font-size: 11px;
+    grid-column-gap: 10px;
+  }
+  .salinn, .share{
+    width: 25px;
+  }
+  .dele{
+    width:15px;
+  }
+}
