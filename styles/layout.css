@@ -808,3 +808,26 @@ p> .unjaya{
         padding: 10px;
     }
 }
+/* bagian tentang */
+@media(max-width:500px){
+    .container{
+        padding: 10% 50px;
+    }
+    #about .abt-1 p{
+        font-size: 12px;
+        line-height: 20px;
+      }
+      #about h1 span{
+        font-size: 25px;
+      }
+      #about{
+        padding: 5px 30px 20px 30px;
+        height: 60%;
+      }
+    .right a{
+        font-size:12px;
+    }
+    .navbar>.left h2{
+        font-size: 13px;
+    }
+}
